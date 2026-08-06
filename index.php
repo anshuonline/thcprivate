@@ -566,8 +566,12 @@
                 <div class="p-6">
                     <h3 class="text-xl font-bold text-slate-900">Starter Business</h3>
                     <p class="text-xs text-slate-500 mt-2">Perfect for startups & small businesses</p>
-                    <div class="mt-4 flex items-baseline gap-1">
+                    <div class="mt-4 flex items-center gap-2">
+                        <span class="text-xl font-medium text-slate-400 line-through" data-price-inr="14999">₹14,999</span>
                         <span class="text-4xl font-black text-slate-900" data-price-inr="9999">₹9,999</span>
+                    </div>
+                    <div class="mt-2">
+                        <span class="inline-block px-2.5 py-1 bg-emerald-50 text-emerald-700 text-xs font-bold rounded-sm border border-emerald-100">Save <span data-price-inr="5000">₹5,000</span></span>
                     </div>
                     <p class="text-xs text-slate-400 mt-1">One-time payment</p>
                     
@@ -592,8 +596,12 @@
                 <div class="p-6">
                     <h3 class="text-xl font-bold text-slate-900">Growth Plan</h3>
                     <p class="text-xs text-slate-500 mt-2">For growing businesses</p>
-                    <div class="mt-4 flex items-baseline gap-1">
+                    <div class="mt-4 flex items-center gap-2">
+                        <span class="text-xl font-medium text-slate-400 line-through" data-price-inr="34999">₹34,999</span>
                         <span class="text-4xl font-black text-slate-900" data-price-inr="24999">₹24,999</span>
+                    </div>
+                    <div class="mt-2">
+                        <span class="inline-block px-2.5 py-1 bg-emerald-50 text-emerald-700 text-xs font-bold rounded-sm border border-emerald-100">Save <span data-price-inr="10000">₹10,000</span></span>
                     </div>
                     <p class="text-xs text-slate-400 mt-1">One-time payment</p>
                     
@@ -617,8 +625,12 @@
                 <div class="p-6">
                     <h3 class="text-xl font-bold text-slate-900">Enterprise</h3>
                     <p class="text-xs text-slate-500 mt-2">For established brands & companies</p>
-                    <div class="mt-4 flex items-baseline gap-1">
+                    <div class="mt-4 flex items-center gap-2">
+                        <span class="text-xl font-medium text-slate-400 line-through" data-price-inr="74999">₹74,999</span>
                         <span class="text-4xl font-black text-slate-900" data-price-inr="49999">₹49,999</span>
+                    </div>
+                    <div class="mt-2">
+                        <span class="inline-block px-2.5 py-1 bg-amber-50 text-amber-700 text-[11px] font-bold rounded-sm border border-amber-100">Save <span data-price-inr="25000">₹25,000</span> &ndash; the largest saving on this page</span>
                     </div>
                     <p class="text-xs text-slate-400 mt-1">One-time payment</p>
                     
