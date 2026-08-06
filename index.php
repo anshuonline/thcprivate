@@ -918,11 +918,9 @@
         utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
     });
 
-    document.getElementById('contact-form').addEventListener('submit', async function(e) {
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
         e.preventDefault();
         const form = e.target;
-        const submitBtn = form.querySelector('button[type="submit"]');
-        const originalBtnText = submitBtn.innerHTML;
         const name = form.querySelector('#name').value;
         const email = form.querySelector('#email').value;
         const phone = iti.isValidNumber() ? iti.getNumber() : form.querySelector('#phone').value;
@@ -930,42 +928,25 @@
         const message = form.querySelector('#message').value;
         const msgDiv = document.getElementById('form-message');
         
-        submitBtn.disabled = true;
-        submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
-        msgDiv.classList.add('hidden');
+        const subject = encodeURIComponent('Official Inquiry from ' + name + ' - ' + service);
+        const body = encodeURIComponent(
+            'Name: ' + name + '\n' +
+            'Email: ' + email + '\n' +
+            'Phone: ' + phone + '\n' +
+            'Service Interest: ' + service + '\n\n' +
+            'Message:\n' + message
+        );
         
-        try {
-            const response = await fetch('send_email.php', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ name, email, phone, service, message })
-            });
-            
-            const result = await response.json();
-            
-            msgDiv.classList.remove('hidden', 'bg-red-50', 'text-red-800', 'bg-emerald-50', 'text-emerald-800');
-            if(result.success) {
-                msgDiv.classList.add('bg-emerald-50', 'text-emerald-800');
-                msgDiv.innerText = result.message;
-                form.reset();
-            } else {
-                msgDiv.classList.add('bg-red-50', 'text-red-800');
-                msgDiv.innerText = result.message || 'Something went wrong.';
-            }
-        } catch(error) {
-            msgDiv.classList.remove('hidden', 'bg-emerald-50', 'text-emerald-800');
-            msgDiv.classList.add('bg-red-50', 'text-red-800');
-            msgDiv.innerText = 'Network error. Please try again later.';
-        }
+        window.location.href = 'mailto:support@hypecrews.com?subject=' + subject + '&body=' + body;
         
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = originalBtnText;
+        msgDiv.classList.remove('hidden', 'bg-red-50', 'text-red-800');
+        msgDiv.classList.add('bg-emerald-50', 'text-emerald-800');
+        msgDiv.innerText = 'Opening your email client... Your official inquiry details have been prepared.';
         
         setTimeout(() => {
             msgDiv.classList.add('hidden');
-        }, 8000);
+            form.reset();
+        }, 5000);
     });
 </script>
 
