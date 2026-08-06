@@ -513,15 +513,30 @@
 </section>
 
 <!-- Pricing Section -->
-<section class="py-24 bg-white border-t border-slate-200" id="pricing">
+<style>
+@keyframes gradient-border {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.flowing-border {
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899, #3b82f6);
+    background-size: 300% 300%;
+    animation: gradient-border 4s ease infinite;
+}
+.card-scale:hover {
+    transform: scale(1.02);
+}
+</style>
+<section class="py-24 bg-slate-50 border-t border-slate-200" id="pricing">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-16 fade-up">
             <span class="inline-block bg-blue-50 text-blue-800 text-xs font-bold px-4 py-2 rounded-sm uppercase tracking-widest mb-4 border-l-4 border-blue-700">Rate Card</span>
-            <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Transparent Pricing Structure</h2>
-            <div class="w-20 h-1 bg-amber-400 mx-auto mt-4 mb-6"></div>
-            <p class="text-slate-600">All prices indicative. Final pricing based on detailed scope of work and service level requirements.</p>
+            <h2 class="text-3xl md:text-5xl font-bold text-slate-900 leading-tight">Transparent, Value-Driven Pricing</h2>
+            <div class="w-20 h-1 bg-amber-400 mx-auto mt-6 mb-6"></div>
+            <p class="text-slate-600 text-lg">No hidden fees, no surprises. Choose the perfect plan tailored to accelerate your digital growth.</p>
             
-            <div class="mt-6 inline-flex items-center gap-2 bg-slate-50 border border-slate-200 rounded-sm px-4 py-2 shadow-sm">
+            <div class="mt-8 inline-flex items-center gap-2 bg-white border border-slate-200 rounded-full px-5 py-2 shadow-sm">
                 <span class="text-sm font-semibold text-slate-700">Currency:</span>
                 <select class="currency-selector bg-transparent text-sm font-bold text-blue-800 cursor-pointer focus:outline-none ml-1">
                     <option value="INR">₹ INR</option>
@@ -531,81 +546,81 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start mt-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center mt-12 max-w-6xl mx-auto">
             
             <!-- Starter -->
-            <div class="bg-white rounded-sm border border-slate-200 overflow-hidden card-hover fade-up shadow-sm hover:shadow-md transition-all">
-                <div class="p-8 border-b border-slate-100 bg-slate-50">
-                    <h3 class="text-xl font-bold text-slate-900">Basic Website</h3>
-                    <p class="text-sm text-slate-500 mt-2">For small departments & local bodies</p>
-                    <div class="mt-6 flex items-baseline gap-1">
-                        <span class="text-4xl font-black text-slate-900" data-price-inr="9999">₹9,999</span>
-                        <span class="text-sm font-medium text-slate-500">onwards</span>
-                    </div>
-                </div>
+            <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden card-scale fade-up shadow-sm hover:shadow-xl transition-all duration-300">
                 <div class="p-8">
-                    <ul class="space-y-3">
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">Up to 5 pages GIGW compliant</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">Basic accessibility features</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">Contact form with captcha</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">Free SSL certificate</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">7 days support</span></li>
+                    <h3 class="text-2xl font-bold text-slate-900">Starter Business</h3>
+                    <p class="text-sm text-slate-500 mt-2">Perfect for startups and small businesses</p>
+                    <div class="mt-6 flex items-baseline gap-1">
+                        <span class="text-5xl font-black text-slate-900" data-price-inr="14999">₹14,999</span>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-1">One-time payment</p>
+                    
+                    <ul class="space-y-4 mt-8">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-green-500 mt-1"></i><span class="text-slate-700">Up to 5 Pages Premium Design</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-green-500 mt-1"></i><span class="text-slate-700">Mobile Responsive & Fast</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-green-500 mt-1"></i><span class="text-slate-700">Basic SEO Optimization</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-green-500 mt-1"></i><span class="text-slate-700">Contact Form Integration</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-green-500 mt-1"></i><span class="text-slate-700">1 Month Free Support</span></li>
                     </ul>
-                    <a href="#contact" class="mt-8 block w-full text-center py-3 text-sm font-semibold rounded-sm border-2 border-slate-300 text-slate-700 hover:bg-slate-50 transition-all">Submit Inquiry</a>
+                    <a href="#contact" class="mt-10 block w-full text-center py-3.5 text-sm font-semibold rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-50 transition-all">Get Started</a>
                 </div>
             </div>
 
-            <!-- Enterprise (Featured) -->
-            <div class="bg-white rounded-sm border-2 border-blue-800 overflow-hidden card-hover fade-up relative shadow-xl lg:-mt-4 lg:mb-4 transform lg:scale-105 z-10">
-                <div class="bg-blue-800 text-white text-center py-2 text-xs font-bold uppercase tracking-widest">Recommended for Government</div>
-                <div class="p-8 border-b border-slate-100 bg-blue-50/20">
-                    <h3 class="text-xl font-bold text-slate-900">Enterprise Solution</h3>
-                    <p class="text-sm text-slate-500 mt-2">For ministries & public sector units</p>
-                    <div class="mt-6 flex items-baseline gap-1">
-                        <span class="text-4xl font-black text-slate-900" data-price-inr="29999">₹29,999</span>
-                        <span class="text-sm font-medium text-slate-500">onwards</span>
+            <!-- Professional (Featured / Mesmerizing Loop) -->
+            <div class="relative flowing-border rounded-2xl p-[3px] fade-up shadow-[0_0_40px_rgba(59,130,246,0.3)] transform md:scale-105 z-10 card-scale transition-all duration-300">
+                <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-lg z-20 animate-pulse">Most Popular</div>
+                <div class="bg-slate-900 rounded-[13px] h-full overflow-hidden relative">
+                    <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-blue-900/20 to-transparent pointer-events-none"></div>
+                    
+                    <div class="p-8 relative z-10">
+                        <h3 class="text-2xl font-bold text-white">Professional Edge</h3>
+                        <p class="text-sm text-slate-400 mt-2">For growing brands & agencies</p>
+                        <div class="mt-6 flex items-baseline gap-1">
+                            <span class="text-5xl font-black text-white" data-price-inr="49999">₹49,999</span>
+                        </div>
+                        <p class="text-xs text-slate-400 mt-1">One-time payment</p>
+                        
+                        <ul class="space-y-4 mt-8">
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-blue-400 mt-1"></i><span class="text-slate-200 font-medium">Up to 15 Pages Premium Design</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-blue-400 mt-1"></i><span class="text-slate-200">Custom Admin Dashboard</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-blue-400 mt-1"></i><span class="text-slate-200">E-Commerce Ready (50 Products)</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-blue-400 mt-1"></i><span class="text-slate-200">Advanced SEO Setup</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-blue-400 mt-1"></i><span class="text-slate-200">Payment Gateway Integration</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-blue-400 mt-1"></i><span class="text-slate-200">3 Months Priority Support</span></li>
+                        </ul>
+                        <a href="#contact" class="mt-10 block w-full text-center py-3.5 text-sm font-semibold rounded-xl text-white bg-blue-600 hover:bg-blue-500 transition-all shadow-lg btn-shine">Claim This Plan</a>
                     </div>
-                </div>
-                <div class="p-8">
-                    <ul class="space-y-3">
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700 font-semibold">Up to 15 pages premium design</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">Advanced admin with analytics</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">Document management system</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">RTI / Grievance portal</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">Payment gateway integration</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">Security audit & VAPT</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">30 days priority support</span></li>
-                    </ul>
-                    <a href="#contact" class="mt-8 block w-full text-center py-3 text-sm font-semibold rounded-sm text-white bg-blue-800 hover:bg-blue-900 transition-all shadow-md">Submit Official Inquiry</a>
                 </div>
             </div>
 
-            <!-- Custom -->
-            <div class="bg-white rounded-sm border border-slate-200 overflow-hidden card-hover fade-up shadow-sm hover:shadow-md transition-all">
-                <div class="p-8 border-b border-slate-100 bg-slate-50">
-                    <h3 class="text-xl font-bold text-slate-900">Custom Tender</h3>
-                    <p class="text-sm text-slate-500 mt-2">For large scale projects & NIC/SDI</p>
-                    <div class="mt-6 flex items-baseline gap-1">
-                        <span class="text-4xl font-black text-slate-900">Custom</span>
-                        <span class="text-sm font-medium text-slate-500">bidding</span>
-                    </div>
-                </div>
+            <!-- Enterprise -->
+            <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden card-scale fade-up shadow-sm hover:shadow-xl transition-all duration-300">
                 <div class="p-8">
-                    <ul class="space-y-3">
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">Fully custom application</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">NIC cloud / SDI deployment</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">Aadhaar / DigiLocker integration</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">Multi-tenant architecture</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">GeM / CPP portal integration</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">Dedicated team & SLA</span></li>
+                    <h3 class="text-2xl font-bold text-slate-900">Enterprise Custom</h3>
+                    <p class="text-sm text-slate-500 mt-2">For large-scale applications & SaaS</p>
+                    <div class="mt-6 flex items-baseline gap-1">
+                        <span class="text-5xl font-black text-slate-900">Custom</span>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-1">Tailored to your requirements</p>
+                    
+                    <ul class="space-y-4 mt-8">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-slate-400 mt-1"></i><span class="text-slate-700">Fully Custom Architecture</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-slate-400 mt-1"></i><span class="text-slate-700">AWS / Cloud Deployment</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-slate-400 mt-1"></i><span class="text-slate-700">Advanced API Integrations</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-slate-400 mt-1"></i><span class="text-slate-700">Multi-tenant Architecture</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-slate-400 mt-1"></i><span class="text-slate-700">Dedicated Development Team</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-slate-400 mt-1"></i><span class="text-slate-700">24/7 SLA Support</span></li>
                     </ul>
-                    <a href="#contact" class="mt-8 block w-full text-center py-3 text-sm font-semibold rounded-sm border-2 border-slate-300 text-slate-700 hover:bg-slate-50 transition-all">Request for Proposal</a>
+                    <a href="#contact" class="mt-10 block w-full text-center py-3.5 text-sm font-semibold rounded-xl text-brand-600 bg-brand-50 hover:bg-brand-100 transition-all">Contact Sales</a>
                 </div>
             </div>
 
         </div>
-        <div class="mt-10 text-center fade-up">
-            <p class="text-sm text-slate-500">All prices exclusive of GST. Domain, hosting, and SSL charges separate. <a href="refund-policy.php" class="text-blue-700 hover:underline font-semibold">Refund & Cancellation Policy</a>.</p>
+        <div class="mt-12 text-center fade-up">
+            <p class="text-sm text-slate-500">All prices exclusive of GST. Domain, hosting, and third-party API charges separate. <a href="refund-policy.php" class="text-blue-700 hover:underline font-semibold">Refund Policy</a>.</p>
         </div>
     </div>
 </section>
