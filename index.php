@@ -681,6 +681,22 @@
 
         </div>
 
+        <!-- Trust Bar -->
+        <div class="mt-10 max-w-5xl mx-auto bg-white border border-slate-200 rounded-xl p-4 md:p-6 shadow-sm fade-up flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
+            <div class="flex items-center gap-3 text-slate-700">
+                <i class="fa-solid fa-shield-halved text-emerald-600 text-xl"></i>
+                <span class="text-sm font-medium">100% Transparent Process</span>
+            </div>
+            <div class="flex items-center gap-3 text-slate-700">
+                <i class="fa-solid fa-lock text-amber-600 text-xl"></i>
+                <span class="text-sm font-medium">Secure payments, GST invoice</span>
+            </div>
+            <div class="flex items-center gap-3 text-slate-700">
+                <i class="fa-regular fa-clock text-blue-600 text-xl"></i>
+                <span class="text-sm font-medium">Kickoff call within 48 hours</span>
+            </div>
+        </div>
+
         <!-- Budget-based Custom Plans -->
         <div class="mt-20">
             <div class="text-center mb-10 fade-up">
