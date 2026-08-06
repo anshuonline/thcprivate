@@ -6,7 +6,7 @@
 
 // Secret key for GitHub webhook (you should match this in your GitHub webhook settings)
 // For security, you can define a secret string here and in GitHub.
-$secret = 'your_github_webhook_secret_here';
+$secret = '';
 
 // Path to the git repository (usually the current directory)
 $repo_dir = __DIR__;
