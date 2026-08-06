@@ -918,9 +918,11 @@
         utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
     });
 
-    document.getElementById('contact-form').addEventListener('submit', function(e) {
+    document.getElementById('contact-form').addEventListener('submit', async function(e) {
         e.preventDefault();
         const form = e.target;
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn.innerHTML;
         const name = form.querySelector('#name').value;
         const email = form.querySelector('#email').value;
         const phone = iti.isValidNumber() ? iti.getNumber() : form.querySelector('#phone').value;
@@ -928,25 +930,51 @@
         const message = form.querySelector('#message').value;
         const msgDiv = document.getElementById('form-message');
         
-        const subject = encodeURIComponent('Official Inquiry from ' + name + ' - ' + service);
-        const body = encodeURIComponent(
-            'Name: ' + name + '\n' +
-            'Email: ' + email + '\n' +
-            'Phone: ' + phone + '\n' +
-            'Service Interest: ' + service + '\n\n' +
-            'Message:\n' + message
-        );
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+        msgDiv.classList.add('hidden');
         
-        window.location.href = 'mailto:support@hypecrews.com?subject=' + subject + '&body=' + body;
+        try {
+            const response = await fetch('https://formsubmit.co/ajax/support@hypecrews.com', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    _subject: "New Official Inquiry from " + name,
+                    Name: name,
+                    Email: email,
+                    Phone: phone,
+                    Service_Interest: service,
+                    Message: message,
+                    _template: "table"
+                })
+            });
+            
+            const result = await response.json();
+            
+            msgDiv.classList.remove('hidden', 'bg-red-50', 'text-red-800', 'bg-emerald-50', 'text-emerald-800');
+            if(result.success === "true" || response.ok) {
+                msgDiv.classList.add('bg-emerald-50', 'text-emerald-800');
+                msgDiv.innerText = 'Thank you! Your message has been sent successfully. We will contact you shortly.';
+                form.reset();
+            } else {
+                msgDiv.classList.add('bg-red-50', 'text-red-800');
+                msgDiv.innerText = 'Something went wrong. Please try again.';
+            }
+        } catch(error) {
+            msgDiv.classList.remove('hidden', 'bg-emerald-50', 'text-emerald-800');
+            msgDiv.classList.add('bg-red-50', 'text-red-800');
+            msgDiv.innerText = 'Network error. Please try again later.';
+        }
         
-        msgDiv.classList.remove('hidden', 'bg-red-50', 'text-red-800');
-        msgDiv.classList.add('bg-emerald-50', 'text-emerald-800');
-        msgDiv.innerText = 'Opening your email client... Your official inquiry details have been prepared.';
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnText;
         
         setTimeout(() => {
             msgDiv.classList.add('hidden');
-            form.reset();
-        }, 5000);
+        }, 8000);
     });
 </script>
 
