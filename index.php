@@ -820,10 +820,13 @@
                                 <label for="service" class="block text-sm font-semibold text-slate-700 mb-1.5">Interested In <span class="text-red-500">*</span></label>
                                 <select id="service" name="service" required class="block w-full rounded-xl border-slate-300 shadow-sm focus:border-blue-600 focus:ring-blue-600 text-sm px-4 py-3 border bg-slate-50">
                                     <option value="">Select an option</option>
-                                    <option value="Starter Business">Starter Business (₹9,999)</option>
-                                    <option value="Growth Plan">Growth Plan (₹24,999)</option>
-                                    <option value="Enterprise">Enterprise (₹49,999)</option>
+                                    <option value="Starter Business" data-price-inr="9999" data-base-text="Starter Business">Starter Business (₹9,999)</option>
+                                    <option value="Growth Plan" data-price-inr="24999" data-base-text="Growth Plan">Growth Plan (₹24,999)</option>
+                                    <option value="Enterprise" data-price-inr="49999" data-base-text="Enterprise">Enterprise (₹49,999)</option>
                                     <option value="Custom Solution">Custom Solution</option>
+                                    <option value="For Individuals">Custom: Individuals (Under ₹15k)</option>
+                                    <option value="For Startups">Custom: Startups (₹25k - ₹50k)</option>
+                                    <option value="For Enterprises">Custom: Enterprises (₹50k - ₹1.5L)</option>
                                     <option value="General Inquiry">General Inquiry</option>
                                 </select>
                             </div>
@@ -919,6 +922,34 @@
             msgDiv.classList.add('hidden');
             form.reset();
         }, 5000);
+    });
+</script>
+
+<script>
+    // Auto-select plan in contact form based on clicked pricing card
+    document.addEventListener('DOMContentLoaded', function() {
+        const planButtons = document.querySelectorAll('a[href="#contact"]');
+        const serviceSelect = document.getElementById('service');
+        
+        planButtons.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Find the closest card
+                const card = this.closest('.bg-white, .bg-slate-900');
+                if(card && serviceSelect) {
+                    const titleEl = card.querySelector('h3, h4');
+                    if(titleEl) {
+                        const planName = titleEl.textContent.trim();
+                        // Try to match the plan name with select options
+                        for(let i = 0; i < serviceSelect.options.length; i++) {
+                            if(serviceSelect.options[i].value === planName) {
+                                serviceSelect.selectedIndex = i;
+                                break;
+                            }
+                        }
+                    }
+                }
+            });
+        });
     });
 </script>
 
