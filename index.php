@@ -559,11 +559,11 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-center mt-12 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch mt-12 max-w-7xl mx-auto">
             
             <!-- Starter -->
-            <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden card-scale fade-up shadow-sm hover:shadow-xl transition-all duration-300">
-                <div class="p-6">
+            <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden card-scale fade-up shadow-sm hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+                <div class="p-6 flex flex-col flex-grow">
                     <h3 class="text-xl font-bold text-slate-900">Starter Business</h3>
                     <p class="text-xs text-slate-500 mt-2">Perfect for startups & small businesses</p>
                     <div class="mt-4 flex items-center gap-2">
@@ -586,14 +586,14 @@
                         <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-1 text-sm"></i><span class="text-sm text-slate-700">Basic SEO Setup</span></li>
                         <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-1 text-sm"></i><span class="text-sm text-slate-700">SSL Configuration</span></li>
                     </ul>
-                    <a href="#contact" class="mt-8 block w-full text-center py-3 text-sm font-semibold rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-50 transition-all">Get Started</a>
+                    <a href="#contact" class="mt-auto block w-full text-center py-3 text-sm font-semibold rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-50 transition-all">Get Started</a>
                 </div>
             </div>
 
             <!-- Growth -->
-            <div class="relative bg-white rounded-2xl border border-slate-200 card-scale fade-up shadow-sm hover:shadow-xl transition-all duration-300">
+            <div class="relative bg-white rounded-2xl border border-slate-200 card-scale fade-up shadow-sm hover:shadow-xl transition-all duration-300 h-full flex flex-col">
                 <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-emerald-500 to-teal-600 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md z-20 whitespace-nowrap">Recommended</div>
-                <div class="p-6">
+                <div class="p-6 flex flex-col flex-grow">
                     <h3 class="text-xl font-bold text-slate-900">Growth Plan</h3>
                     <p class="text-xs text-slate-500 mt-2">For growing businesses</p>
                     <div class="mt-4 flex items-center gap-2">
@@ -621,8 +621,8 @@
             </div>
 
             <!-- Enterprise -->
-            <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden card-scale fade-up shadow-sm hover:shadow-xl transition-all duration-300">
-                <div class="p-6">
+            <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden card-scale fade-up shadow-sm hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+                <div class="p-6 flex flex-col flex-grow">
                     <h3 class="text-xl font-bold text-slate-900">Enterprise</h3>
                     <p class="text-xs text-slate-500 mt-2">For established brands & companies</p>
                     <div class="mt-4 flex items-center gap-2">
@@ -645,17 +645,17 @@
                         <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-1 text-sm"></i><span class="text-sm text-slate-700">Security & Backup</span></li>
                         <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-1 text-sm"></i><span class="text-sm text-slate-700">Priority Support (90 Days)</span></li>
                     </ul>
-                    <a href="#contact" class="mt-8 block w-full text-center py-3 text-sm font-semibold rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-50 transition-all">Choose Plan</a>
+                    <a href="#contact" class="mt-auto block w-full text-center py-3 text-sm font-semibold rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-50 transition-all">Choose Plan</a>
                 </div>
             </div>
 
             <!-- Custom Solution (Featured / Mesmerizing Loop) -->
-            <div class="relative flowing-border rounded-2xl p-[3px] fade-up shadow-[0_0_40px_rgba(59,130,246,0.3)] transform lg:scale-105 z-10 card-scale transition-all duration-300">
+            <div class="relative flowing-border rounded-2xl p-[3px] fade-up shadow-[0_0_40px_rgba(59,130,246,0.3)] transform lg:scale-105 z-10 card-scale transition-all duration-300 h-full flex flex-col">
                 <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-lg z-20 animate-pulse whitespace-nowrap">Most Popular</div>
-                <div class="bg-slate-900 rounded-[13px] h-full overflow-hidden relative">
+                <div class="bg-slate-900 rounded-[13px] h-full overflow-hidden relative flex flex-col flex-grow">
                     <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-blue-900/20 to-transparent pointer-events-none"></div>
                     
-                    <div class="p-6 relative z-10">
+                    <div class="p-6 relative z-10 flex flex-col flex-grow">
                         <h3 class="text-xl font-bold text-white">Custom Solution</h3>
                         <p class="text-xs text-slate-400 mt-2">Tailored to your business needs</p>
                         <div class="mt-4 flex items-baseline gap-1">
@@ -663,18 +663,18 @@
                         </div>
                         <p class="text-xs text-slate-400 mt-1">Contact Us</p>
                         
-                        <ul class="space-y-3 mt-6">
-                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200 font-medium">Fully Custom Development</span></li>
+                        <ul class="space-y-3 mt-6 mb-8">
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200 font-medium">Fully custom architecture</span></li>
                             <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200">Custom Dashboard</span></li>
                             <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200">CRM / ERP Development</span></li>
-                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200">Custom API Development</span></li>
-                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200">AI Integration</span></li>
-                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200">Cloud Deployment</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200">Advanced API integrations</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200">Multi-tenant architecture</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200">AWS / cloud deployment</span></li>
                             <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200">Mobile App Integration</span></li>
                             <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200">Dedicated Technical Support</span></li>
-                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200">SLA & Long-Term Maintenance</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200">24/7 SLA support</span></li>
                         </ul>
-                        <a href="#contact" class="mt-8 block w-full text-center py-3 text-sm font-semibold rounded-xl text-white bg-blue-600 hover:bg-blue-500 transition-all shadow-lg btn-shine">Contact Sales</a>
+                        <a href="#contact" class="mt-auto block w-full text-center py-3 text-sm font-semibold rounded-xl text-white bg-blue-600 hover:bg-blue-500 transition-all shadow-lg btn-shine">Contact Sales</a>
                     </div>
                 </div>
             </div>
