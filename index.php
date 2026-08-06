@@ -397,6 +397,34 @@
                     95% { width: 100%; opacity: 1; }
                     95.1%, 100% { width: 100%; opacity: 0; }
                 }\n";
+                
+                $smooth_end = min(100, $end_card + 3);
+                $fade_out_start = 93;
+                $fade_out_end = 96;
+
+                echo "@keyframes cardBg{$i} {
+                    0%, {$end_card}% { background-color: #ffffff; }
+                    {$smooth_end}%, {$fade_out_start}% { background-color: #0f172a; } 
+                    {$fade_out_end}%, 100% { background-color: #ffffff; }
+                }\n";
+                
+                echo "@keyframes textTitle{$i} {
+                    0%, {$end_card}% { color: #0f172a; }
+                    {$smooth_end}%, {$fade_out_start}% { color: #ffffff; }
+                    {$fade_out_end}%, 100% { color: #0f172a; }
+                }\n";
+                
+                echo "@keyframes textDesc{$i} {
+                    0%, {$end_card}% { color: #475569; }
+                    {$smooth_end}%, {$fade_out_start}% { color: #cbd5e1; }
+                    {$fade_out_end}%, 100% { color: #475569; }
+                }\n";
+                
+                echo "@keyframes iconBg{$i} {
+                    0%, {$end_card}% { background-color: #eff6ff; color: #1e40af; }
+                    {$smooth_end}%, {$fade_out_start}% { background-color: #1e293b; color: #fbbf24; }
+                    {$fade_out_end}%, 100% { background-color: #eff6ff; color: #1e40af; }
+                }\n";
             }
             ?>
             .seq-border { stroke-dasharray: 3000; }
@@ -424,20 +452,23 @@
 
                 echo '
                     <!-- Card Body -->
-                    <div class="bg-white rounded-sm border border-slate-200 p-8 text-center fade-up shadow-sm h-full relative z-10">
-                        <!-- Sequential Animated SVG Border (Shining) -->
-                        <div class="absolute inset-0 w-full h-full pointer-events-none z-20 rounded-sm drop-shadow-[0_0_12px_rgba(245,158,11,0.9)]">
-                            <svg class="w-full h-full" style="animation: drawBorder'.$index.' 10s linear infinite;">
-                                <rect x="0" y="0" width="100%" height="100%" rx="4" fill="none" stroke="#f59e0b" stroke-width="4" class="seq-border" />
+                    <div class="rounded-sm border border-slate-200 p-8 text-center fade-up shadow-sm h-full relative z-10" style="animation: cardBg'.$index.' 10s linear infinite;">
+                        <!-- Sequential Animated SVG Border (Microdots + Shining) -->
+                        <div class="absolute inset-0 w-full h-full pointer-events-none z-20 rounded-sm drop-shadow-[0_0_10px_rgba(245,158,11,0.9)]">
+                            <svg class="w-full h-full">
+                                <mask id="drawMask'.$index.'">
+                                    <rect x="0" y="0" width="100%" height="100%" rx="4" fill="none" stroke="white" stroke-width="12" class="seq-border" style="animation: drawBorder'.$index.' 10s linear infinite;" />
+                                </mask>
+                                <rect x="0" y="0" width="100%" height="100%" rx="4" fill="none" stroke="#f59e0b" stroke-width="3" stroke-dasharray="4 6" mask="url(#drawMask'.$index.')" />
                             </svg>
                         </div>
 
                         <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-blue-800 text-white text-sm font-bold w-10 h-10 rounded-full flex items-center justify-center border-4 border-white shadow-md z-30">'.$step['num'].'</div>
-                        <div class="w-14 h-14 mx-auto rounded-full bg-blue-50 flex items-center justify-center text-blue-800 text-xl mb-5 mt-2 relative z-30">
+                        <div class="w-14 h-14 mx-auto rounded-full flex items-center justify-center text-xl mb-5 mt-2 relative z-30" style="animation: iconBg'.$index.' 10s linear infinite;">
                             <i class="fa-solid '.$step['icon'].'"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-3 relative z-30">'.$step['title'].'</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed relative z-30">'.$step['desc'].'</p>
+                        <h3 class="text-lg font-bold mb-3 relative z-30" style="animation: textTitle'.$index.' 10s linear infinite;">'.$step['title'].'</h3>
+                        <p class="text-sm leading-relaxed relative z-30" style="animation: textDesc'.$index.' 10s linear infinite;">'.$step['desc'].'</p>
                     </div>
                 </div>';
             }
