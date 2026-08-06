@@ -843,6 +843,10 @@
                             <label for="message" class="block text-sm font-semibold text-slate-700 mb-1.5">Project Details <span class="text-red-500">*</span></label>
                             <textarea id="message" name="message" rows="4" required placeholder="Tell us about your project goals, timeline, and any specific requirements..." class="block w-full rounded-xl border-slate-300 shadow-sm focus:border-blue-600 focus:ring-blue-600 text-sm px-4 py-3 border bg-slate-50"></textarea>
                         </div>
+                        <div>
+                            <label for="captcha-answer" class="block text-sm font-semibold text-slate-700 mb-1.5">Security Check: What is <span id="captcha-question" class="font-black text-blue-600 tracking-wider"></span>? <span class="text-red-500">*</span></label>
+                            <input type="number" id="captcha-answer" required placeholder="Enter the sum" class="block w-full rounded-xl border-slate-300 shadow-sm focus:border-blue-600 focus:ring-blue-600 text-sm px-4 py-3 border bg-slate-50">
+                        </div>
                         <button type="submit" class="w-full flex justify-center items-center gap-2 py-4 px-6 rounded-xl shadow-lg text-sm font-bold text-white bg-blue-600 hover:bg-blue-700 transition-all duration-200 card-scale">
                             <i class="fa-solid fa-paper-plane"></i> Send Message
                         </button>
@@ -918,11 +922,33 @@
         utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
     });
 
+    let captchaExpected = 0;
+    function generateCaptcha() {
+        const num1 = Math.floor(Math.random() * 10) + 1;
+        const num2 = Math.floor(Math.random() * 10) + 1;
+        captchaExpected = num1 + num2;
+        document.getElementById('captcha-question').innerText = num1 + ' + ' + num2;
+        document.getElementById('captcha-answer').value = '';
+    }
+    
+    // Initialize captcha on load
+    document.addEventListener('DOMContentLoaded', generateCaptcha);
+
     document.getElementById('contact-form').addEventListener('submit', async function(e) {
         e.preventDefault();
         const form = e.target;
         const submitBtn = form.querySelector('button[type="submit"]');
         const originalBtnText = submitBtn.innerHTML;
+        const msgDiv = document.getElementById('form-message');
+        
+        const captchaAnswer = parseInt(document.getElementById('captcha-answer').value);
+        if (captchaAnswer !== captchaExpected) {
+            msgDiv.classList.remove('hidden', 'bg-emerald-50', 'text-emerald-800');
+            msgDiv.classList.add('bg-red-50', 'text-red-800');
+            msgDiv.innerText = 'Incorrect security check answer. Please try again.';
+            generateCaptcha();
+            return;
+        }
         const name = form.querySelector('#name').value;
         const email = form.querySelector('#email').value;
         const phone = iti.isValidNumber() ? iti.getNumber() : form.querySelector('#phone').value;
@@ -959,6 +985,7 @@
                 msgDiv.classList.add('bg-emerald-50', 'text-emerald-800');
                 msgDiv.innerText = 'Thank you! Your message has been sent successfully. We will contact you shortly.';
                 form.reset();
+                generateCaptcha();
             } else {
                 msgDiv.classList.add('bg-red-50', 'text-red-800');
                 msgDiv.innerText = 'Something went wrong. Please try again.';
