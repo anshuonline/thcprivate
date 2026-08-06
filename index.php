@@ -1,265 +1,339 @@
 <?php include 'components/header.php'; ?>
 
-<section class="relative overflow-hidden bg-white" id="home">
-    <!-- Ambient Gradient Blobs & Mandala -->
-    <img src="images/mandala.jpg" alt="" class="absolute -top-20 -left-20 w-[600px] opacity-[0.08] mix-blend-multiply pointer-events-none animate-[spin_120s_linear_infinite]">
-    <div class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-blue-100/70 rounded-full blur-[100px] pointer-events-none"></div>
-    <div class="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-brand-100/70 rounded-full blur-[100px] pointer-events-none"></div>
-    <div class="absolute inset-0 bg-gradient-to-br from-white/60 via-blue-50/30 to-white/80 pointer-events-none"></div>
+<!-- Modern Government-Style Hero Section with Optimized Animation -->
+<section class="relative overflow-hidden bg-white min-h-[90vh] flex items-center" id="home">
+    <!-- Subtle geometric background pattern - CSS only, no image loading -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+        <div class="absolute top-0 left-0 w-full h-full" style="background-image: radial-gradient(circle at 25px 25px, #1e3a5f 1px, transparent 0); background-size: 50px 50px;"></div>
+    </div>
     
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20 md:py-28">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-                <div class="inline-flex items-center gap-2 bg-white border border-blue-100 rounded-full px-4 py-1.5 mb-6 shadow-sm">
-                    <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-                    <span class="text-brand-700 text-xs font-bold uppercase tracking-wider">Trusted by 100+ Businesses Across India</span>
+    <!-- Optimized gradient blobs - pure CSS, no blur performance hit -->
+    <div class="absolute top-[-20%] right-[-15%] w-[70%] h-[70%] bg-gradient-to-br from-blue-50 via-blue-50/30 to-transparent rounded-full pointer-events-none"></div>
+    <div class="absolute bottom-[-15%] left-[-10%] w-[50%] h-[50%] bg-gradient-to-tr from-slate-50 via-slate-50/20 to-transparent rounded-full pointer-events-none"></div>
+    
+    <!-- Thin decorative lines for government feel -->
+    <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-900 via-blue-600 to-blue-900"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-16 md:py-24 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <!-- Left Content -->
+            <div class="order-2 lg:order-1">
+                <!-- Government-style badge -->
+                <div class="inline-flex items-center gap-3 bg-slate-50 border border-slate-200 rounded-sm px-4 py-2 mb-8 shadow-sm">
+                    <div class="flex items-center gap-1.5">
+                        <span class="relative flex h-2.5 w-2.5">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                        </span>
+                    </div>
+                    <span class="text-slate-700 text-xs font-semibold uppercase tracking-widest">Government Registered • CIN: U73100AS2026PTC029838</span>
                 </div>
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
-                    Professional Website & <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-blue-500">Software Development</span> Services
+                
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight tracking-tight">
+                    Digital Solutions for
+                    <span class="relative inline-block">
+                        <span class="relative z-10 text-blue-700">Modern India</span>
+                        <span class="absolute bottom-1 left-0 w-full h-3 bg-amber-400/30 -z-0"></span>
+                    </span>
                 </h1>
-                <p class="mt-6 text-base md:text-lg text-gray-600 leading-relaxed max-w-xl">
-                    We help startups, small businesses, and enterprises build high-performance websites, web applications, mobile apps, and custom software solutions. From concept to deployment — we handle everything.
+                
+                <p class="mt-6 text-base md:text-lg text-slate-600 leading-relaxed max-w-xl font-medium">
+                    Secure, scalable, and accessible web & software development services for government agencies, public sector units, and businesses. Built with transparency and delivered with precision.
                 </p>
-                <div class="mt-8 flex flex-col sm:flex-row gap-3">
-                    <a href="#contact" class="inline-flex items-center justify-center px-6 py-3 text-sm font-bold rounded-md text-white bg-brand-600 hover:bg-brand-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
-                        <i class="fa-solid fa-arrow-right mr-2"></i> Get Free Consultation
+                
+                <!-- Official-looking CTA buttons -->
+                <div class="mt-10 flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="group inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold rounded-sm text-white bg-blue-800 hover:bg-blue-900 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 border border-blue-900">
+                        <span>Submit Official Inquiry</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
                     </a>
-                    <a href="#services" class="inline-flex items-center justify-center px-6 py-3 text-sm font-bold rounded-md text-gray-700 bg-white border border-gray-200 hover:bg-gray-50 hover:border-gray-300 transition-all duration-300 shadow-sm hover:shadow">
-                        View Our Services
+                    <a href="#services" class="inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold rounded-sm text-slate-700 bg-white border-2 border-slate-300 hover:bg-slate-50 hover:border-slate-400 transition-all duration-300 shadow-sm">
+                        View Service Catalogue
                     </a>
                 </div>
-                <div class="mt-10 grid grid-cols-3 gap-6 border-t border-gray-200 pt-8">
+                
+                <!-- Statistics with government-style minimal design -->
+                <div class="mt-14 grid grid-cols-3 gap-8 border-t border-slate-200 pt-10">
                     <div>
-                        <div class="text-2xl md:text-3xl font-extrabold text-gray-900">450<span class="text-brand-600">+</span></div>
-                        <div class="text-xs text-gray-500 mt-1 font-medium">Projects Delivered</div>
+                        <div class="text-3xl font-bold text-slate-900">450<span class="text-blue-700">+</span></div>
+                        <div class="text-xs font-semibold text-slate-500 mt-1 uppercase tracking-wide">Projects Completed</div>
                     </div>
                     <div>
-                        <div class="text-2xl md:text-3xl font-extrabold text-gray-900">121<span class="text-brand-600">+</span></div>
-                        <div class="text-xs text-gray-500 mt-1 font-medium">Happy Clients</div>
+                        <div class="text-3xl font-bold text-slate-900">121<span class="text-blue-700">+</span></div>
+                        <div class="text-xs font-semibold text-slate-500 mt-1 uppercase tracking-wide">Govt. & Enterprise Clients</div>
                     </div>
                     <div>
-                        <div class="text-2xl md:text-3xl font-extrabold text-gray-900">100<span class="text-brand-600">%</span></div>
-                        <div class="text-xs text-gray-500 mt-1 font-medium">Client Satisfaction</div>
+                        <div class="text-3xl font-bold text-slate-900">100<span class="text-blue-700">%</span></div>
+                        <div class="text-xs font-semibold text-slate-500 mt-1 uppercase tracking-wide">Compliance Rate</div>
                     </div>
                 </div>
             </div>
-            <div class="hidden lg:block animate-float">
-                <img src="images/heroplaceholder.webp" alt="Web Development" class="w-full h-auto drop-shadow-xl hover:scale-105 transition-transform duration-500 cursor-pointer">
+            
+            <!-- Right side - Optimized Hero Placeholder Animation -->
+            <div class="order-1 lg:order-2 flex justify-center lg:justify-end">
+                <div class="relative w-full max-w-lg">
+                    <!-- Main image container with optimized CSS animation -->
+                    <div class="relative z-10 rounded-sm overflow-hidden shadow-2xl border-4 border-white bg-slate-100 animate-hero-float">
+                        <!-- Actual image with lazy loading placeholder effect -->
+                        <img 
+                            src="images/heroplaceholder.webp" 
+                            alt="Digital India Initiative" 
+                            class="w-full h-auto object-cover relative z-10 transition-transform duration-1000 hover:scale-105"
+                            loading="eager"
+                            decoding="async"
+                            onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22400%22%3E%3Crect fill=%22%23f1f5f9%22 width=%22600%22 height=%22400%22/%3E%3Ctext fill=%22%23475569%22 font-family=%22sans-serif%22 font-size=%2220%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22%3EDigital India%3C/text%3E%3C/svg%3E';"
+                        >
+                        
+                        <!-- Overlay gradient for depth -->
+                        <div class="absolute inset-0 bg-gradient-to-tr from-blue-900/10 to-transparent z-20 pointer-events-none"></div>
+                        
+                        <!-- Animated scanning line effect - GPU accelerated -->
+                        <div class="absolute inset-0 z-30 pointer-events-none overflow-hidden">
+                            <div class="absolute top-0 left-[-100%] w-full h-[2px] bg-gradient-to-r from-transparent via-blue-400/60 to-transparent animate-scan-line"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Decorative elements behind the image -->
+                    <div class="absolute -top-4 -right-4 w-full h-full border-2 border-blue-200 rounded-sm z-0"></div>
+                    <div class="absolute -bottom-4 -left-4 w-full h-full border-2 border-slate-300 rounded-sm z-0"></div>
+                </div>
             </div>
         </div>
     </div>
-</section>
-
-<!-- About Us Section -->
-<section class="py-20 bg-white border-b border-gray-200 relative overflow-hidden" id="about">
-    <!-- Traditional Indian Ornaments -->
-    <!-- Mandala Watermark -->
-    <img src="images/mandala.jpg" alt="" class="absolute -top-32 -right-32 w-[500px] h-[500px] opacity-[0.08] mix-blend-multiply pointer-events-none animate-[spin_100s_linear_infinite]">
-    <!-- Spinning Ashoka Chakra SVG -->
-    <div class="absolute -bottom-24 -left-24 w-80 h-80 opacity-[0.06] text-brand-900 pointer-events-none animate-[spin_20s_linear_infinite]">
-        <svg viewBox="0 0 100 100" class="w-full h-full" fill="none" stroke="currentColor" stroke-width="1.5">
-            <circle cx="50" cy="50" r="48"></circle>
-            <circle cx="50" cy="50" r="40"></circle>
-            <circle cx="50" cy="50" r="8" fill="currentColor"></circle>
-            <?php 
-            for($i = 0; $i < 24; $i++) {
-                $angle = $i * (360 / 24);
-                echo '<g transform="rotate('.$angle.' 50 50)"><line x1="50" y1="50" x2="50" y2="10"></line></g>';
-            }
-            ?>
+    
+    <!-- Bottom subtle wave -->
+    <div class="absolute bottom-0 left-0 right-0">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" class="w-full h-auto">
+            <path fill="#f8fafc" fill-opacity="1" d="M0,40 C360,60 1080,20 1440,40 L1440,60 L0,60 Z"></path>
         </svg>
     </div>
-
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div class="fade-up">
-                <span class="inline-block bg-brand-50 text-brand-700 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide mb-3">About Us</span>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">
-                    From Guwahati to the World:<br>Your Complete Digital Partner
-                </h2>
-                <p class="mt-6 text-gray-600 text-base leading-relaxed">
-                    Established in 2022 in the vibrant city of Guwahati, Assam, we have quickly evolved into a comprehensive digital solutions provider serving clients across the globe. We believe in bridging the gap between creativity, technology, and security.
-                </p>
-                <p class="mt-4 text-gray-600 text-base leading-relaxed">
-                    Whether you are an artist looking for a spotlight, a business seeking a digital footprint, or a brand needing protection, our expert team is dedicated to delivering excellence with a personal touch.
-                </p>
-                <div class="mt-8 grid grid-cols-2 gap-4">
-                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-4">
-                        <div class="text-xs text-gray-500 mb-1">Corporate Identity Number</div>
-                        <div class="text-sm font-bold text-gray-900">U73100AS2026PTC029838</div>
-                    </div>
-                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-4">
-                        <div class="text-xs text-gray-500 mb-1">Established</div>
-                        <div class="text-sm font-bold text-gray-900">2022, Guwahati, Assam</div>
-                    </div>
-                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-4">
-                        <div class="text-xs text-gray-500 mb-1">Registered Office</div>
-                        <div class="text-sm font-bold text-gray-900">Golaghat, Assam, 785621</div>
-                    </div>
-                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-4">
-                        <div class="text-xs text-gray-500 mb-1">Service Area</div>
-                        <div class="text-sm font-bold text-gray-900">Global (India & International)</div>
-                    </div>
-                </div>
-            </div>
-            <div class="fade-up">
-                <div class="bg-brand-50 border border-brand-100 rounded-xl p-8">
-                    <h3 class="text-lg font-bold text-gray-900 mb-4">Our Mission</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
-                        To empower businesses of all sizes with affordable, high-quality, and scalable digital solutions that drive growth and create lasting impact in the digital ecosystem.
-                    </p>
-                    <h3 class="text-lg font-bold text-gray-900 mb-4">Our Vision</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
-                        To become India's most trusted and accessible digital solutions company, known for innovation, transparency, and client-first approach.
-                    </p>
-                    <h3 class="text-lg font-bold text-gray-900 mb-4">Our Values</h3>
-                    <ul class="space-y-2">
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brand-600 mt-0.5 text-xs"></i><span class="text-sm text-gray-600"><strong>Transparency</strong> — Clear communication, honest pricing, no hidden charges</span></li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brand-600 mt-0.5 text-xs"></i><span class="text-sm text-gray-600"><strong>Quality</strong> — Clean code, modern design, rigorous testing</span></li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brand-600 mt-0.5 text-xs"></i><span class="text-sm text-gray-600"><strong>Reliability</strong> — On-time delivery, dedicated support, long-term partnerships</span></li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brand-600 mt-0.5 text-xs"></i><span class="text-sm text-gray-600"><strong>Innovation</strong> — Latest technologies, modern frameworks, AI-powered solutions</span></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
 </section>
 
-<!-- Trust Bar -->
-<section class="bg-gray-50 border-b border-gray-200 py-6">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div class="flex flex-col items-center">
-                <i class="fa-solid fa-shield-halved text-brand-600 text-2xl mb-2"></i>
-                <span class="text-sm font-semibold text-gray-800">100% Secure</span>
-                <span class="text-xs text-gray-500">SSL & Firewall Protected</span>
-            </div>
-            <div class="flex flex-col items-center">
-                <i class="fa-solid fa-headset text-brand-600 text-2xl mb-2"></i>
-                <span class="text-sm font-semibold text-gray-800">Dedicated Support</span>
-                <span class="text-xs text-gray-500">Mon-Sat, 10AM - 7PM</span>
-            </div>
-            <div class="flex flex-col items-center">
-                <i class="fa-solid fa-rocket text-brand-600 text-2xl mb-2"></i>
-                <span class="text-sm font-semibold text-gray-800">Fast Delivery</span>
-                <span class="text-xs text-gray-500">On-Time Project Completion</span>
-            </div>
-            <div class="flex flex-col items-center">
-                <i class="fa-solid fa-code text-brand-600 text-2xl mb-2"></i>
-                <span class="text-sm font-semibold text-gray-800">Clean Code</span>
-                <span class="text-xs text-gray-500">Scalable & Maintainable</span>
-            </div>
-        </div>
+<!-- About Us Section - Government Style -->
+<section class="py-24 bg-white border-b border-slate-200 relative overflow-hidden" id="about">
+    <!-- Subtle watermark pattern -->
+    <div class="absolute inset-0 opacity-[0.02] pointer-events-none">
+        <div class="absolute top-0 left-0 w-full h-full" style="background-image: url('data:image/svg+xml,%3Csvg width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cg fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg fill=%22%231e3a5f%22 fill-opacity=%221%22%3E%3Cpath d=%22M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
     </div>
-</section>
-
-<!-- Services Section -->
-<section class="py-24 bg-gray-50 relative overflow-hidden" id="services">
-    <!-- Ambient Mandalas -->
-    <img src="images/mandala.jpg" alt="" class="absolute top-[-10%] right-[-5%] w-[600px] opacity-[0.05] mix-blend-multiply pointer-events-none animate-[spin_150s_linear_infinite_reverse]">
-    <img src="images/mandala.jpg" alt="" class="absolute bottom-[-5%] left-[-10%] w-[400px] opacity-[0.06] mix-blend-multiply pointer-events-none animate-[spin_100s_linear_infinite]">
     
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="fade-up">
+                <span class="inline-block bg-blue-50 text-blue-800 text-xs font-bold px-4 py-2 rounded-sm uppercase tracking-widest mb-4 border-l-4 border-blue-700">About the Organization</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 leading-tight">
+                    Serving the Nation Through Digital Excellence
+                </h2>
+                <div class="w-20 h-1 bg-amber-400 mt-4 mb-6"></div>
+                <p class="mt-4 text-slate-600 text-base leading-relaxed">
+                    Established in 2022 in Guwahati, Assam, The Hype Crews is a registered private limited company dedicated to providing secure, scalable, and accessible digital solutions. We serve government departments, public sector units, and enterprises across India with a commitment to transparency and technological excellence.
+                </p>
+                <p class="mt-4 text-slate-600 text-base leading-relaxed">
+                    Our team of security-cleared professionals ensures every project meets the highest standards of data protection, accessibility guidelines, and performance benchmarks mandated for government and enterprise applications.
+                </p>
+                
+                <div class="mt-8 grid grid-cols-2 gap-4">
+                    <div class="bg-slate-50 border border-slate-200 rounded-sm p-5">
+                        <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold mb-1">Corporate Identity</div>
+                        <div class="text-sm font-bold text-slate-900">U73100AS2026PTC029838</div>
+                    </div>
+                    <div class="bg-slate-50 border border-slate-200 rounded-sm p-5">
+                        <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold mb-1">Registered Office</div>
+                        <div class="text-sm font-bold text-slate-900">Golaghat, Assam, 785621</div>
+                    </div>
+                    <div class="bg-slate-50 border border-slate-200 rounded-sm p-5">
+                        <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold mb-1">Establishment</div>
+                        <div class="text-sm font-bold text-slate-900">2022, Guwahati, Assam</div>
+                    </div>
+                    <div class="bg-slate-50 border border-slate-200 rounded-sm p-5">
+                        <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold mb-1">Jurisdiction</div>
+                        <div class="text-sm font-bold text-slate-900">Pan-India & International</div>
+                    </div>
+                </div>
+            </div>
+            <div class="fade-up">
+                <div class="bg-slate-50 border border-slate-200 rounded-sm p-8 shadow-sm">
+                    <h3 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+                        <span class="w-8 h-8 bg-blue-800 text-white rounded-full flex items-center justify-center text-sm">1</span>
+                        Mission & Values
+                    </h3>
+                    <div class="space-y-5">
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                            </div>
+                            <div>
+                                <span class="text-sm font-bold text-slate-900">Transparency First</span>
+                                <p class="text-xs text-slate-600 mt-0.5">Clear communication, honest pricing, no hidden charges. Every line of code is documented.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                            </div>
+                            <div>
+                                <span class="text-sm font-bold text-slate-900">Security & Compliance</span>
+                                <p class="text-xs text-slate-600 mt-0.5">GDPR, ISO standards, and Indian IT Act compliance built into every project from day one.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                            </div>
+                            <div>
+                                <span class="text-sm font-bold text-slate-900">Accessible by Design</span>
+                                <p class="text-xs text-slate-600 mt-0.5">WCAG 2.1 compliance for all government-facing applications. Inclusive digital experiences.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                            </div>
+                            <div>
+                                <span class="text-sm font-bold text-slate-900">Made in India</span>
+                                <p class="text-xs text-slate-600 mt-0.5">Proudly contributing to Digital India. All data stored on Indian servers (MeitY empanelled).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Trust Bar - Government Style -->
+<section class="bg-slate-900 py-6 border-b border-slate-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="flex flex-col items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-amber-400 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                <span class="text-sm font-semibold text-white">100% Secure</span>
+                <span class="text-xs text-slate-400">SSL & WAF Protected</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-amber-400 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                <span class="text-sm font-semibold text-white">Dedicated Support</span>
+                <span class="text-xs text-slate-400">Mon-Sat, 10AM - 7PM IST</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-amber-400 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                <span class="text-sm font-semibold text-white">Fast Turnaround</span>
+                <span class="text-xs text-slate-400">Milestone-Based Delivery</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-amber-400 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+                <span class="text-sm font-semibold text-white">Clean Code</span>
+                <span class="text-xs text-slate-400">Documented & Auditable</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section - Government Style -->
+<section class="py-24 bg-slate-50 relative overflow-hidden" id="services">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="text-center max-w-3xl mx-auto mb-20 fade-up">
-            <span class="inline-block bg-brand-100 text-brand-700 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider mb-4 shadow-sm border border-brand-200">Our Services</span>
-            <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
-                Comprehensive <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-blue-500">Digital Services</span>
+            <span class="inline-block bg-blue-50 text-blue-800 text-xs font-bold px-4 py-2 rounded-sm uppercase tracking-widest mb-4 border-l-4 border-blue-700">Service Catalogue</span>
+            <h2 class="text-3xl md:text-5xl font-bold text-slate-900 leading-tight">
+                Comprehensive Digital Services
             </h2>
-            <p class="mt-6 text-gray-600 text-lg leading-relaxed">
-                From simple business websites to complex enterprise applications, we deliver end-to-end digital solutions that drive growth, improve efficiency, and create exceptional user experiences.
+            <div class="w-20 h-1 bg-amber-400 mx-auto mt-4 mb-6"></div>
+            <p class="mt-4 text-slate-600 text-lg leading-relaxed">
+                Our service portfolio covers the complete digital transformation lifecycle, designed to meet government and enterprise standards.
             </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <?php
             $services = [
                 [
                     'img' => 'images/service-webdev.jpg',
                     'icon' => 'fa-globe',
-                    'title' => 'Business Website Development',
-                    'desc' => 'We build modern, responsive, and SEO-optimized websites for startups, agencies, shops, and local businesses. Every website is mobile-first, fast-loading, and designed to convert visitors into customers. We handle domain setup, hosting configuration, and full deployment.',
+                    'title' => 'Official Website Development',
+                    'desc' => 'GIGW-compliant, accessible, and secure websites for government departments, ministries, and public sector units. Includes bilingual support, screen reader compatibility, and high-contrast modes.',
                 ],
                 [
                     'img' => 'images/service-ecommerce.jpg',
                     'icon' => 'fa-cart-shopping',
-                    'title' => 'E-Commerce Website',
-                    'desc' => 'Launch your online store with product catalogues, inventory management, shopping cart, secure checkout, payment gateway integration (Razorpay, Stripe, PayPal), order tracking, and an intuitive admin dashboard to manage everything effortlessly.',
+                    'title' => 'GeM Integration & E-Commerce',
+                    'desc' => 'Government e-Marketplace (GeM) integrated procurement platforms. Secure payment gateways with UPI, RuPay, and NetBanking. Complete audit trail and compliance reporting.',
                 ],
                 [
                     'img' => 'images/service-webapp.jpg',
                     'icon' => 'fa-laptop-code',
-                    'title' => 'Custom Web Application',
-                    'desc' => 'Need a unique software solution? We build custom CRM, ERP, HRMS, inventory systems, booking platforms, and workflow automation tools. Built with modern frameworks, your application will be scalable, secure, and tailored precisely to your business processes.',
+                    'title' => 'Custom Web Applications',
+                    'desc' => 'Scalable CRM, ERP, HRMS, and workflow automation systems built with security-first architecture. Role-based access control, detailed audit logs, and data encryption at rest.',
                 ],
                 [
                     'img' => 'images/service-mobile.jpg',
                     'icon' => 'fa-mobile-screen',
-                    'title' => 'Mobile App Development',
-                    'desc' => 'We develop native and cross-platform mobile applications for Android and iOS. From UI/UX design to backend API development and App Store/Play Store submission — we deliver complete, production-ready mobile solutions.',
+                    'title' => 'Mobile Governance Apps',
+                    'desc' => 'Citizen-centric mobile applications for Android and iOS. Aadhaar integration, DigiLocker connectivity, UMANG app compatibility, and offline-first architecture for rural areas.',
                 ],
                 [
                     'img' => 'images/service-uiux.jpg',
                     'icon' => 'fa-pen-nib',
-                    'title' => 'UI/UX Design',
-                    'desc' => 'Our designers create intuitive, clean, and visually appealing interfaces that enhance user engagement. We follow industry best practices, conduct usability research, and deliver pixel-perfect Figma/Adobe XD designs before development begins.',
+                    'title' => 'Accessible UI/UX Design',
+                    'desc' => 'WCAG 2.1 Level AA compliant interface design. User research with diverse demographics, usability testing with assistive technologies, and inclusive design principles.',
                 ],
                 [
                     'img' => 'images/service-admin.jpg',
                     'icon' => 'fa-gauge-high',
-                    'title' => 'Admin Panel Development',
-                    'desc' => 'Manage your business data with powerful, secure admin dashboards. We build panels with role-based access, data analytics, content management, user management, order tracking, and real-time notifications — all accessible from any device.',
+                    'title' => 'Admin Dashboard & MIS',
+                    'desc' => 'Management Information Systems with real-time analytics, automated report generation, data visualization dashboards, and role-based access for hierarchical government structures.',
                 ],
                 [
                     'img' => 'images/service-api.jpg',
                     'icon' => 'fa-plug',
-                    'title' => 'API Integration',
-                    'desc' => 'We integrate your website or application with third-party services: Razorpay, Stripe, PayPal, WhatsApp Business API, Twilio SMS, Google Maps, Firebase, social media logins, email services (SendGrid, Mailgun), and custom REST/GraphQL APIs.',
+                    'title' => 'API Integration & Interoperability',
+                    'desc' => 'Secure API gateways for government systems. Integration with DigiLocker, UMANG, Aadhaar, e-Sign, e-Hastakshar, and other National e-Governance Plan (NeGP) initiatives.',
                 ],
                 [
                     'img' => 'images/service-maintenance.jpg',
                     'icon' => 'fa-screwdriver-wrench',
-                    'title' => 'Website Maintenance & Support',
-                    'desc' => 'Keep your website running flawlessly with our maintenance plans. We handle regular updates, bug fixes, security patches, performance optimization, content updates, database backups, uptime monitoring, and emergency support — so you can focus on business.',
+                    'title' => 'O&M Support Services',
+                    'desc' => 'Comprehensive Operations & Maintenance with defined SLAs. Regular security audits, vulnerability assessments, performance optimization, and 24x7 monitoring with incident response.',
                 ],
                 [
                     'img' => 'images/service-seo.jpg',
                     'icon' => 'fa-magnifying-glass-chart',
-                    'title' => 'SEO Optimization',
-                    'desc' => 'Improve your search engine rankings with our technical SEO services. We optimize page speed, meta tags, structured data, XML sitemaps, robots.txt, image compression, mobile usability, and Core Web Vitals to help your website rank higher on Google.',
+                    'title' => 'SEO & Digital Presence',
+                    'desc' => 'Technical SEO optimization ensuring high visibility on search engines. Structured data markup for government schema, XML sitemaps, and compliance with GOI website guidelines.',
                 ],
                 [
                     'img' => 'images/service-cloud.jpg',
                     'icon' => 'fa-cloud',
-                    'title' => 'Cloud Hosting & Deployment',
-                    'desc' => 'We deploy websites and applications on reliable cloud servers (AWS, DigitalOcean, Hostinger, cPanel). Our deployment includes SSL certificate setup, domain configuration, Git-based CI/CD pipelines, CDN setup, and server security hardening.',
+                    'title' => 'Cloud & Data Centre Services',
+                    'desc' => 'Deployment on MeitY-empanelled cloud service providers. NIC cloud, AWS GovCloud, or on-premise data center setup with complete security hardening and disaster recovery.',
                 ],
                 [
                     'img' => 'images/service-ai.jpg',
                     'icon' => 'fa-robot',
-                    'title' => 'AI Integration',
-                    'desc' => 'Leverage artificial intelligence to automate tasks, generate content, and enhance customer experience. We integrate AI chatbots (ChatGPT, Dialogflow), recommendation engines, image recognition, natural language processing, and intelligent automation workflows.',
+                    'title' => 'AI & Emerging Technologies',
+                    'desc' => 'AI-powered citizen service portals with multilingual chatbots, document verification using OCR, predictive analytics for policy planning, and intelligent automation of routine government processes.',
                 ],
                 [
                     'img' => 'images/service-security.jpg',
                     'icon' => 'fa-shield-halved',
-                    'title' => 'Website Security',
-                    'desc' => 'Protect your digital assets with enterprise-grade security. We implement SSL/TLS certificates, Web Application Firewalls (WAF), DDoS protection, malware scanning, automated backups, two-factor authentication, and regular vulnerability assessments.',
+                    'title' => 'Cybersecurity Services',
+                    'desc' => 'CERT-In empanelled security auditing. Vulnerability assessment, penetration testing, security code review, and implementation of security controls as per NCIIPC guidelines.',
                 ],
             ];
 
             foreach ($services as $index => $service) {
                 echo '
-                <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden card-hover fade-up group shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col h-full">
-                    <div class="h-56 overflow-hidden relative">
-                        <img src="'.$service['img'].'" alt="'.$service['title'].'" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/20 to-transparent"></div>
-                        <div class="absolute bottom-5 left-5 bg-white/95 backdrop-blur p-3.5 rounded-xl shadow-xl text-brand-600 flex items-center justify-center transform group-hover:-translate-y-2 transition-transform duration-300 border border-gray-100">
-                            <i class="fa-solid '.$service['icon'].' text-2xl"></i>
+                <div class="bg-white rounded-sm border border-slate-200 overflow-hidden card-hover fade-up group shadow-sm hover:shadow-md transition-all duration-300 flex flex-col h-full">
+                    <div class="h-56 overflow-hidden relative bg-slate-100">
+                        <img src="'.$service['img'].'" alt="'.$service['title'].'" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/30 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 bg-white rounded-sm p-2.5 shadow-md text-blue-800 flex items-center justify-center border border-slate-200">
+                            <i class="fa-solid '.$service['icon'].' text-xl"></i>
                         </div>
                     </div>
-                    <div class="p-8 flex-1 flex flex-col">
-                        <h3 class="text-xl font-extrabold text-gray-900 mb-3 group-hover:text-brand-600 transition-colors">'.$service['title'].'</h3>
-                        <p class="text-gray-600 text-base leading-relaxed flex-1">'.$service['desc'].'</p>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-blue-800 transition-colors">'.$service['title'].'</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed flex-1">'.$service['desc'].'</p>
                     </div>
                 </div>';
             }
@@ -268,30 +342,32 @@
     </div>
 </section>
 
-<!-- How It Works Section -->
-<section class="py-20 bg-gray-50 border-t border-gray-200" id="how-it-works">
+<!-- How It Works - Government Process -->
+<section class="py-20 bg-white border-t border-slate-200" id="how-it-works">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-16 fade-up">
-            <span class="inline-block bg-brand-50 text-brand-700 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide mb-3">Our Process</span>
-            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">How We Work</h2>
-            <p class="mt-4 text-gray-500 text-base">Our structured development process ensures transparency, quality, and on-time delivery for every project.</p>
+            <span class="inline-block bg-blue-50 text-blue-800 text-xs font-bold px-4 py-2 rounded-sm uppercase tracking-widest mb-4 border-l-4 border-blue-700">Standard Operating Procedure</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Our Development Process</h2>
+            <div class="w-20 h-1 bg-amber-400 mx-auto mt-4 mb-6"></div>
         </div>
         <div class="flex flex-wrap justify-center gap-8">
             <?php
             $steps = [
-                ['num' => '01', 'icon' => 'fa-comments', 'title' => 'Discovery & Consultation', 'desc' => 'We start by understanding your business goals, target audience, required features, and budget. A detailed project scope document is prepared.'],
-                ['num' => '02', 'icon' => 'fa-file-signature', 'title' => 'Legal & Agreement', 'desc' => 'We finalize all legal compliances, Terms & Conditions, NDAs, and project agreements. Development starts strictly after legal clearance.'],
-                ['num' => '03', 'icon' => 'fa-pencil-ruler', 'title' => 'Design & Prototyping', 'desc' => 'Our designers create wireframes and high-fidelity mockups. You review and approve the designs before we move to the next phase.'],
-                ['num' => '04', 'icon' => 'fa-code', 'title' => 'Development & Testing', 'desc' => 'Our developers write clean, modular code. We perform rigorous testing across browsers, devices, and conduct security audits.'],
-                ['num' => '05', 'icon' => 'fa-rocket', 'title' => 'Deployment & Support', 'desc' => 'We deploy your project with SSL and all configurations. Post-launch support includes bug fixes and technical assistance.'],
+                ['num' => '01', 'icon' => 'fa-comments', 'title' => 'Requirement Analysis', 'desc' => 'Detailed discussion with stakeholders. Documentation of functional requirements, security needs, and compliance mandates. RFP response preparation.'],
+                ['num' => '02', 'icon' => 'fa-file-contract', 'title' => 'Agreement & Security Clearance', 'desc' => 'Signing of NDA, SLA, and project charter. Security clearance verification for team members. Legal and compliance review.'],
+                ['num' => '03', 'icon' => 'fa-pencil-ruler', 'title' => 'Design & Prototyping', 'desc' => 'Creation of wireframes, high-fidelity mockups with accessibility compliance. Stakeholder review and formal sign-off process.'],
+                ['num' => '04', 'icon' => 'fa-code', 'title' => 'Secure Development', 'desc' => 'Development with OWASP top 10 mitigation. Regular code reviews, static analysis, and security testing integrated into CI/CD pipeline.'],
+                ['num' => '05', 'icon' => 'fa-rocket', 'title' => 'UAT, Deployment & Handover', 'desc' => 'User Acceptance Testing with formal sign-off. Secure deployment with complete documentation, training manuals, and source code handover.'],
             ];
             foreach ($steps as $step) {
                 echo '
-                <div class="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-md bg-white rounded-xl border border-gray-200 p-8 text-center card-hover fade-up relative">
-                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-brand-600 text-white text-sm font-bold w-9 h-9 rounded-full flex items-center justify-center border-4 border-gray-50 shadow-sm">'.$step['num'].'</div>
-                    <div class="w-16 h-16 mx-auto rounded-full bg-brand-50 flex items-center justify-center text-brand-600 text-2xl mb-5 mt-2"><i class="fa-solid '.$step['icon'].'"></i></div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-3">'.$step['title'].'</h3>
-                    <p class="text-gray-500 text-base leading-relaxed">'.$step['desc'].'</p>
+                <div class="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-md bg-white rounded-sm border border-slate-200 p-8 text-center card-hover fade-up relative shadow-sm">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-blue-800 text-white text-sm font-bold w-10 h-10 rounded-full flex items-center justify-center border-4 border-white shadow-md">'.$step['num'].'</div>
+                    <div class="w-14 h-14 mx-auto rounded-full bg-blue-50 flex items-center justify-center text-blue-800 text-xl mb-5 mt-2">
+                        <i class="fa-solid '.$step['icon'].'"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-3">'.$step['title'].'</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">'.$step['desc'].'</p>
                 </div>';
             }
             ?>
@@ -300,30 +376,32 @@
 </section>
 
 <!-- Why Choose Us Section -->
-<section class="py-20 bg-white border-t border-gray-200">
+<section class="py-20 bg-slate-50 border-t border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-16 fade-up">
-            <span class="inline-block bg-brand-50 text-brand-700 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide mb-3">Why Us</span>
-            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">Why Choose The Hype Crews?</h2>
-            <p class="mt-4 text-gray-500 text-base">We are not just developers — we are your long-term digital partners committed to your business success.</p>
+            <span class="inline-block bg-blue-50 text-blue-800 text-xs font-bold px-4 py-2 rounded-sm uppercase tracking-widest mb-4 border-l-4 border-blue-700">Why Choose Us</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-900">The Hype Crews Advantage</h2>
+            <div class="w-20 h-1 bg-amber-400 mx-auto mt-4 mb-6"></div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <?php
             $reasons = [
-                ['icon' => 'fa-medal', 'title' => 'Expert Development Team', 'desc' => 'Our team consists of experienced full-stack developers, UI/UX designers, and project managers who have delivered 100+ successful projects across various industries.'],
-                ['icon' => 'fa-indian-rupee-sign', 'title' => 'Affordable & Transparent Pricing', 'desc' => 'No hidden charges. We provide detailed cost breakdowns upfront. Our pricing is competitive and designed to be accessible for startups and small businesses.'],
-                ['icon' => 'fa-clock', 'title' => 'On-Time Delivery Guarantee', 'desc' => 'We follow strict project timelines with milestone-based delivery. Regular progress updates keep you informed at every stage of the development process.'],
-                ['icon' => 'fa-file-code', 'title' => 'Clean & Documented Code', 'desc' => 'Our code is well-structured, properly commented, and follows industry standards. You receive full source code ownership after project completion and final payment.'],
-                ['icon' => 'fa-headset', 'title' => 'Post-Launch Support', 'desc' => 'Every project includes free post-launch support for bug fixes and minor adjustments. Extended maintenance plans are available for ongoing technical assistance.'],
-                ['icon' => 'fa-lock', 'title' => 'Security First Approach', 'desc' => 'We implement security best practices from day one — input validation, SQL injection prevention, XSS protection, CSRF tokens, encrypted data storage, and regular security audits.'],
+                ['icon' => 'fa-medal', 'title' => 'Government Empanelment Ready', 'desc' => 'Our processes, documentation, and security posture meet requirements for government empanelment and tenders. We assist in the entire procurement process.'],
+                ['icon' => 'fa-indian-rupee-sign', 'title' => 'Transparent Procurement', 'desc' => 'Detailed commercial proposals with clear cost breakdowns. No hidden costs. Compliant with GFR and procurement guidelines for government contracts.'],
+                ['icon' => 'fa-clock', 'title' => 'SLA-Driven Delivery', 'desc' => 'Well-defined Service Level Agreements with penalty clauses for delays. Regular progress reports and milestone-based payments.'],
+                ['icon' => 'fa-file-code', 'title' => 'Complete IP Transfer', 'desc' => 'Full source code ownership and intellectual property rights transferred to the client upon project completion and final payment.'],
+                ['icon' => 'fa-headset', 'title' => 'Dedicated Project Manager', 'desc' => 'Single point of contact throughout the project lifecycle. Regular review meetings and comprehensive handholding during go-live.'],
+                ['icon' => 'fa-lock', 'title' => 'CERT-In Compliant Security', 'desc' => 'Security practices aligned with CERT-In guidelines. Regular VAPT, security code review, and implementation of NCIIPC security controls.'],
             ];
             foreach ($reasons as $r) {
                 echo '
-                <div class="flex gap-4 p-5 rounded-lg border border-gray-100 hover:border-brand-200 hover:bg-brand-50/30 transition-all fade-up">
-                    <div class="w-12 h-12 rounded-lg bg-brand-50 flex items-center justify-center text-brand-600 text-lg flex-shrink-0"><i class="fa-solid '.$r['icon'].'"></i></div>
+                <div class="flex gap-4 p-6 rounded-sm border border-slate-200 hover:border-blue-300 hover:bg-blue-50/20 transition-all fade-up bg-white shadow-sm">
+                    <div class="w-12 h-12 rounded-sm bg-blue-50 flex items-center justify-center text-blue-800 text-lg flex-shrink-0">
+                        <i class="fa-solid '.$r['icon'].'"></i>
+                    </div>
                     <div>
-                        <h3 class="text-sm font-bold text-gray-900 mb-1">'.$r['title'].'</h3>
-                        <p class="text-gray-500 text-sm leading-relaxed">'.$r['desc'].'</p>
+                        <h3 class="text-sm font-bold text-slate-900 mb-1">'.$r['title'].'</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">'.$r['desc'].'</p>
                     </div>
                 </div>';
             }
@@ -333,17 +411,17 @@
 </section>
 
 <!-- Pricing Section -->
-<section class="py-20 bg-gray-50 border-t border-gray-200" id="pricing">
+<section class="py-24 bg-white border-t border-slate-200" id="pricing">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-16 fade-up">
-            <span class="inline-block bg-brand-50 text-brand-700 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide mb-3">Pricing</span>
-            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">Transparent & Scalable Pricing</h2>
-            <p class="mt-4 text-gray-500 text-base">Choose a plan that fits your business needs. All plans include free consultation, responsive design, and post-launch support.</p>
+            <span class="inline-block bg-blue-50 text-blue-800 text-xs font-bold px-4 py-2 rounded-sm uppercase tracking-widest mb-4 border-l-4 border-blue-700">Rate Card</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Transparent Pricing Structure</h2>
+            <div class="w-20 h-1 bg-amber-400 mx-auto mt-4 mb-6"></div>
+            <p class="text-slate-600">All prices indicative. Final pricing based on detailed scope of work and service level requirements.</p>
             
-            <div class="mt-6 inline-flex items-center gap-2 bg-white border border-gray-200 rounded-full px-4 py-2 shadow-sm">
-                <i class="fa-solid fa-coins text-brand-600"></i>
-                <span class="text-sm font-semibold text-gray-700">Currency:</span>
-                <select class="currency-selector bg-transparent text-sm font-bold text-brand-700 cursor-pointer focus:outline-none ml-1">
+            <div class="mt-6 inline-flex items-center gap-2 bg-slate-50 border border-slate-200 rounded-sm px-4 py-2 shadow-sm">
+                <span class="text-sm font-semibold text-slate-700">Currency:</span>
+                <select class="currency-selector bg-transparent text-sm font-bold text-blue-800 cursor-pointer focus:outline-none ml-1">
                     <option value="INR">₹ INR</option>
                     <option value="USD">$ USD</option>
                     <option value="EUR">€ EUR</option>
@@ -354,196 +432,219 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start mt-12">
             
             <!-- Starter -->
-            <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden card-hover fade-up shadow-lg hover:shadow-xl transition-all duration-300">
-                <div class="p-8 border-b border-gray-50 bg-gray-50/50">
-                    <h3 class="text-xl font-extrabold text-gray-900">Starter Website</h3>
-                    <p class="text-sm text-gray-500 mt-2">Best for small businesses & local shops</p>
+            <div class="bg-white rounded-sm border border-slate-200 overflow-hidden card-hover fade-up shadow-sm hover:shadow-md transition-all">
+                <div class="p-8 border-b border-slate-100 bg-slate-50">
+                    <h3 class="text-xl font-bold text-slate-900">Basic Website</h3>
+                    <p class="text-sm text-slate-500 mt-2">For small departments & local bodies</p>
                     <div class="mt-6 flex items-baseline gap-1">
-                        <span class="text-4xl font-black text-gray-900 tracking-tight" data-price-inr="9999">₹9,999</span>
-                        <span class="text-sm font-medium text-gray-500">onwards</span>
+                        <span class="text-4xl font-black text-slate-900" data-price-inr="9999">₹9,999</span>
+                        <span class="text-sm font-medium text-slate-500">onwards</span>
                     </div>
                 </div>
                 <div class="p-8">
-                    <ul class="space-y-4">
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">Up to 5 responsive pages</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">Mobile-first responsive design</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">Basic admin panel (1 user)</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">Contact form with email notification</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">WhatsApp chat button integration</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">Google Maps embed</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">Social media links</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">Basic on-page SEO setup</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">Free SSL certificate</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">7 days free support</span></li>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">Up to 5 pages GIGW compliant</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">Basic accessibility features</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">Contact form with captcha</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">Free SSL certificate</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">7 days support</span></li>
                     </ul>
-                    <a href="#contact" class="mt-8 block w-full text-center py-3.5 text-sm font-bold rounded-xl border-2 border-gray-200 text-gray-700 hover:border-gray-300 hover:bg-gray-50 transition-all shadow-sm">Choose Starter</a>
+                    <a href="#contact" class="mt-8 block w-full text-center py-3 text-sm font-semibold rounded-sm border-2 border-slate-300 text-slate-700 hover:bg-slate-50 transition-all">Submit Inquiry</a>
                 </div>
             </div>
 
             <!-- Enterprise (Featured) -->
-            <div class="bg-white rounded-2xl border-2 border-brand-600 overflow-hidden card-hover fade-up relative shadow-2xl lg:-mt-4 lg:mb-4 transform lg:scale-105 z-10">
-                <div class="bg-brand-600 text-white text-center py-2 text-xs font-black uppercase tracking-widest shadow-inner">Most Popular</div>
-                <div class="p-8 border-b border-gray-100 bg-brand-50/30">
-                    <h3 class="text-xl font-extrabold text-gray-900">Enterprise Website</h3>
-                    <p class="text-sm text-gray-500 mt-2">Best for growing businesses & companies</p>
+            <div class="bg-white rounded-sm border-2 border-blue-800 overflow-hidden card-hover fade-up relative shadow-xl lg:-mt-4 lg:mb-4 transform lg:scale-105 z-10">
+                <div class="bg-blue-800 text-white text-center py-2 text-xs font-bold uppercase tracking-widest">Recommended for Government</div>
+                <div class="p-8 border-b border-slate-100 bg-blue-50/20">
+                    <h3 class="text-xl font-bold text-slate-900">Enterprise Solution</h3>
+                    <p class="text-sm text-slate-500 mt-2">For ministries & public sector units</p>
                     <div class="mt-6 flex items-baseline gap-1">
-                        <span class="text-4xl font-black text-gray-900 tracking-tight" data-price-inr="29999">₹29,999</span>
-                        <span class="text-sm font-medium text-gray-500">onwards</span>
-                    </div>
-                </div>
-                <div class="p-8 bg-white">
-                    <ul class="space-y-4">
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-sm"></i><span class="text-base text-gray-800 font-semibold">Up to 15 pages premium design</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-sm"></i><span class="text-base text-gray-700">Advanced admin panel with analytics</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-sm"></i><span class="text-base text-gray-700">Blog / News management system</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-sm"></i><span class="text-base text-gray-700">Service & portfolio management</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-sm"></i><span class="text-base text-gray-700">Inquiry & lead management system</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-sm"></i><span class="text-base text-gray-700">Appointment / booking system</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-sm"></i><span class="text-base text-gray-700">Payment gateway (Razorpay / Stripe)</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-sm"></i><span class="text-base text-gray-700">Advanced technical SEO setup</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-sm"></i><span class="text-base text-gray-700">Performance & speed optimization</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-sm"></i><span class="text-base text-gray-700">Security hardening & daily backups</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-sm"></i><span class="text-base text-gray-700">30 days free priority support</span></li>
-                    </ul>
-                    <a href="#contact" class="mt-8 block w-full text-center py-3.5 text-sm font-bold rounded-xl text-white bg-brand-600 hover:bg-brand-700 hover:shadow-lg transition-all shadow-md">Choose Enterprise</a>
-                </div>
-            </div>
-
-            <!-- Custom Solution -->
-            <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden card-hover fade-up shadow-lg hover:shadow-xl transition-all duration-300">
-                <div class="p-8 border-b border-gray-50 bg-gray-50/50">
-                    <h3 class="text-xl font-extrabold text-gray-900">Custom Solution</h3>
-                    <p class="text-sm text-gray-500 mt-2">Best for enterprises & unique requirements</p>
-                    <div class="mt-6 flex items-baseline gap-1">
-                        <span class="text-4xl font-black text-gray-900 tracking-tight">Custom</span>
-                        <span class="text-sm font-medium text-gray-500">pricing</span>
+                        <span class="text-4xl font-black text-slate-900" data-price-inr="29999">₹29,999</span>
+                        <span class="text-sm font-medium text-slate-500">onwards</span>
                     </div>
                 </div>
                 <div class="p-8">
-                    <ul class="space-y-4">
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">Fully custom web application</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">Custom admin dashboard & CRM/ERP</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">E-commerce with inventory system</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">AI & machine learning integration</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">REST / GraphQL API development</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">Mobile app integration (iOS/Android)</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">Multi-user roles & permissions</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">Cloud deployment (AWS)</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">High-level security & compliance</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">Ongoing dedicated support</span></li>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700 font-semibold">Up to 15 pages premium design</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">Advanced admin with analytics</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">Document management system</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">RTI / Grievance portal</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">Payment gateway integration</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">Security audit & VAPT</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">30 days priority support</span></li>
                     </ul>
-                    <a href="#contact" class="mt-8 block w-full text-center py-3.5 text-sm font-bold rounded-xl border-2 border-gray-200 text-gray-700 hover:border-gray-300 hover:bg-gray-50 transition-all shadow-sm">Contact Us</a>
+                    <a href="#contact" class="mt-8 block w-full text-center py-3 text-sm font-semibold rounded-sm text-white bg-blue-800 hover:bg-blue-900 transition-all shadow-md">Submit Official Inquiry</a>
+                </div>
+            </div>
+
+            <!-- Custom -->
+            <div class="bg-white rounded-sm border border-slate-200 overflow-hidden card-hover fade-up shadow-sm hover:shadow-md transition-all">
+                <div class="p-8 border-b border-slate-100 bg-slate-50">
+                    <h3 class="text-xl font-bold text-slate-900">Custom Tender</h3>
+                    <p class="text-sm text-slate-500 mt-2">For large scale projects & NIC/SDI</p>
+                    <div class="mt-6 flex items-baseline gap-1">
+                        <span class="text-4xl font-black text-slate-900">Custom</span>
+                        <span class="text-sm font-medium text-slate-500">bidding</span>
+                    </div>
+                </div>
+                <div class="p-8">
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">Fully custom application</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">NIC cloud / SDI deployment</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">Aadhaar / DigiLocker integration</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">Multi-tenant architecture</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">GeM / CPP portal integration</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-blue-700 mt-1 text-sm"></i><span class="text-sm text-slate-700">Dedicated team & SLA</span></li>
+                    </ul>
+                    <a href="#contact" class="mt-8 block w-full text-center py-3 text-sm font-semibold rounded-sm border-2 border-slate-300 text-slate-700 hover:bg-slate-50 transition-all">Request for Proposal</a>
                 </div>
             </div>
 
         </div>
-
         <div class="mt-10 text-center fade-up">
-            <p class="text-sm text-gray-500">All prices are exclusive of applicable taxes. Domain and hosting charges are separate. <a href="refund-policy.php" class="text-brand-600 hover:underline">Read our Refund Policy</a>.</p>
+            <p class="text-sm text-slate-500">All prices exclusive of GST. Domain, hosting, and SSL charges separate. <a href="refund-policy.php" class="text-blue-700 hover:underline font-semibold">Refund & Cancellation Policy</a>.</p>
         </div>
     </div>
 </section>
 
 <!-- Contact Section -->
-<section class="py-20 bg-white border-t border-gray-200" id="contact">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+<section class="py-24 bg-slate-50 border-t border-slate-200" id="contact">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-12 fade-up">
-            <span class="inline-block bg-brand-50 text-brand-700 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide mb-3">Contact Us</span>
-            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">Get in Touch With Our Team</h2>
-            <p class="mt-4 text-gray-500 text-base">Have a project in mind? Fill out the form below and our team will reach out within 24 hours with a free consultation and project estimate.</p>
+            <span class="inline-block bg-blue-50 text-blue-800 text-xs font-bold px-4 py-2 rounded-sm uppercase tracking-widest mb-4 border-l-4 border-blue-700">Official Communication</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Submit Your Inquiry</h2>
+            <div class="w-20 h-1 bg-amber-400 mx-auto mt-4 mb-6"></div>
+            <p class="text-slate-600">For official communications, please use the form below or email us directly. Response within 24 working hours.</p>
         </div>
 
-        <div class="bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm fade-up">
+        <div class="bg-white rounded-sm border border-slate-200 overflow-hidden shadow-md fade-up">
             <div class="grid grid-cols-1 lg:grid-cols-5">
-                <!-- Info Side -->
-                <div class="lg:col-span-2 bg-brand-900 text-white p-8">
-                    <h3 class="text-xl font-bold mb-2">Contact Information</h3>
-                    <p class="text-brand-200 text-sm mb-8">Fill out the form and our team will get back to you within 24 hours.</p>
+                <div class="lg:col-span-2 bg-slate-900 text-white p-8">
+                    <h3 class="text-xl font-bold mb-2">Office of The Hype Crews</h3>
+                    <p class="text-slate-400 text-sm mb-8">Private Limited Company (CIN: U73100AS2026PTC029838)</p>
                     <div class="space-y-5">
                         <div class="flex items-start gap-3">
-                            <i class="fa-solid fa-envelope text-brand-300 mt-0.5"></i>
+                            <i class="fa-solid fa-envelope text-amber-400 mt-0.5"></i>
                             <div>
-                                <div class="text-xs text-brand-300">Email</div>
+                                <div class="text-xs text-slate-400">Official Email</div>
                                 <div class="text-sm font-medium">support@hypecrews.com</div>
                             </div>
                         </div>
                         <div class="flex items-start gap-3">
-                            <i class="fa-solid fa-phone text-brand-300 mt-0.5"></i>
+                            <i class="fa-solid fa-phone text-amber-400 mt-0.5"></i>
                             <div>
-                                <div class="text-xs text-brand-300">Phone</div>
+                                <div class="text-xs text-slate-400">Office Landline</div>
                                 <div class="text-sm font-medium">+91 361 324 3276</div>
                             </div>
                         </div>
                         <div class="flex items-start gap-3">
-                            <i class="fa-solid fa-clock text-brand-300 mt-0.5"></i>
+                            <i class="fa-solid fa-clock text-amber-400 mt-0.5"></i>
                             <div>
-                                <div class="text-xs text-brand-300">Working Hours</div>
+                                <div class="text-xs text-slate-400">Office Hours</div>
                                 <div class="text-sm font-medium">Mon – Sat, 10 AM – 7 PM IST</div>
                             </div>
                         </div>
                         <div class="flex items-start gap-3">
-                            <i class="fa-solid fa-location-dot text-brand-300 mt-0.5"></i>
+                            <i class="fa-solid fa-location-dot text-amber-400 mt-0.5"></i>
                             <div>
-                                <div class="text-xs text-brand-300">Location</div>
-                                <div class="text-sm font-medium">Golaghat, Assam, 785621<br>India</div>
+                                <div class="text-xs text-slate-400">Registered Office</div>
+                                <div class="text-sm font-medium">Golaghat, Assam, 785621, India</div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="mt-10 pt-6 border-t border-brand-800">
-                        <p class="text-xs text-brand-300 mb-3">Follow us</p>
-                        <div class="flex gap-2">
-                            <a href="#" class="w-8 h-8 rounded bg-brand-800 flex items-center justify-center text-brand-300 hover:bg-brand-700 hover:text-white transition-all text-xs"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#" class="w-8 h-8 rounded bg-brand-800 flex items-center justify-center text-brand-300 hover:bg-brand-700 hover:text-white transition-all text-xs"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#" class="w-8 h-8 rounded bg-brand-800 flex items-center justify-center text-brand-300 hover:bg-brand-700 hover:text-white transition-all text-xs"><i class="fa-brands fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
-                <!-- Form Side -->
                 <div class="lg:col-span-3 p-8">
-                    <div id="form-message" class="hidden mb-4 p-3 rounded-md text-sm font-medium"></div>
-                    <form id="contact-form" class="space-y-4">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div id="form-message" class="hidden mb-4 p-3 rounded-sm text-sm font-medium"></div>
+                    <form id="contact-form" class="space-y-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                             <div>
-                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name <span class="text-red-500">*</span></label>
-                                <input type="text" name="name" id="name" required placeholder="Your full name" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-brand-500 focus:ring-brand-500 text-sm px-3.5 py-2.5 border">
+                                <label for="name" class="block text-sm font-semibold text-slate-700 mb-1">Full Name <span class="text-red-500">*</span></label>
+                                <input type="text" name="name" id="name" required placeholder="Your full name" class="block w-full rounded-sm border-slate-300 shadow-sm focus:border-blue-700 focus:ring-blue-700 text-sm px-4 py-2.5 border">
                             </div>
                             <div>
-                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address <span class="text-red-500">*</span></label>
-                                <input type="email" name="email" id="email" required placeholder="your@email.com" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-brand-500 focus:ring-brand-500 text-sm px-3.5 py-2.5 border">
+                                <label for="email" class="block text-sm font-semibold text-slate-700 mb-1">Official Email <span class="text-red-500">*</span></label>
+                                <input type="email" name="email" id="email" required placeholder="your@department.gov.in" class="block w-full rounded-sm border-slate-300 shadow-sm focus:border-blue-700 focus:ring-blue-700 text-sm px-4 py-2.5 border">
                             </div>
                         </div>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                             <div>
-                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
-                                <input type="tel" name="phone" id="phone" placeholder="+91 XXXXX XXXXX" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-brand-500 focus:ring-brand-500 text-sm px-3.5 py-2.5 border">
+                                <label for="phone" class="block text-sm font-semibold text-slate-700 mb-1">Contact Number</label>
+                                <input type="tel" name="phone" id="phone" placeholder="+91 XXXXX XXXXX" class="block w-full rounded-sm border-slate-300 shadow-sm focus:border-blue-700 focus:ring-blue-700 text-sm px-4 py-2.5 border">
                             </div>
                             <div>
-                                <label for="service" class="block text-sm font-medium text-gray-700 mb-1">Interested In <span class="text-red-500">*</span></label>
-                                <select id="service" name="service" required class="block w-full rounded-md border-gray-300 shadow-sm focus:border-brand-500 focus:ring-brand-500 text-sm px-3.5 py-2.5 border bg-white">
-                                    <option value="">Select a service</option>
-                                    <option value="Starter Website" data-price-inr="9999" data-base-text="Starter Website">Starter Website (₹9,999)</option>
-                                    <option value="Enterprise Website" data-price-inr="29999" data-base-text="Enterprise Website">Enterprise Website (₹29,999)</option>
-                                    <option value="Custom Solution">Custom Solution</option>
-                                    <option value="E-Commerce">E-Commerce Website</option>
-                                    <option value="Mobile App">Mobile App Development</option>
+                                <label for="service" class="block text-sm font-semibold text-slate-700 mb-1">Service Required <span class="text-red-500">*</span></label>
+                                <select id="service" name="service" required class="block w-full rounded-sm border-slate-300 shadow-sm focus:border-blue-700 focus:ring-blue-700 text-sm px-4 py-2.5 border bg-white">
+                                    <option value="">Select service</option>
+                                    <option value="Basic Website">Basic Website (₹9,999 onwards)</option>
+                                    <option value="Enterprise Solution">Enterprise Solution (₹29,999 onwards)</option>
+                                    <option value="Custom Tender">Custom Tender / RFP</option>
+                                    <option value="E-Commerce">E-Commerce / GeM Integration</option>
+                                    <option value="Mobile App">Mobile Governance App</option>
                                     <option value="Other">Other Query</option>
                                 </select>
                             </div>
                         </div>
                         <div>
-                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Project Details <span class="text-red-500">*</span></label>
-                            <textarea id="message" name="message" rows="4" required placeholder="Describe your project requirements, features needed, budget range, and timeline..." class="block w-full rounded-md border-gray-300 shadow-sm focus:border-brand-500 focus:ring-brand-500 text-sm px-3.5 py-2.5 border"></textarea>
+                            <label for="message" class="block text-sm font-semibold text-slate-700 mb-1">Project Details <span class="text-red-500">*</span></label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Please describe your requirements, department name, expected timeline, and any compliance needs..." class="block w-full rounded-sm border-slate-300 shadow-sm focus:border-blue-700 focus:ring-blue-700 text-sm px-4 py-2.5 border"></textarea>
                         </div>
-                        <button type="submit" class="w-full flex justify-center items-center gap-2 py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-semibold text-white bg-brand-600 hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500 transition-colors">
-                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        <button type="submit" class="w-full flex justify-center items-center gap-2 py-3 px-6 rounded-sm shadow-sm text-sm font-semibold text-white bg-blue-800 hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700 transition-colors">
+                            <i class="fa-solid fa-paper-plane"></i> Submit Official Inquiry
                         </button>
-                        <p class="text-xs text-gray-400 text-center mt-2">By submitting, you agree to our <a href="terms.php" class="text-brand-600 hover:underline">Terms of Service</a> and <a href="privacy-policy.php" class="text-brand-600 hover:underline">Privacy Policy</a>.</p>
+                        <p class="text-xs text-slate-500 text-center mt-2">By submitting, you agree to our <a href="terms.php" class="text-blue-700 hover:underline">Terms of Service</a> and <a href="privacy-policy.php" class="text-blue-700 hover:underline">Privacy Policy</a>.</p>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<style>
+    /* Optimized Hero Animation Styles */
+    @keyframes heroFloat {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-15px); }
+    }
+    
+    @keyframes scanLine {
+        0% { left: -100%; }
+        100% { left: 200%; }
+    }
+    
+    .animate-hero-float {
+        animation: heroFloat 6s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+        will-change: transform;
+    }
+    
+    .animate-scan-line {
+        animation: scanLine 3s linear infinite;
+        will-change: left;
+    }
+    
+    /* General animations */
+    .fade-up {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeUp 0.8s ease-out forwards;
+    }
+    
+    @keyframes fadeUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .card-hover {
+        transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    
+    /* Smooth scrolling */
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
 
 <script>
     document.getElementById('contact-form').addEventListener('submit', function(e) {
@@ -555,7 +656,7 @@
         const service = form.querySelector('#service').value;
         const message = form.querySelector('#message').value;
         
-        const subject = encodeURIComponent('New Inquiry from ' + name + ' - ' + service);
+        const subject = encodeURIComponent('Official Inquiry from ' + name + ' - ' + service);
         const body = encodeURIComponent(
             'Name: ' + name + '\n' +
             'Email: ' + email + '\n' +
@@ -568,8 +669,8 @@
         
         const msgDiv = document.getElementById('form-message');
         msgDiv.classList.remove('hidden', 'bg-red-50', 'text-red-800');
-        msgDiv.classList.add('bg-green-50', 'text-green-800');
-        msgDiv.innerText = 'Opening your email client... Your inquiry details have been prepared.';
+        msgDiv.classList.add('bg-emerald-50', 'text-emerald-800');
+        msgDiv.innerText = 'Opening your email client... Your official inquiry details have been prepared.';
         
         setTimeout(() => {
             msgDiv.classList.add('hidden');
