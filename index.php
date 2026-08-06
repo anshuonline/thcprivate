@@ -40,7 +40,7 @@
                 </div>
             </div>
             <div class="hidden lg:block">
-                <img src="images/servicesimage.png" alt="Web Development" class="rounded-xl shadow-2xl">
+                <img src="images/heroplaceholder.webp" alt="Web Development" class="rounded-xl shadow-2xl">
             </div>
         </div>
     </div>
