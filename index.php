@@ -935,7 +935,7 @@
         msgDiv.classList.add('hidden');
         
         try {
-            const response = await fetch('https://formsubmit.co/ajax/thehypecrews@proton.me', {
+            const response = await fetch('https://formsubmit.co/ajax/57f604790efda6b45077ca88f94a4256', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
