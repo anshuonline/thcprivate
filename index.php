@@ -370,34 +370,37 @@
                 ['num' => '05', 'icon' => 'fa-rocket', 'title' => 'UAT, Deployment & Handover', 'desc' => 'User Acceptance Testing with formal sign-off. Secure deployment with complete documentation, training manuals, and source code handover.'],
             ];
             foreach ($steps as $index => $step) {
-                // Determine arrow visibility based on breakpoints
+                // Determine line visibility based on breakpoints
                 // md: 2 columns -> hide on index 1, 3, 4
                 // lg: 3 columns -> hide on index 2, 4
-                $arrow_classes = "hidden absolute top-1/2 -right-8 w-8 flex items-center justify-center -mt-2 z-10 ";
-                if ($index == 0) $arrow_classes .= "md:flex lg:flex";
-                elseif ($index == 1) $arrow_classes .= "md:hidden lg:flex";
-                elseif ($index == 2) $arrow_classes .= "md:flex lg:hidden";
-                elseif ($index == 3) $arrow_classes .= "md:hidden lg:flex";
+                $line_classes = "hidden absolute top-1/2 left-1/2 w-[calc(100%+2rem)] h-[3px] bg-slate-100 -translate-y-1/2 overflow-hidden ";
+                
+                if ($index == 0) $line_classes .= "md:block lg:block";
+                elseif ($index == 1) $line_classes .= "md:hidden lg:block";
+                elseif ($index == 2) $line_classes .= "md:block lg:hidden";
+                elseif ($index == 3) $line_classes .= "md:hidden lg:block";
                 
                 echo '
-                <div class="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-md bg-white rounded-sm border border-slate-200 p-8 text-center card-hover fade-up relative shadow-sm">';
+                <div class="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-md relative">';
                 
                 if ($index < 4) {
                     echo '
-                    <!-- Connecting Arrow -->
-                    <div class="'.$arrow_classes.'">
-                        <div class="w-full border-t-2 border-dashed border-amber-400/60"></div>
-                        <i class="fa-solid fa-chevron-right text-amber-500 absolute -right-2 text-lg drop-shadow-sm"></i>
+                    <!-- Animated Beam Connector -->
+                    <div class="'.$line_classes.' z-0">
+                        <div class="h-full w-1/3 bg-gradient-to-r from-transparent via-amber-400 to-transparent animate-slide-right"></div>
                     </div>';
                 }
 
                 echo '
-                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-blue-800 text-white text-sm font-bold w-10 h-10 rounded-full flex items-center justify-center border-4 border-white shadow-md z-20">'.$step['num'].'</div>
-                    <div class="w-14 h-14 mx-auto rounded-full bg-blue-50 flex items-center justify-center text-blue-800 text-xl mb-5 mt-2 relative z-20">
-                        <i class="fa-solid '.$step['icon'].'"></i>
+                    <!-- Card Body -->
+                    <div class="bg-white rounded-sm border border-slate-200 p-8 text-center card-hover fade-up shadow-sm h-full relative z-10">
+                        <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-blue-800 text-white text-sm font-bold w-10 h-10 rounded-full flex items-center justify-center border-4 border-white shadow-md">'.$step['num'].'</div>
+                        <div class="w-14 h-14 mx-auto rounded-full bg-blue-50 flex items-center justify-center text-blue-800 text-xl mb-5 mt-2">
+                            <i class="fa-solid '.$step['icon'].'"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-3">'.$step['title'].'</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">'.$step['desc'].'</p>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-3 relative z-20">'.$step['title'].'</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed relative z-20">'.$step['desc'].'</p>
                 </div>';
             }
             ?>
