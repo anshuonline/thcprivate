@@ -240,7 +240,7 @@
             </h2>
             <div class="w-20 h-1 bg-amber-400 mx-auto mt-4 mb-6"></div>
             <p class="mt-4 text-slate-600 text-lg leading-relaxed">
-                Our service portfolio covers the complete digital transformation lifecycle, designed to meet government and enterprise standards.
+                Our service portfolio covers the complete digital transformation lifecycle, designed to meet global enterprise standards.
             </p>
         </div>
 
@@ -250,74 +250,74 @@
                 [
                     'img' => 'images/service-webdev.jpg',
                     'icon' => 'fa-globe',
-                    'title' => 'Official Website Development',
-                    'desc' => 'GIGW-compliant, accessible, and secure websites for government departments, ministries, and public sector units. Includes bilingual support, screen reader compatibility, and high-contrast modes.',
+                    'title' => 'Custom Website Development',
+                    'desc' => 'Modern, responsive, and secure websites built for brands and enterprises. Includes SEO optimization, accessibility compliance, and lightning-fast performance.',
                 ],
                 [
                     'img' => 'images/service-ecommerce.jpg',
                     'icon' => 'fa-cart-shopping',
-                    'title' => 'GeM Integration & E-Commerce',
-                    'desc' => 'Government e-Marketplace (GeM) integrated procurement platforms. Secure payment gateways with UPI, RuPay, and NetBanking. Complete audit trail and compliance reporting.',
+                    'title' => 'E-Commerce Solutions',
+                    'desc' => 'Scalable and conversion-optimized e-commerce platforms. Secure payment gateways, inventory management, and seamless third-party API integrations.',
                 ],
                 [
                     'img' => 'images/service-webapp.jpg',
                     'icon' => 'fa-laptop-code',
                     'title' => 'Custom Web Applications',
-                    'desc' => 'Scalable CRM, ERP, HRMS, and workflow automation systems built with security-first architecture. Role-based access control, detailed audit logs, and data encryption at rest.',
+                    'desc' => 'Scalable CRM, ERP, and workflow automation systems built with security-first architecture. Role-based access control, detailed audit logs, and data encryption.',
                 ],
                 [
                     'img' => 'images/service-mobile.jpg',
                     'icon' => 'fa-mobile-screen',
-                    'title' => 'Mobile Governance Apps',
-                    'desc' => 'Citizen-centric mobile applications for Android and iOS. Aadhaar integration, DigiLocker connectivity, UMANG app compatibility, and offline-first architecture for rural areas.',
+                    'title' => 'Mobile App Development',
+                    'desc' => 'High-performance native and cross-platform mobile applications for iOS and Android. Offline-first architecture, seamless API integration, and beautiful UI.',
                 ],
                 [
                     'img' => 'images/service-uiux.jpg',
                     'icon' => 'fa-pen-nib',
-                    'title' => 'Accessible UI/UX Design',
-                    'desc' => 'WCAG 2.1 Level AA compliant interface design. User research with diverse demographics, usability testing with assistive technologies, and inclusive design principles.',
+                    'title' => 'Premium UI/UX Design',
+                    'desc' => 'Data-driven, user-centric interface design. We create engaging wireframes, interactive prototypes, and conversion-optimized user journeys.',
                 ],
                 [
                     'img' => 'images/service-admin.jpg',
                     'icon' => 'fa-gauge-high',
                     'title' => 'Admin Dashboard & MIS',
-                    'desc' => 'Management Information Systems with real-time analytics, automated report generation, data visualization dashboards, and role-based access for hierarchical government structures.',
+                    'desc' => 'Custom Management Information Systems with real-time analytics, automated report generation, and dynamic data visualization dashboards.',
                 ],
                 [
                     'img' => 'images/service-api.jpg',
                     'icon' => 'fa-plug',
-                    'title' => 'API Integration & Interoperability',
-                    'desc' => 'Secure API gateways for government systems. Integration with DigiLocker, UMANG, Aadhaar, e-Sign, e-Hastakshar, and other National e-Governance Plan (NeGP) initiatives.',
+                    'title' => 'API & Backend Development',
+                    'desc' => 'Robust and secure API development. Seamless integration with external services, CRM tools, payment gateways, and third-party SaaS platforms.',
                 ],
                 [
                     'img' => 'images/service-maintenance.jpg',
                     'icon' => 'fa-screwdriver-wrench',
-                    'title' => 'O&M Support Services',
-                    'desc' => 'Comprehensive Operations & Maintenance with defined SLAs. Regular security audits, vulnerability assessments, performance optimization, and 24x7 monitoring with incident response.',
+                    'title' => 'Maintenance & Support',
+                    'desc' => 'Comprehensive post-launch support with defined SLAs. Regular security audits, performance optimization, and 24x7 monitoring for absolute peace of mind.',
                 ],
                 [
                     'img' => 'images/service-seo.jpg',
                     'icon' => 'fa-magnifying-glass-chart',
                     'title' => 'SEO & Digital Presence',
-                    'desc' => 'Technical SEO optimization ensuring high visibility on search engines. Structured data markup for government schema, XML sitemaps, and compliance with GOI website guidelines.',
+                    'desc' => 'Technical SEO optimization ensuring high visibility on search engines. Structured data markup, high-speed delivery, and continuous performance tracking.',
                 ],
                 [
                     'img' => 'images/service-cloud.jpg',
                     'icon' => 'fa-cloud',
-                    'title' => 'Cloud & Data Centre Services',
-                    'desc' => 'Deployment on MeitY-empanelled cloud service providers. NIC cloud, AWS GovCloud, or on-premise data center setup with complete security hardening and disaster recovery.',
+                    'title' => 'Cloud & DevOps Services',
+                    'desc' => 'Scalable cloud deployment on AWS, Google Cloud, or Azure. CI/CD pipeline automation, serverless architecture, and disaster recovery planning.',
                 ],
                 [
                     'img' => 'images/service-ai.jpg',
                     'icon' => 'fa-robot',
                     'title' => 'AI & Emerging Technologies',
-                    'desc' => 'AI-powered citizen service portals with multilingual chatbots, document verification using OCR, predictive analytics for policy planning, and intelligent automation of routine government processes.',
+                    'desc' => 'AI-powered business solutions including smart chatbots, predictive analytics, process automation, and intelligent data processing systems.',
                 ],
                 [
                     'img' => 'images/service-security.jpg',
                     'icon' => 'fa-shield-halved',
-                    'title' => 'Cybersecurity Services',
-                    'desc' => 'CERT-In empanelled security auditing. Vulnerability assessment, penetration testing, security code review, and implementation of security controls as per NCIIPC guidelines.',
+                    'title' => 'Security & Compliance',
+                    'desc' => 'Enterprise-grade security auditing. Regular vulnerability assessment, penetration testing, and security code reviews to protect your digital assets.',
                 ],
             ];
 
