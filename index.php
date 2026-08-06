@@ -51,8 +51,26 @@
 </section>
 
 <!-- About Us Section -->
-<section class="py-20 bg-white border-b border-gray-200" id="about">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<section class="py-20 bg-white border-b border-gray-200 relative overflow-hidden" id="about">
+    <!-- Traditional Indian Ornaments -->
+    <!-- Mandala Watermark -->
+    <img src="images/mandala.jpg" alt="" class="absolute -top-32 -right-32 w-96 h-96 opacity-[0.03] mix-blend-multiply pointer-events-none rotate-12">
+    <!-- Spinning Ashoka Chakra SVG -->
+    <div class="absolute -bottom-24 -left-24 w-80 h-80 opacity-[0.04] text-brand-900 pointer-events-none animate-[spin_20s_linear_infinite]">
+        <svg viewBox="0 0 100 100" class="w-full h-full" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="50" cy="50" r="48"></circle>
+            <circle cx="50" cy="50" r="40"></circle>
+            <circle cx="50" cy="50" r="8" fill="currentColor"></circle>
+            <?php 
+            for($i = 0; $i < 24; $i++) {
+                $angle = $i * (360 / 24);
+                echo '<g transform="rotate('.$angle.' 50 50)"><line x1="50" y1="50" x2="50" y2="10"></line></g>';
+            }
+            ?>
+        </svg>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div class="fade-up">
                 <span class="inline-block bg-brand-50 text-brand-700 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide mb-3">About Us</span>
