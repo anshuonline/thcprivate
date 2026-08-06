@@ -931,8 +931,8 @@
         document.getElementById('captcha-answer').value = '';
     }
     
-    // Initialize captcha on load
-    document.addEventListener('DOMContentLoaded', generateCaptcha);
+    // Initialize captcha immediately
+    generateCaptcha();
 
     document.getElementById('contact-form').addEventListener('submit', async function(e) {
         e.preventDefault();
