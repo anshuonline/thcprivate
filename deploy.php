@@ -21,12 +21,7 @@ function logMessage($msg) {
     file_put_contents($log_file, "[$time] $msg\n", FILE_APPEND);
 }
 
-// Check for POST request
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    logMessage("Invalid request method: " . $_SERVER['REQUEST_METHOD']);
-    header('HTTP/1.1 405 Method Not Allowed');
-    exit('Method Not Allowed');
-}
+// Request method check removed to allow GET requests (visiting via browser)
 
 // Check secret if defined
 if (!empty($secret)) {
