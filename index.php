@@ -250,7 +250,7 @@
             <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">How We Work</h2>
             <p class="mt-4 text-gray-500 text-base">Our structured development process ensures transparency, quality, and on-time delivery for every project.</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div class="flex flex-wrap justify-center gap-8">
             <?php
             $steps = [
                 ['num' => '01', 'icon' => 'fa-comments', 'title' => 'Discovery & Consultation', 'desc' => 'We start by understanding your business goals, target audience, required features, and budget. A detailed project scope document is prepared.'],
@@ -261,11 +261,11 @@
             ];
             foreach ($steps as $step) {
                 echo '
-                <div class="bg-white rounded-lg border border-gray-200 p-6 text-center card-hover fade-up relative">
-                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-brand-600 text-white text-xs font-bold w-7 h-7 rounded-full flex items-center justify-center">'.$step['num'].'</div>
-                    <div class="w-14 h-14 mx-auto rounded-full bg-brand-50 flex items-center justify-center text-brand-600 text-xl mb-4 mt-2"><i class="fa-solid '.$step['icon'].'"></i></div>
-                    <h3 class="text-base font-bold text-gray-900 mb-2">'.$step['title'].'</h3>
-                    <p class="text-gray-500 text-sm leading-relaxed">'.$step['desc'].'</p>
+                <div class="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-md bg-white rounded-xl border border-gray-200 p-8 text-center card-hover fade-up relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-brand-600 text-white text-sm font-bold w-9 h-9 rounded-full flex items-center justify-center border-4 border-gray-50 shadow-sm">'.$step['num'].'</div>
+                    <div class="w-16 h-16 mx-auto rounded-full bg-brand-50 flex items-center justify-center text-brand-600 text-2xl mb-5 mt-2"><i class="fa-solid '.$step['icon'].'"></i></div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">'.$step['title'].'</h3>
+                    <p class="text-gray-500 text-base leading-relaxed">'.$step['desc'].'</p>
                 </div>';
             }
             ?>
