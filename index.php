@@ -244,7 +244,7 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
             <?php
             $services = [
                 [
@@ -322,19 +322,42 @@
             ];
 
             foreach ($services as $index => $service) {
+                // Apple-style Bento Grid Logic
+                $bento_class = 'col-span-1 row-span-1';
+                $bg_class = 'bg-white';
+                $text_color = 'text-slate-900';
+                $desc_color = 'text-slate-600';
+                $icon_color = 'text-blue-600 bg-blue-50';
+                
+                if ($index == 0) {
+                    $bento_class = 'md:col-span-2 lg:col-span-2 lg:row-span-2';
+                    $bg_class = 'bg-gradient-to-br from-blue-900 to-slate-900';
+                    $text_color = 'text-white';
+                    $desc_color = 'text-blue-100';
+                    $icon_color = 'text-white bg-white/20 backdrop-blur-md';
+                } elseif ($index == 1) {
+                    $bento_class = 'md:col-span-2 lg:col-span-2';
+                    $bg_class = 'bg-gradient-to-r from-blue-50 to-white';
+                } elseif ($index == 6 || $index == 9) {
+                    $bento_class = 'md:col-span-2 lg:col-span-2';
+                } elseif ($index == 7) {
+                    $bento_class = 'lg:row-span-2';
+                    $bg_class = 'bg-gradient-to-b from-slate-50 to-white';
+                } elseif ($index == 11) {
+                    $bento_class = 'md:col-span-2 lg:col-span-2';
+                }
+
                 echo '
-                <div class="bg-white rounded-sm border border-slate-200 overflow-hidden card-hover fade-up group shadow-sm hover:shadow-md transition-all duration-300 flex flex-col h-full">
-                    <div class="h-56 overflow-hidden relative bg-slate-100">
-                        <img src="'.$service['img'].'" alt="'.$service['title'].'" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/30 to-transparent"></div>
-                        <div class="absolute bottom-4 left-4 bg-white rounded-sm p-2.5 shadow-md text-blue-800 flex items-center justify-center border border-slate-200">
-                            <i class="fa-solid '.$service['icon'].' text-xl"></i>
-                        </div>
+                <div class="rounded-[2rem] border border-slate-200/60 overflow-hidden card-hover fade-up shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col p-8 relative group ' . $bento_class . ' ' . $bg_class . '">
+                    <div class="w-16 h-16 rounded-2xl flex items-center justify-center text-3xl mb-10 shadow-sm transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-3 z-10 ' . $icon_color . '">
+                        <i class="fa-solid '.$service['icon'].'"></i>
                     </div>
-                    <div class="p-6 flex-1 flex flex-col">
-                        <h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-blue-800 transition-colors">'.$service['title'].'</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed flex-1">'.$service['desc'].'</p>
+                    <div class="flex-1 flex flex-col justify-end z-10">
+                        <h3 class="text-2xl font-extrabold mb-3 tracking-tight ' . $text_color . '">'.$service['title'].'</h3>
+                        <p class="text-base leading-relaxed font-medium ' . $desc_color . '">'.$service['desc'].'</p>
                     </div>
+                    <!-- Decorative subtle icon in background -->
+                    <i class="fa-solid '.$service['icon'].' absolute -bottom-8 -right-8 text-9xl opacity-[0.03] transition-transform duration-700 group-hover:rotate-12 group-hover:scale-125 z-0 ' . ($index == 0 ? 'text-white opacity-[0.05]' : 'text-slate-900') . '"></i>
                 </div>';
             }
             ?>
