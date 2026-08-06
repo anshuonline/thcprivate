@@ -901,9 +901,9 @@
     const iti = window.intlTelInput(phoneInput, {
         initialCountry: "auto",
         geoIpLookup: function(success, failure) {
-            fetch("https://ipapi.co/json")
+            fetch("https://get.geojs.io/v1/ip/country.json")
                 .then(function(res) { return res.json(); })
-                .then(function(data) { success(data.country_code); })
+                .then(function(data) { success(data.country); })
                 .catch(function() { success("in"); });
         },
         utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
