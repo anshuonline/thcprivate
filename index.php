@@ -30,15 +30,15 @@
                 </div>
                 <div class="mt-10 grid grid-cols-3 gap-6 border-t border-gray-200 pt-8">
                     <div>
-                        <div class="text-2xl md:text-3xl font-extrabold text-gray-900">100<span class="text-brand-600">+</span></div>
+                        <div class="text-2xl md:text-3xl font-extrabold text-gray-900">450<span class="text-brand-600">+</span></div>
                         <div class="text-xs text-gray-500 mt-1 font-medium">Projects Delivered</div>
                     </div>
                     <div>
-                        <div class="text-2xl md:text-3xl font-extrabold text-gray-900">50<span class="text-brand-600">+</span></div>
+                        <div class="text-2xl md:text-3xl font-extrabold text-gray-900">121<span class="text-brand-600">+</span></div>
                         <div class="text-xs text-gray-500 mt-1 font-medium">Happy Clients</div>
                     </div>
                     <div>
-                        <div class="text-2xl md:text-3xl font-extrabold text-gray-900">99<span class="text-brand-600">%</span></div>
+                        <div class="text-2xl md:text-3xl font-extrabold text-gray-900">100<span class="text-brand-600">%</span></div>
                         <div class="text-xs text-gray-500 mt-1 font-medium">Client Satisfaction</div>
                     </div>
                 </div>
@@ -351,88 +351,88 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-start mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start mt-12">
             
             <!-- Starter -->
-            <div class="bg-white rounded-lg border border-gray-200 overflow-hidden card-hover fade-up">
-                <div class="p-6 border-b border-gray-100">
-                    <h3 class="text-lg font-bold text-gray-900">Starter Website</h3>
-                    <p class="text-sm text-gray-500 mt-1">Best for small businesses & local shops</p>
-                    <div class="mt-4">
-                        <span class="text-3xl font-extrabold text-gray-900" data-price-inr="9999">₹9,999</span>
-                        <span class="text-sm text-gray-500 ml-1">onwards</span>
+            <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden card-hover fade-up shadow-lg hover:shadow-xl transition-all duration-300">
+                <div class="p-8 border-b border-gray-50 bg-gray-50/50">
+                    <h3 class="text-xl font-extrabold text-gray-900">Starter Website</h3>
+                    <p class="text-sm text-gray-500 mt-2">Best for small businesses & local shops</p>
+                    <div class="mt-6 flex items-baseline gap-1">
+                        <span class="text-4xl font-black text-gray-900 tracking-tight" data-price-inr="9999">₹9,999</span>
+                        <span class="text-sm font-medium text-gray-500">onwards</span>
                     </div>
                 </div>
-                <div class="p-6">
-                    <ul class="space-y-3">
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5 text-xs"></i><span class="text-sm text-gray-600">Up to 5 responsive pages</span></li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5 text-xs"></i><span class="text-sm text-gray-600">Mobile-first responsive design</span></li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5 text-xs"></i><span class="text-sm text-gray-600">Basic admin panel (1 user)</span></li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5 text-xs"></i><span class="text-sm text-gray-600">Contact form with email notification</span></li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5 text-xs"></i><span class="text-sm text-gray-600">WhatsApp chat button integration</span></li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5 text-xs"></i><span class="text-sm text-gray-600">Google Maps embed</span></li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5 text-xs"></i><span class="text-sm text-gray-600">Social media links</span></li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5 text-xs"></i><span class="text-sm text-gray-600">Basic on-page SEO setup</span></li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5 text-xs"></i><span class="text-sm text-gray-600">Free SSL certificate configuration</span></li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5 text-xs"></i><span class="text-sm text-gray-600">7 days free post-launch support</span></li>
+                <div class="p-8">
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">Up to 5 responsive pages</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">Mobile-first responsive design</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">Basic admin panel (1 user)</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">Contact form with email notification</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">WhatsApp chat button integration</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">Google Maps embed</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">Social media links</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">Basic on-page SEO setup</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">Free SSL certificate</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">7 days free support</span></li>
                     </ul>
-                    <a href="#contact" class="mt-6 block w-full text-center py-2.5 text-sm font-semibold rounded-md border border-gray-300 text-gray-700 hover:bg-gray-50 transition-colors">Choose Starter</a>
+                    <a href="#contact" class="mt-8 block w-full text-center py-3.5 text-sm font-bold rounded-xl border-2 border-gray-200 text-gray-700 hover:border-gray-300 hover:bg-gray-50 transition-all shadow-sm">Choose Starter</a>
                 </div>
             </div>
 
             <!-- Enterprise (Featured) -->
-            <div class="bg-white rounded-lg border-2 border-brand-600 overflow-hidden card-hover fade-up relative">
-                <div class="bg-brand-600 text-white text-center py-1.5 text-xs font-bold uppercase tracking-wider">Most Popular</div>
-                <div class="p-6 border-b border-gray-100">
-                    <h3 class="text-lg font-bold text-gray-900">Enterprise Website</h3>
-                    <p class="text-sm text-gray-500 mt-1">Best for growing businesses & companies</p>
-                    <div class="mt-4">
-                        <span class="text-3xl font-extrabold text-gray-900" data-price-inr="29999">₹29,999</span>
-                        <span class="text-sm text-gray-500 ml-1">onwards</span>
+            <div class="bg-white rounded-2xl border-2 border-brand-600 overflow-hidden card-hover fade-up relative shadow-2xl lg:-mt-4 lg:mb-4 transform lg:scale-105 z-10">
+                <div class="bg-brand-600 text-white text-center py-2 text-xs font-black uppercase tracking-widest shadow-inner">Most Popular</div>
+                <div class="p-8 border-b border-gray-100 bg-brand-50/30">
+                    <h3 class="text-xl font-extrabold text-gray-900">Enterprise Website</h3>
+                    <p class="text-sm text-gray-500 mt-2">Best for growing businesses & companies</p>
+                    <div class="mt-6 flex items-baseline gap-1">
+                        <span class="text-4xl font-black text-gray-900 tracking-tight" data-price-inr="29999">₹29,999</span>
+                        <span class="text-sm font-medium text-gray-500">onwards</span>
                     </div>
                 </div>
-                <div class="p-6">
-                    <ul class="space-y-3">
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brand-600 mt-0.5 text-xs"></i><span class="text-sm text-gray-700 font-medium">Up to 15 pages with premium design</span></li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brand-600 mt-0.5 text-xs"></i><span class="text-sm text-gray-700 font-medium">Advanced admin panel with analytics</span></li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brand-600 mt-0.5 text-xs"></i><span class="text-sm text-gray-700 font-medium">Blog / News management system</span></li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brand-600 mt-0.5 text-xs"></i><span class="text-sm text-gray-700 font-medium">Service & portfolio management</span></li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brand-600 mt-0.5 text-xs"></i><span class="text-sm text-gray-700 font-medium">Inquiry & lead management system</span></li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brand-600 mt-0.5 text-xs"></i><span class="text-sm text-gray-700 font-medium">Appointment / booking system</span></li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brand-600 mt-0.5 text-xs"></i><span class="text-sm text-gray-700 font-medium">Payment gateway (Razorpay / Stripe)</span></li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brand-600 mt-0.5 text-xs"></i><span class="text-sm text-gray-700 font-medium">Advanced technical SEO setup</span></li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brand-600 mt-0.5 text-xs"></i><span class="text-sm text-gray-700 font-medium">Performance & speed optimization</span></li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brand-600 mt-0.5 text-xs"></i><span class="text-sm text-gray-700 font-medium">Security hardening & daily backups</span></li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brand-600 mt-0.5 text-xs"></i><span class="text-sm text-gray-700 font-medium">30 days free post-launch support</span></li>
+                <div class="p-8 bg-white">
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-sm"></i><span class="text-base text-gray-800 font-semibold">Up to 15 pages premium design</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-sm"></i><span class="text-base text-gray-700">Advanced admin panel with analytics</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-sm"></i><span class="text-base text-gray-700">Blog / News management system</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-sm"></i><span class="text-base text-gray-700">Service & portfolio management</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-sm"></i><span class="text-base text-gray-700">Inquiry & lead management system</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-sm"></i><span class="text-base text-gray-700">Appointment / booking system</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-sm"></i><span class="text-base text-gray-700">Payment gateway (Razorpay / Stripe)</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-sm"></i><span class="text-base text-gray-700">Advanced technical SEO setup</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-sm"></i><span class="text-base text-gray-700">Performance & speed optimization</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-sm"></i><span class="text-base text-gray-700">Security hardening & daily backups</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-sm"></i><span class="text-base text-gray-700">30 days free priority support</span></li>
                     </ul>
-                    <a href="#contact" class="mt-6 block w-full text-center py-2.5 text-sm font-bold rounded-md text-white bg-brand-600 hover:bg-brand-700 transition-colors shadow-sm">Choose Enterprise</a>
+                    <a href="#contact" class="mt-8 block w-full text-center py-3.5 text-sm font-bold rounded-xl text-white bg-brand-600 hover:bg-brand-700 hover:shadow-lg transition-all shadow-md">Choose Enterprise</a>
                 </div>
             </div>
 
             <!-- Custom Solution -->
-            <div class="bg-white rounded-lg border border-gray-200 overflow-hidden card-hover fade-up">
-                <div class="p-6 border-b border-gray-100">
-                    <h3 class="text-lg font-bold text-gray-900">Custom Solution</h3>
-                    <p class="text-sm text-gray-500 mt-1">Best for enterprises & unique requirements</p>
-                    <div class="mt-4">
-                        <span class="text-3xl font-extrabold text-gray-900">Custom</span>
-                        <span class="text-sm text-gray-500 ml-1">pricing</span>
+            <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden card-hover fade-up shadow-lg hover:shadow-xl transition-all duration-300">
+                <div class="p-8 border-b border-gray-50 bg-gray-50/50">
+                    <h3 class="text-xl font-extrabold text-gray-900">Custom Solution</h3>
+                    <p class="text-sm text-gray-500 mt-2">Best for enterprises & unique requirements</p>
+                    <div class="mt-6 flex items-baseline gap-1">
+                        <span class="text-4xl font-black text-gray-900 tracking-tight">Custom</span>
+                        <span class="text-sm font-medium text-gray-500">pricing</span>
                     </div>
                 </div>
-                <div class="p-6">
-                    <ul class="space-y-3">
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5 text-xs"></i><span class="text-sm text-gray-600">Fully custom web application</span></li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5 text-xs"></i><span class="text-sm text-gray-600">Custom admin dashboard & CRM/ERP</span></li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5 text-xs"></i><span class="text-sm text-gray-600">E-commerce with full inventory system</span></li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5 text-xs"></i><span class="text-sm text-gray-600">AI & machine learning integration</span></li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5 text-xs"></i><span class="text-sm text-gray-600">REST / GraphQL API development</span></li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5 text-xs"></i><span class="text-sm text-gray-600">Mobile app integration (iOS & Android)</span></li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5 text-xs"></i><span class="text-sm text-gray-600">Multi-user roles & permissions</span></li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5 text-xs"></i><span class="text-sm text-gray-600">Cloud deployment (AWS / DigitalOcean)</span></li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5 text-xs"></i><span class="text-sm text-gray-600">High-level security & compliance</span></li>
-                        <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5 text-xs"></i><span class="text-sm text-gray-600">Ongoing maintenance & dedicated support</span></li>
+                <div class="p-8">
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">Fully custom web application</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">Custom admin dashboard & CRM/ERP</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">E-commerce with inventory system</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">AI & machine learning integration</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">REST / GraphQL API development</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">Mobile app integration (iOS/Android)</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">Multi-user roles & permissions</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">Cloud deployment (AWS)</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">High-level security & compliance</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span class="text-base text-gray-600">Ongoing dedicated support</span></li>
                     </ul>
-                    <a href="#contact" class="mt-6 block w-full text-center py-2.5 text-sm font-semibold rounded-md border border-gray-300 text-gray-700 hover:bg-gray-50 transition-colors">Contact Us</a>
+                    <a href="#contact" class="mt-8 block w-full text-center py-3.5 text-sm font-bold rounded-xl border-2 border-gray-200 text-gray-700 hover:border-gray-300 hover:bg-gray-50 transition-all shadow-sm">Contact Us</a>
                 </div>
             </div>
 
