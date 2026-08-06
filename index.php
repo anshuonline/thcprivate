@@ -813,8 +813,8 @@
                         </div>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             <div>
-                                <label for="phone" class="block text-sm font-semibold text-slate-700 mb-1.5">Phone Number</label>
-                                <input type="tel" name="phone" id="phone" placeholder="+91 XXXXX XXXXX" class="block w-full rounded-xl border-slate-300 shadow-sm focus:border-blue-600 focus:ring-blue-600 text-sm px-4 py-3 border bg-slate-50">
+                                <label for="phone" class="block text-sm font-semibold text-slate-700 mb-1.5">Phone Number <span class="text-red-500">*</span></label>
+                                <input type="tel" name="phone" id="phone" required placeholder="+91 XXXXX XXXXX" class="block w-full rounded-xl border-slate-300 shadow-sm focus:border-blue-600 focus:ring-blue-600 text-sm px-4 py-3 border bg-slate-50">
                             </div>
                             <div>
                                 <label for="service" class="block text-sm font-semibold text-slate-700 mb-1.5">Interested In <span class="text-red-500">*</span></label>

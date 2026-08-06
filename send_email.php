@@ -25,7 +25,7 @@ $phone = htmlspecialchars(strip_tags(trim($data['phone'] ?? '')));
 $service = htmlspecialchars(strip_tags(trim($data['service'] ?? '')));
 $message_body = htmlspecialchars(strip_tags(trim($data['message'] ?? '')));
 
-if (empty($name) || empty($email) || empty($service) || empty($message_body)) {
+if (empty($name) || empty($email) || empty($phone) || empty($service) || empty($message_body)) {
     http_response_code(400);
     echo json_encode(['success' => false, 'message' => 'Please fill in all required fields.']);
     exit;
