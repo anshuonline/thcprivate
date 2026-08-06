@@ -546,75 +546,94 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center mt-12 max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-center mt-12 max-w-7xl mx-auto">
             
             <!-- Starter -->
             <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden card-scale fade-up shadow-sm hover:shadow-xl transition-all duration-300">
-                <div class="p-8">
-                    <h3 class="text-2xl font-bold text-slate-900">Starter Business</h3>
-                    <p class="text-sm text-slate-500 mt-2">Perfect for startups and small businesses</p>
-                    <div class="mt-6 flex items-baseline gap-1">
-                        <span class="text-5xl font-black text-slate-900" data-price-inr="14999">₹14,999</span>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-slate-900">Starter Business</h3>
+                    <p class="text-xs text-slate-500 mt-2">Perfect for startups and small businesses</p>
+                    <div class="mt-4 flex items-baseline gap-1">
+                        <span class="text-4xl font-black text-slate-900" data-price-inr="9999">₹9,999</span>
                     </div>
                     <p class="text-xs text-slate-400 mt-1">One-time payment</p>
                     
-                    <ul class="space-y-4 mt-8">
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-green-500 mt-1"></i><span class="text-slate-700">Up to 5 Pages Premium Design</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-green-500 mt-1"></i><span class="text-slate-700">Mobile Responsive & Fast</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-green-500 mt-1"></i><span class="text-slate-700">Basic SEO Optimization</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-green-500 mt-1"></i><span class="text-slate-700">Contact Form Integration</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-green-500 mt-1"></i><span class="text-slate-700">1 Month Free Support</span></li>
+                    <ul class="space-y-3 mt-6">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-1 text-sm"></i><span class="text-sm text-slate-700">Up to 5 Pages Premium Design</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-1 text-sm"></i><span class="text-sm text-slate-700">Mobile Responsive & Fast</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-1 text-sm"></i><span class="text-sm text-slate-700">Basic SEO Optimization</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-1 text-sm"></i><span class="text-sm text-slate-700">Contact Form Integration</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-1 text-sm"></i><span class="text-sm text-slate-700">1 Month Free Support</span></li>
                     </ul>
-                    <a href="#contact" class="mt-10 block w-full text-center py-3.5 text-sm font-semibold rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-50 transition-all">Get Started</a>
+                    <a href="#contact" class="mt-8 block w-full text-center py-3 text-sm font-semibold rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-50 transition-all">Get Started</a>
+                </div>
+            </div>
+
+            <!-- Growth -->
+            <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden card-scale fade-up shadow-sm hover:shadow-xl transition-all duration-300">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-slate-900">Growth Plan</h3>
+                    <p class="text-xs text-slate-500 mt-2">For established businesses expanding online</p>
+                    <div class="mt-4 flex items-baseline gap-1">
+                        <span class="text-4xl font-black text-slate-900" data-price-inr="24999">₹24,999</span>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-1">One-time payment</p>
+                    
+                    <ul class="space-y-3 mt-6">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-1 text-sm"></i><span class="text-sm text-slate-700 font-medium">Up to 10 Pages Premium Design</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-1 text-sm"></i><span class="text-sm text-slate-700">Custom Admin Dashboard</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-1 text-sm"></i><span class="text-sm text-slate-700">E-Commerce Ready (20 Products)</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-1 text-sm"></i><span class="text-sm text-slate-700">Google Analytics Setup</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-1 text-sm"></i><span class="text-sm text-slate-700">2 Months Priority Support</span></li>
+                    </ul>
+                    <a href="#contact" class="mt-8 block w-full text-center py-3 text-sm font-semibold rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-50 transition-all">Get Started</a>
                 </div>
             </div>
 
             <!-- Professional (Featured / Mesmerizing Loop) -->
-            <div class="relative flowing-border rounded-2xl p-[3px] fade-up shadow-[0_0_40px_rgba(59,130,246,0.3)] transform md:scale-105 z-10 card-scale transition-all duration-300">
-                <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-lg z-20 animate-pulse">Most Popular</div>
+            <div class="relative flowing-border rounded-2xl p-[3px] fade-up shadow-[0_0_40px_rgba(59,130,246,0.3)] transform lg:scale-105 z-10 card-scale transition-all duration-300">
+                <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-lg z-20 animate-pulse whitespace-nowrap">Most Popular</div>
                 <div class="bg-slate-900 rounded-[13px] h-full overflow-hidden relative">
                     <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-blue-900/20 to-transparent pointer-events-none"></div>
                     
-                    <div class="p-8 relative z-10">
-                        <h3 class="text-2xl font-bold text-white">Professional Edge</h3>
-                        <p class="text-sm text-slate-400 mt-2">For growing brands & agencies</p>
-                        <div class="mt-6 flex items-baseline gap-1">
-                            <span class="text-5xl font-black text-white" data-price-inr="49999">₹49,999</span>
+                    <div class="p-6 relative z-10">
+                        <h3 class="text-xl font-bold text-white">Professional Edge</h3>
+                        <p class="text-xs text-slate-400 mt-2">For growing brands & agencies</p>
+                        <div class="mt-4 flex items-baseline gap-1">
+                            <span class="text-4xl font-black text-white" data-price-inr="49999">₹49,999</span>
                         </div>
                         <p class="text-xs text-slate-400 mt-1">One-time payment</p>
                         
-                        <ul class="space-y-4 mt-8">
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-blue-400 mt-1"></i><span class="text-slate-200 font-medium">Up to 15 Pages Premium Design</span></li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-blue-400 mt-1"></i><span class="text-slate-200">Custom Admin Dashboard</span></li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-blue-400 mt-1"></i><span class="text-slate-200">E-Commerce Ready (50 Products)</span></li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-blue-400 mt-1"></i><span class="text-slate-200">Advanced SEO Setup</span></li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-blue-400 mt-1"></i><span class="text-slate-200">Payment Gateway Integration</span></li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-blue-400 mt-1"></i><span class="text-slate-200">3 Months Priority Support</span></li>
+                        <ul class="space-y-3 mt-6">
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200 font-medium">Up to 15 Pages Premium Design</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200">Advanced Admin Dashboard</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200">E-Commerce Ready (100 Products)</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200">Advanced SEO Setup</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200">3 Months Priority Support</span></li>
                         </ul>
-                        <a href="#contact" class="mt-10 block w-full text-center py-3.5 text-sm font-semibold rounded-xl text-white bg-blue-600 hover:bg-blue-500 transition-all shadow-lg btn-shine">Claim This Plan</a>
+                        <a href="#contact" class="mt-8 block w-full text-center py-3 text-sm font-semibold rounded-xl text-white bg-blue-600 hover:bg-blue-500 transition-all shadow-lg btn-shine">Claim This Plan</a>
                     </div>
                 </div>
             </div>
 
             <!-- Enterprise -->
             <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden card-scale fade-up shadow-sm hover:shadow-xl transition-all duration-300">
-                <div class="p-8">
-                    <h3 class="text-2xl font-bold text-slate-900">Enterprise Custom</h3>
-                    <p class="text-sm text-slate-500 mt-2">For large-scale applications & SaaS</p>
-                    <div class="mt-6 flex items-baseline gap-1">
-                        <span class="text-5xl font-black text-slate-900">Custom</span>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-slate-900">Enterprise Custom</h3>
+                    <p class="text-xs text-slate-500 mt-2">For large-scale applications & SaaS</p>
+                    <div class="mt-4 flex items-baseline gap-1">
+                        <span class="text-4xl font-black text-slate-900">Custom</span>
                     </div>
                     <p class="text-xs text-slate-400 mt-1">Tailored to your requirements</p>
                     
-                    <ul class="space-y-4 mt-8">
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-slate-400 mt-1"></i><span class="text-slate-700">Fully Custom Architecture</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-slate-400 mt-1"></i><span class="text-slate-700">AWS / Cloud Deployment</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-slate-400 mt-1"></i><span class="text-slate-700">Advanced API Integrations</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-slate-400 mt-1"></i><span class="text-slate-700">Multi-tenant Architecture</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-slate-400 mt-1"></i><span class="text-slate-700">Dedicated Development Team</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-slate-400 mt-1"></i><span class="text-slate-700">24/7 SLA Support</span></li>
+                    <ul class="space-y-3 mt-6">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-slate-400 mt-1 text-sm"></i><span class="text-sm text-slate-700">Fully Custom Architecture</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-slate-400 mt-1 text-sm"></i><span class="text-sm text-slate-700">AWS / Cloud Deployment</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-slate-400 mt-1 text-sm"></i><span class="text-sm text-slate-700">Advanced API Integrations</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-slate-400 mt-1 text-sm"></i><span class="text-sm text-slate-700">Multi-tenant Architecture</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-slate-400 mt-1 text-sm"></i><span class="text-sm text-slate-700">24/7 SLA Support</span></li>
                     </ul>
-                    <a href="#contact" class="mt-10 block w-full text-center py-3.5 text-sm font-semibold rounded-xl text-brand-600 bg-brand-50 hover:bg-brand-100 transition-all">Contact Sales</a>
+                    <a href="#contact" class="mt-8 block w-full text-center py-3 text-sm font-semibold rounded-xl text-brand-600 bg-brand-50 hover:bg-brand-100 transition-all">Contact Sales</a>
                 </div>
             </div>
 
@@ -629,87 +648,86 @@
 <section class="py-24 bg-slate-50 border-t border-slate-200" id="contact">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-12 fade-up">
-            <span class="inline-block bg-blue-50 text-blue-800 text-xs font-bold px-4 py-2 rounded-sm uppercase tracking-widest mb-4 border-l-4 border-blue-700">Official Communication</span>
-            <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Submit Your Inquiry</h2>
+            <span class="inline-block bg-blue-50 text-blue-800 text-xs font-bold px-4 py-2 rounded-sm uppercase tracking-widest mb-4 border-l-4 border-blue-700">Get In Touch</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Let's Discuss Your Project</h2>
             <div class="w-20 h-1 bg-amber-400 mx-auto mt-4 mb-6"></div>
-            <p class="text-slate-600">For official communications, please use the form below or email us directly. Response within 24 working hours.</p>
+            <p class="text-slate-600">Have a project in mind? Use the form below or email us directly. Our team will get back to you within 24 hours.</p>
         </div>
 
-        <div class="bg-white rounded-sm border border-slate-200 overflow-hidden shadow-md fade-up">
+        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xl fade-up">
             <div class="grid grid-cols-1 lg:grid-cols-5">
-                <div class="lg:col-span-2 bg-slate-900 text-white p-8">
-                    <h3 class="text-xl font-bold mb-2">Office of The Hype Crews</h3>
-                    <p class="text-slate-400 text-sm mb-8">Private Limited Company (CIN: U73100AS2026PTC029838)</p>
-                    <div class="space-y-5">
-                        <div class="flex items-start gap-3">
-                            <i class="fa-solid fa-envelope text-amber-400 mt-0.5"></i>
+                <div class="lg:col-span-2 bg-slate-900 text-white p-10">
+                    <h3 class="text-2xl font-bold mb-2">The Hype Crews</h3>
+                    <p class="text-slate-400 text-sm mb-10">Premium Web & App Development Agency</p>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <i class="fa-solid fa-envelope text-blue-500 mt-1 text-xl"></i>
                             <div>
-                                <div class="text-xs text-slate-400">Official Email</div>
-                                <div class="text-sm font-medium">support@hypecrews.com</div>
+                                <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Email Us</div>
+                                <div class="text-base font-medium mt-1">support@hypecrews.com</div>
                             </div>
                         </div>
-                        <div class="flex items-start gap-3">
-                            <i class="fa-solid fa-phone text-amber-400 mt-0.5"></i>
+                        <div class="flex items-start gap-4">
+                            <i class="fa-solid fa-phone text-blue-500 mt-1 text-xl"></i>
                             <div>
-                                <div class="text-xs text-slate-400">Office Landline</div>
-                                <div class="text-sm font-medium">+91 361 324 3276</div>
+                                <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Call Us</div>
+                                <div class="text-base font-medium mt-1">+91 361 324 3276</div>
                             </div>
                         </div>
-                        <div class="flex items-start gap-3">
-                            <i class="fa-solid fa-clock text-amber-400 mt-0.5"></i>
+                        <div class="flex items-start gap-4">
+                            <i class="fa-solid fa-clock text-blue-500 mt-1 text-xl"></i>
                             <div>
-                                <div class="text-xs text-slate-400">Office Hours</div>
-                                <div class="text-sm font-medium">Mon – Sat, 10 AM – 7 PM IST</div>
+                                <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Business Hours</div>
+                                <div class="text-base font-medium mt-1">Mon – Sat, 10 AM – 7 PM IST</div>
                             </div>
                         </div>
-                        <div class="flex items-start gap-3">
-                            <i class="fa-solid fa-location-dot text-amber-400 mt-0.5"></i>
+                        <div class="flex items-start gap-4">
+                            <i class="fa-solid fa-location-dot text-blue-500 mt-1 text-xl"></i>
                             <div>
-                                <div class="text-xs text-slate-400">Registered Office</div>
-                                <div class="text-sm font-medium">Golaghat, Assam, 785621, India</div>
+                                <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Headquarters</div>
+                                <div class="text-base font-medium mt-1">Golaghat, Assam, 785621, India</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="lg:col-span-3 p-8">
+                <div class="lg:col-span-3 p-10">
                     <div id="form-message" class="hidden mb-4 p-3 rounded-sm text-sm font-medium"></div>
-                    <form id="contact-form" class="space-y-5">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             <div>
-                                <label for="name" class="block text-sm font-semibold text-slate-700 mb-1">Full Name <span class="text-red-500">*</span></label>
-                                <input type="text" name="name" id="name" required placeholder="Your full name" class="block w-full rounded-sm border-slate-300 shadow-sm focus:border-blue-700 focus:ring-blue-700 text-sm px-4 py-2.5 border">
+                                <label for="name" class="block text-sm font-semibold text-slate-700 mb-1.5">Full Name <span class="text-red-500">*</span></label>
+                                <input type="text" name="name" id="name" required placeholder="John Doe" class="block w-full rounded-xl border-slate-300 shadow-sm focus:border-blue-600 focus:ring-blue-600 text-sm px-4 py-3 border bg-slate-50">
                             </div>
                             <div>
-                                <label for="email" class="block text-sm font-semibold text-slate-700 mb-1">Official Email <span class="text-red-500">*</span></label>
-                                <input type="email" name="email" id="email" required placeholder="your@department.gov.in" class="block w-full rounded-sm border-slate-300 shadow-sm focus:border-blue-700 focus:ring-blue-700 text-sm px-4 py-2.5 border">
+                                <label for="email" class="block text-sm font-semibold text-slate-700 mb-1.5">Work Email <span class="text-red-500">*</span></label>
+                                <input type="email" name="email" id="email" required placeholder="john@company.com" class="block w-full rounded-xl border-slate-300 shadow-sm focus:border-blue-600 focus:ring-blue-600 text-sm px-4 py-3 border bg-slate-50">
                             </div>
                         </div>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             <div>
-                                <label for="phone" class="block text-sm font-semibold text-slate-700 mb-1">Contact Number</label>
-                                <input type="tel" name="phone" id="phone" placeholder="+91 XXXXX XXXXX" class="block w-full rounded-sm border-slate-300 shadow-sm focus:border-blue-700 focus:ring-blue-700 text-sm px-4 py-2.5 border">
+                                <label for="phone" class="block text-sm font-semibold text-slate-700 mb-1.5">Phone Number</label>
+                                <input type="tel" name="phone" id="phone" placeholder="+91 XXXXX XXXXX" class="block w-full rounded-xl border-slate-300 shadow-sm focus:border-blue-600 focus:ring-blue-600 text-sm px-4 py-3 border bg-slate-50">
                             </div>
                             <div>
-                                <label for="service" class="block text-sm font-semibold text-slate-700 mb-1">Service Required <span class="text-red-500">*</span></label>
-                                <select id="service" name="service" required class="block w-full rounded-sm border-slate-300 shadow-sm focus:border-blue-700 focus:ring-blue-700 text-sm px-4 py-2.5 border bg-white">
-                                    <option value="">Select service</option>
-                                    <option value="Basic Website">Basic Website (₹9,999 onwards)</option>
-                                    <option value="Enterprise Solution">Enterprise Solution (₹29,999 onwards)</option>
-                                    <option value="Custom Tender">Custom Tender / RFP</option>
-                                    <option value="E-Commerce">E-Commerce / GeM Integration</option>
-                                    <option value="Mobile App">Mobile Governance App</option>
-                                    <option value="Other">Other Query</option>
+                                <label for="service" class="block text-sm font-semibold text-slate-700 mb-1.5">Interested In <span class="text-red-500">*</span></label>
+                                <select id="service" name="service" required class="block w-full rounded-xl border-slate-300 shadow-sm focus:border-blue-600 focus:ring-blue-600 text-sm px-4 py-3 border bg-slate-50">
+                                    <option value="">Select an option</option>
+                                    <option value="Starter Business">Starter Business (₹9,999)</option>
+                                    <option value="Growth Plan">Growth Plan (₹24,999)</option>
+                                    <option value="Professional Edge">Professional Edge (₹49,999)</option>
+                                    <option value="Enterprise Custom">Enterprise Custom Solution</option>
+                                    <option value="General Inquiry">General Inquiry</option>
                                 </select>
                             </div>
                         </div>
                         <div>
-                            <label for="message" class="block text-sm font-semibold text-slate-700 mb-1">Project Details <span class="text-red-500">*</span></label>
-                            <textarea id="message" name="message" rows="4" required placeholder="Please describe your requirements, department name, expected timeline, and any compliance needs..." class="block w-full rounded-sm border-slate-300 shadow-sm focus:border-blue-700 focus:ring-blue-700 text-sm px-4 py-2.5 border"></textarea>
+                            <label for="message" class="block text-sm font-semibold text-slate-700 mb-1.5">Project Details <span class="text-red-500">*</span></label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Tell us about your project goals, timeline, and any specific requirements..." class="block w-full rounded-xl border-slate-300 shadow-sm focus:border-blue-600 focus:ring-blue-600 text-sm px-4 py-3 border bg-slate-50"></textarea>
                         </div>
-                        <button type="submit" class="w-full flex justify-center items-center gap-2 py-3 px-6 rounded-sm shadow-sm text-sm font-semibold text-white bg-blue-800 hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700 transition-colors">
-                            <i class="fa-solid fa-paper-plane"></i> Submit Official Inquiry
+                        <button type="submit" class="w-full flex justify-center items-center gap-2 py-4 px-6 rounded-xl shadow-lg text-sm font-bold text-white bg-blue-600 hover:bg-blue-700 transition-all duration-200 card-scale">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
                         </button>
-                        <p class="text-xs text-slate-500 text-center mt-2">By submitting, you agree to our <a href="terms.php" class="text-blue-700 hover:underline">Terms of Service</a> and <a href="privacy-policy.php" class="text-blue-700 hover:underline">Privacy Policy</a>.</p>
+                        <p class="text-xs text-slate-500 text-center mt-3">By submitting, you agree to our <a href="terms.php" class="text-blue-700 hover:underline">Terms of Service</a> and <a href="privacy-policy.php" class="text-blue-700 hover:underline">Privacy Policy</a>.</p>
                     </form>
                 </div>
             </div>
