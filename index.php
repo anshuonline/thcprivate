@@ -702,6 +702,14 @@
             <div class="text-center mb-10 fade-up">
                 <h3 class="text-2xl md:text-3xl font-bold text-slate-900">Customized For Every Budget</h3>
                 <p class="text-slate-600 mt-2">Specialized custom web development plans tailored to your specific budget range.</p>
+                <div class="mt-6 inline-flex items-center gap-2 bg-white border border-slate-200 rounded-full px-5 py-2 shadow-sm">
+                    <span class="text-sm font-semibold text-slate-700">Currency:</span>
+                    <select class="currency-selector bg-transparent text-sm font-bold text-blue-800 cursor-pointer focus:outline-none ml-1">
+                        <option value="INR">₹ INR</option>
+                        <option value="USD">$ USD</option>
+                        <option value="EUR">€ EUR</option>
+                    </select>
+                </div>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
@@ -712,7 +720,7 @@
                     </div>
                     <h4 class="text-xl font-bold text-slate-900">For Individuals</h4>
                     <p class="text-xs text-slate-500 mt-1 uppercase tracking-wider font-semibold">Low Budget Customized</p>
-                    <div class="my-5 text-2xl font-black text-blue-600">Under ₹15,000</div>
+                    <div class="my-5 text-2xl font-black text-blue-600">Under <span data-price-inr="15000">₹15,000</span></div>
                     <p class="text-sm text-slate-600 leading-relaxed">Perfect for portfolios, freelancers, and personal brands needing a professional online presence without breaking the bank.</p>
                     <a href="#contact" class="mt-6 inline-block text-sm font-bold text-blue-600 hover:text-blue-800 transition-colors">Get a Quote <i class="fa-solid fa-arrow-right ml-1 text-xs"></i></a>
                 </div>
@@ -724,7 +732,7 @@
                     </div>
                     <h4 class="text-xl font-bold text-slate-900">For Startups</h4>
                     <p class="text-xs text-slate-500 mt-1 uppercase tracking-wider font-semibold">Mid-Tier Customized</p>
-                    <div class="my-5 text-2xl font-black text-emerald-600">₹25,000 - ₹50,000</div>
+                    <div class="my-5 text-2xl font-black text-emerald-600"><span data-price-inr="25000">₹25,000</span> - <span data-price-inr="50000">₹50,000</span></div>
                     <p class="text-sm text-slate-600 leading-relaxed">Ideal for small businesses and growing startups looking for custom functionalities, CMS, and dynamic content.</p>
                     <a href="#contact" class="mt-6 inline-block text-sm font-bold text-emerald-600 hover:text-emerald-800 transition-colors">Get a Quote <i class="fa-solid fa-arrow-right ml-1 text-xs"></i></a>
                 </div>
@@ -738,7 +746,7 @@
                         </div>
                         <h4 class="text-xl font-bold text-slate-900">For Enterprises</h4>
                         <p class="text-xs text-slate-500 mt-1 uppercase tracking-wider font-semibold">High-End Platforms</p>
-                        <div class="my-5 text-2xl font-black text-purple-600">₹50,000 - ₹1,50,000</div>
+                        <div class="my-5 text-2xl font-black text-purple-600"><span data-price-inr="50000">₹50,000</span> - <span data-price-inr="150000">₹1,50,000</span></div>
                         <p class="text-sm text-slate-600 leading-relaxed">Comprehensive custom development for large-scale web apps, extensive e-commerce, and heavy API integrations.</p>
                         <a href="#contact" class="mt-6 inline-block text-sm font-bold text-purple-600 hover:text-purple-800 transition-colors">Get a Quote <i class="fa-solid fa-arrow-right ml-1 text-xs"></i></a>
                     </div>
