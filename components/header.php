@@ -3,8 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Hype Crews - Professional Web & App Development Services</title>
-    <meta name="description" content="India's trusted web development company. We build enterprise-grade websites, e-commerce platforms, mobile apps, and custom software solutions.">
+    <title>The Hype Crews | Web & App Development Company in Guwahati, India</title>
+    <meta name="description" content="Top web development company in Guwahati, India. We build enterprise-grade websites, e-commerce platforms, mobile apps, and custom software solutions globally.">
+    <meta name="keywords" content="web development company guwahati, app development india, software agency, ecommerce development, website design guwahati, The Hype Crews">
+    <meta name="author" content="The Hype Crews">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thehypecrews.in/">
+    <meta property="og:title" content="The Hype Crews | Web & App Development Company">
+    <meta property="og:description" content="Top web development company in Guwahati, India. We build enterprise websites, e-commerce platforms, and mobile apps.">
+    <meta property="og:image" content="https://thehypecrews.in/images/hypecrews logo white.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://thehypecrews.in/">
+    <meta property="twitter:title" content="The Hype Crews | Web & App Development Company">
+    <meta property="twitter:description" content="Top web development company in Guwahati, India. We build enterprise websites, e-commerce platforms, and mobile apps.">
+    <meta property="twitter:image" content="https://thehypecrews.in/images/hypecrews logo white.png">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://thehypecrews.in/">
+
+    <!-- Schema.org JSON-LD for Google Search -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "The Hype Crews",
+      "image": "https://thehypecrews.in/images/hypecrews logo white.png",
+      "url": "https://thehypecrews.in/",
+      "telephone": "+913613243276",
+      "email": "support@hypecrews.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Golaghat",
+        "addressLocality": "Guwahati",
+        "addressRegion": "Assam",
+        "postalCode": "785621",
+        "addressCountry": "IN"
+      },
+      "description": "India's trusted web and app development company based in Guwahati, Assam.",
+      "foundingDate": "2022",
+      "priceRange": "$$"
+    }
+    </script>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
