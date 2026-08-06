@@ -634,7 +634,7 @@
                     <h3 class="text-xl font-bold text-slate-900">Custom Solution</h3>
                     <p class="text-xs text-slate-500 mt-2">Tailored to your business needs</p>
                     <div class="mt-4 flex items-baseline gap-1">
-                        <span class="text-2xl font-black text-slate-900">Custom Quote</span>
+                        <span class="text-2xl font-black text-slate-900">Fully Customized</span>
                     </div>
                     <p class="text-xs text-slate-400 mt-1">Contact Us</p>
                     
