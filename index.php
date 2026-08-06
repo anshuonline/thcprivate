@@ -53,10 +53,10 @@
             <div class="fade-up">
                 <span class="inline-block bg-brand-50 text-brand-700 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide mb-3">About Us</span>
                 <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">
-                    From Guwahati to Pan-India:<br>Your Complete Digital Partner
+                    From Guwahati to the World:<br>Your Complete Digital Partner
                 </h2>
                 <p class="mt-6 text-gray-600 text-base leading-relaxed">
-                    Established in 2022 in the vibrant city of Guwahati, Assam, we have quickly evolved into a comprehensive digital solutions provider serving clients across the entire nation. We believe in bridging the gap between creativity, technology, and security.
+                    Established in 2022 in the vibrant city of Guwahati, Assam, we have quickly evolved into a comprehensive digital solutions provider serving clients across the globe. We believe in bridging the gap between creativity, technology, and security.
                 </p>
                 <p class="mt-4 text-gray-600 text-base leading-relaxed">
                     Whether you are an artist looking for a spotlight, a business seeking a digital footprint, or a brand needing protection, our expert team is dedicated to delivering excellence with a personal touch.
