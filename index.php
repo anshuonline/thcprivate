@@ -1,41 +1,45 @@
 <?php include 'components/header.php'; ?>
 
 <!-- Hero Section -->
-<section class="bg-brand-900 relative overflow-hidden" id="home">
-    <div class="absolute inset-0 bg-[url('images/hero-bg.jpg')] bg-cover bg-center opacity-10"></div>
+<section class="relative overflow-hidden bg-white" id="home">
+    <!-- Ambient Gradient Blobs -->
+    <div class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-blue-100/70 rounded-full blur-[100px] pointer-events-none"></div>
+    <div class="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-brand-100/70 rounded-full blur-[100px] pointer-events-none"></div>
+    <div class="absolute inset-0 bg-gradient-to-br from-white/60 via-blue-50/30 to-white/80 pointer-events-none"></div>
+    
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20 md:py-28">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-                <div class="inline-flex items-center gap-2 bg-brand-800/50 border border-brand-700 rounded-full px-4 py-1.5 mb-6">
-                    <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
-                    <span class="text-brand-200 text-xs font-medium">Trusted by 100+ Businesses Across India</span>
+                <div class="inline-flex items-center gap-2 bg-white border border-blue-100 rounded-full px-4 py-1.5 mb-6 shadow-sm">
+                    <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                    <span class="text-brand-700 text-xs font-bold uppercase tracking-wider">Trusted by 100+ Businesses Across India</span>
                 </div>
-                <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight">
-                    Professional Website & Software Development Services
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
+                    Professional Website & <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-blue-500">Software Development</span> Services
                 </h1>
-                <p class="mt-6 text-base md:text-lg text-brand-200 leading-relaxed max-w-xl">
+                <p class="mt-6 text-base md:text-lg text-gray-600 leading-relaxed max-w-xl">
                     We help startups, small businesses, and enterprises build high-performance websites, web applications, mobile apps, and custom software solutions. From concept to deployment — we handle everything.
                 </p>
                 <div class="mt-8 flex flex-col sm:flex-row gap-3">
-                    <a href="#contact" class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold rounded-md text-brand-900 bg-white hover:bg-gray-100 transition-colors shadow-md">
+                    <a href="#contact" class="inline-flex items-center justify-center px-6 py-3 text-sm font-bold rounded-md text-white bg-brand-600 hover:bg-brand-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
                         <i class="fa-solid fa-arrow-right mr-2"></i> Get Free Consultation
                     </a>
-                    <a href="#services" class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold rounded-md text-white border border-brand-500 hover:bg-brand-800 transition-colors">
+                    <a href="#services" class="inline-flex items-center justify-center px-6 py-3 text-sm font-bold rounded-md text-gray-700 bg-white border border-gray-200 hover:bg-gray-50 hover:border-gray-300 transition-all duration-300 shadow-sm hover:shadow">
                         View Our Services
                     </a>
                 </div>
-                <div class="mt-10 grid grid-cols-3 gap-6 border-t border-brand-800 pt-8">
+                <div class="mt-10 grid grid-cols-3 gap-6 border-t border-gray-200 pt-8">
                     <div>
-                        <div class="text-2xl font-extrabold text-white">100<span class="text-brand-400">+</span></div>
-                        <div class="text-xs text-brand-300 mt-1">Projects Delivered</div>
+                        <div class="text-2xl md:text-3xl font-extrabold text-gray-900">100<span class="text-brand-600">+</span></div>
+                        <div class="text-xs text-gray-500 mt-1 font-medium">Projects Delivered</div>
                     </div>
                     <div>
-                        <div class="text-2xl font-extrabold text-white">50<span class="text-brand-400">+</span></div>
-                        <div class="text-xs text-brand-300 mt-1">Happy Clients</div>
+                        <div class="text-2xl md:text-3xl font-extrabold text-gray-900">50<span class="text-brand-600">+</span></div>
+                        <div class="text-xs text-gray-500 mt-1 font-medium">Happy Clients</div>
                     </div>
                     <div>
-                        <div class="text-2xl font-extrabold text-white">99<span class="text-brand-400">%</span></div>
-                        <div class="text-xs text-brand-300 mt-1">Client Satisfaction</div>
+                        <div class="text-2xl md:text-3xl font-extrabold text-gray-900">99<span class="text-brand-600">%</span></div>
+                        <div class="text-xs text-gray-500 mt-1 font-medium">Client Satisfaction</div>
                     </div>
                 </div>
             </div>
