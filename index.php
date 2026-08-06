@@ -369,10 +369,41 @@
                 ['num' => '04', 'icon' => 'fa-code', 'title' => 'Secure Development', 'desc' => 'Development with OWASP top 10 mitigation. Regular code reviews, static analysis, and security testing integrated into CI/CD pipeline.'],
                 ['num' => '05', 'icon' => 'fa-rocket', 'title' => 'UAT, Deployment & Handover', 'desc' => 'User Acceptance Testing with formal sign-off. Secure deployment with complete documentation, training manuals, and source code handover.'],
             ];
+            ?>
+            <style>
+            <?php
+            $total_time = 10;
+            $card_percent = 15;
+            $line_percent = 5;
+
+            for ($i = 0; $i < 5; $i++) {
+                $start_card = $i * ($card_percent + $line_percent);
+                $end_card = $start_card + $card_percent;
+                $start_line = $end_card;
+                $end_line = $start_line + $line_percent;
+                
+                echo "@keyframes drawBorder{$i} {
+                    0%, ".max(0, $start_card - 0.1)."% { stroke-dashoffset: 3000; opacity: 0; }
+                    {$start_card}% { stroke-dashoffset: 3000; opacity: 1; }
+                    {$end_card}% { stroke-dashoffset: 0; opacity: 1; }
+                    95% { stroke-dashoffset: 0; opacity: 1; }
+                    95.1%, 100% { stroke-dashoffset: 0; opacity: 0; }
+                }\n";
+                
+                echo "@keyframes drawLine{$i} {
+                    0%, ".max(0, $start_line - 0.1)."% { width: 0%; opacity: 0; }
+                    {$start_line}% { width: 0%; opacity: 1; }
+                    {$end_line}% { width: 100%; opacity: 1; }
+                    95% { width: 100%; opacity: 1; }
+                    95.1%, 100% { width: 100%; opacity: 0; }
+                }\n";
+            }
+            ?>
+            .seq-border { stroke-dasharray: 3000; }
+            </style>
+            <?php
             foreach ($steps as $index => $step) {
                 // Determine line visibility based on breakpoints
-                // md: 2 columns -> hide on index 1, 3, 4
-                // lg: 3 columns -> hide on index 2, 4
                 $line_classes = "hidden absolute top-1/2 left-1/2 w-[calc(100%+2rem)] h-[3px] bg-slate-100 -translate-y-1/2 overflow-hidden ";
                 
                 if ($index == 0) $line_classes .= "md:block lg:block";
@@ -385,21 +416,26 @@
                 
                 if ($index < 4) {
                     echo '
-                    <!-- Animated Beam Connector -->
+                    <!-- Sequential Animated Line Connector -->
                     <div class="'.$line_classes.' z-0">
-                        <div class="h-full w-1/3 bg-gradient-to-r from-transparent via-amber-400 to-transparent animate-slide-right"></div>
+                        <div class="h-full bg-amber-500 shadow-[0_0_8px_#f59e0b]" style="animation: drawLine'.$index.' 10s linear infinite;"></div>
                     </div>';
                 }
 
                 echo '
                     <!-- Card Body -->
-                    <div class="bg-white rounded-sm border border-slate-200 p-8 text-center card-hover fade-up shadow-sm h-full relative z-10">
-                        <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-blue-800 text-white text-sm font-bold w-10 h-10 rounded-full flex items-center justify-center border-4 border-white shadow-md">'.$step['num'].'</div>
-                        <div class="w-14 h-14 mx-auto rounded-full bg-blue-50 flex items-center justify-center text-blue-800 text-xl mb-5 mt-2">
+                    <div class="bg-white rounded-sm border border-slate-200 p-8 text-center fade-up shadow-sm h-full relative z-10">
+                        <!-- Sequential Animated SVG Border -->
+                        <svg class="absolute inset-0 w-full h-full pointer-events-none z-20 rounded-sm" style="animation: drawBorder'.$index.' 10s linear infinite;">
+                            <rect x="0" y="0" width="100%" height="100%" rx="4" fill="none" stroke="#f59e0b" stroke-width="4" class="seq-border" />
+                        </svg>
+
+                        <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-blue-800 text-white text-sm font-bold w-10 h-10 rounded-full flex items-center justify-center border-4 border-white shadow-md z-30">'.$step['num'].'</div>
+                        <div class="w-14 h-14 mx-auto rounded-full bg-blue-50 flex items-center justify-center text-blue-800 text-xl mb-5 mt-2 relative z-30">
                             <i class="fa-solid '.$step['icon'].'"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-3">'.$step['title'].'</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed">'.$step['desc'].'</p>
+                        <h3 class="text-lg font-bold text-slate-900 mb-3 relative z-30">'.$step['title'].'</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed relative z-30">'.$step['desc'].'</p>
                     </div>
                 </div>';
             }
