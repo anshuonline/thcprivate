@@ -1,8 +1,8 @@
 <?php include 'components/header.php'; ?>
-<div class="pt-32 pb-20 bg-white">
+<main class="pt-32 pb-20 bg-white min-h-screen">
     <div class="max-w-4xl mx-auto px-4">
-        <h1 class="text-4xl font-bold mb-6 text-gray-900">Privacy Policy</h1>
-        <p class="text-sm text-gray-500 mb-8">Effective Date: <?php echo date('F j, Y'); ?></p>
+        <h1 class="text-4xl font-bold text-gray-900 mb-2">Privacy Policy</h1>
+        <p class="text-sm text-gray-500 mb-8">Effective Date: April 10, 2024 | Originally Published: August 22, 2022 | Last Reviewed: January 15, 2026</p>
 
         <div class="mb-10 p-6 bg-gray-50 rounded-lg border border-gray-200">
             <h2 class="text-xl font-semibold mb-4 text-gray-800">Table of Contents</h2>
