@@ -54,6 +54,19 @@
                     </a>
                 </div>
                 
+                <!-- Social Proof -->
+                <div class="mt-8 flex flex-col sm:flex-row items-center sm:items-start gap-4 fade-up" style="animation-delay: 0.3s;">
+                    <div class="flex -space-x-2">
+                        <div class="w-8 h-8 rounded-full bg-emerald-700 text-white flex items-center justify-center text-[10px] font-bold border-2 border-white relative z-40">RK</div>
+                        <div class="w-8 h-8 rounded-full bg-amber-600 text-white flex items-center justify-center text-[10px] font-bold border-2 border-white relative z-30">SP</div>
+                        <div class="w-8 h-8 rounded-full bg-slate-900 text-white flex items-center justify-center text-[10px] font-bold border-2 border-white relative z-20">AN</div>
+                        <div class="w-8 h-8 rounded-full bg-slate-500 text-white flex items-center justify-center text-[10px] font-bold border-2 border-white relative z-10">+</div>
+                    </div>
+                    <div class="text-xs sm:text-sm text-slate-600 font-medium pt-1">
+                        <span class="font-bold text-slate-900">524+</span> Indian businesses launched <span class="mx-1 text-slate-300">•</span> <span class="font-bold text-slate-900">4.9/5</span> average client rating
+                    </div>
+                </div>
+                
                 <!-- Statistics with government-style minimal design -->
                 <div class="mt-14 grid grid-cols-3 gap-8 border-t border-slate-200 pt-10">
                     <div>
