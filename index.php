@@ -43,8 +43,8 @@
                     </div>
                 </div>
             </div>
-            <div class="hidden lg:block">
-                <img src="images/heroplaceholder.webp" alt="Web Development" class="w-full h-auto drop-shadow-xl hover:scale-105 transition-transform duration-500">
+            <div class="hidden lg:block animate-float">
+                <img src="images/heroplaceholder.webp" alt="Web Development" class="w-full h-auto drop-shadow-xl hover:scale-105 transition-transform duration-500 cursor-pointer">
             </div>
         </div>
     </div>
