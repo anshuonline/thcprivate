@@ -133,12 +133,12 @@
                     </a>
                 </div>
                 <div class="hidden md:flex items-center space-x-6">
-                    <a href="#about" class="text-sm font-medium text-gray-600 hover:text-brand-600 transition-colors">About</a>
-                    <a href="#services" class="text-sm font-medium text-gray-600 hover:text-brand-600 transition-colors">Services</a>
-                    <a href="#how-it-works" class="text-sm font-medium text-gray-600 hover:text-brand-600 transition-colors">How It Works</a>
-                    <a href="#pricing" class="text-sm font-medium text-gray-600 hover:text-brand-600 transition-colors">Pricing</a>
-                    <a href="#contact" class="text-sm font-medium text-gray-600 hover:text-brand-600 transition-colors">Contact</a>
-                    <a href="#contact" class="inline-flex items-center px-5 py-2 border border-transparent text-sm font-semibold rounded-md text-white bg-brand-600 hover:bg-brand-700 transition-colors shadow-sm">
+                    <a href="/#about" class="text-sm font-medium text-gray-600 hover:text-brand-600 transition-colors">About</a>
+                    <a href="/#services" class="text-sm font-medium text-gray-600 hover:text-brand-600 transition-colors">Services</a>
+                    <a href="/#how-it-works" class="text-sm font-medium text-gray-600 hover:text-brand-600 transition-colors">How It Works</a>
+                    <a href="/#pricing" class="text-sm font-medium text-gray-600 hover:text-brand-600 transition-colors">Pricing</a>
+                    <a href="/#contact" class="text-sm font-medium text-gray-600 hover:text-brand-600 transition-colors">Contact</a>
+                    <a href="/#contact" class="inline-flex items-center px-5 py-2 border border-transparent text-sm font-semibold rounded-md text-white bg-brand-600 hover:bg-brand-700 transition-colors shadow-sm">
                         Get Free Quote
                     </a>
                 </div>
@@ -149,12 +149,12 @@
         </div>
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
             <div class="px-4 pt-2 pb-4 space-y-1">
-                <a href="#about" class="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-brand-600 hover:bg-gray-50 rounded-md">About</a>
-                <a href="#services" class="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-brand-600 hover:bg-gray-50 rounded-md">Services</a>
-                <a href="#how-it-works" class="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-brand-600 hover:bg-gray-50 rounded-md">How It Works</a>
-                <a href="#pricing" class="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-brand-600 hover:bg-gray-50 rounded-md">Pricing</a>
-                <a href="#contact" class="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-brand-600 hover:bg-gray-50 rounded-md">Contact</a>
-                <a href="#contact" class="block mt-2 text-center px-5 py-2.5 text-sm font-semibold rounded-md text-white bg-brand-600 hover:bg-brand-700">Get Free Quote</a>
+                <a href="/#about" class="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-brand-600 hover:bg-gray-50 rounded-md">About</a>
+                <a href="/#services" class="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-brand-600 hover:bg-gray-50 rounded-md">Services</a>
+                <a href="/#how-it-works" class="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-brand-600 hover:bg-gray-50 rounded-md">How It Works</a>
+                <a href="/#pricing" class="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-brand-600 hover:bg-gray-50 rounded-md">Pricing</a>
+                <a href="/#contact" class="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-brand-600 hover:bg-gray-50 rounded-md">Contact</a>
+                <a href="/#contact" class="block mt-2 text-center px-5 py-2.5 text-sm font-semibold rounded-md text-white bg-brand-600 hover:bg-brand-700">Get Free Quote</a>
             </div>
         </div>
     </nav>
