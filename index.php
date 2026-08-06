@@ -954,7 +954,6 @@
         const phone = iti.isValidNumber() ? iti.getNumber() : form.querySelector('#phone').value;
         const service = form.querySelector('#service').value;
         const message = form.querySelector('#message').value;
-        const msgDiv = document.getElementById('form-message');
         
         submitBtn.disabled = true;
         submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
