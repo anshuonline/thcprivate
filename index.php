@@ -488,12 +488,12 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <?php
             $reasons = [
-                ['icon' => 'fa-medal', 'title' => 'Government Empanelment Ready', 'desc' => 'Our processes, documentation, and security posture meet requirements for government empanelment and tenders. We assist in the entire procurement process.'],
-                ['icon' => 'fa-indian-rupee-sign', 'title' => 'Transparent Procurement', 'desc' => 'Detailed commercial proposals with clear cost breakdowns. No hidden costs. Compliant with GFR and procurement guidelines for government contracts.'],
-                ['icon' => 'fa-clock', 'title' => 'SLA-Driven Delivery', 'desc' => 'Well-defined Service Level Agreements with penalty clauses for delays. Regular progress reports and milestone-based payments.'],
-                ['icon' => 'fa-file-code', 'title' => 'Complete IP Transfer', 'desc' => 'Full source code ownership and intellectual property rights transferred to the client upon project completion and final payment.'],
-                ['icon' => 'fa-headset', 'title' => 'Dedicated Project Manager', 'desc' => 'Single point of contact throughout the project lifecycle. Regular review meetings and comprehensive handholding during go-live.'],
-                ['icon' => 'fa-lock', 'title' => 'CERT-In Compliant Security', 'desc' => 'Security practices aligned with CERT-In guidelines. Regular VAPT, security code review, and implementation of NCIIPC security controls.'],
+                ['icon' => 'fa-medal', 'title' => 'Uncompromising Quality', 'desc' => 'We build highly scalable, pixel-perfect, and modern digital solutions using the latest technology stacks tailored to your business goals.'],
+                ['icon' => 'fa-indian-rupee-sign', 'title' => '100% Transparent Pricing', 'desc' => 'Detailed commercial proposals with clear cost breakdowns. No hidden costs, no last-minute surprises, just honest and upfront pricing.'],
+                ['icon' => 'fa-clock', 'title' => 'SLA-Driven Delivery', 'desc' => 'Well-defined Service Level Agreements to ensure your project is delivered on time, every time, with regular progress reports.'],
+                ['icon' => 'fa-file-code', 'title' => 'Complete IP Transfer', 'desc' => 'Full source code ownership and intellectual property rights are completely transferred to you upon project completion.'],
+                ['icon' => 'fa-headset', 'title' => 'Dedicated Project Manager', 'desc' => 'A single point of contact throughout the project lifecycle. Regular review meetings and comprehensive handholding during go-live.'],
+                ['icon' => 'fa-lock', 'title' => 'Enterprise-Grade Security', 'desc' => 'Security is built-in from day one. We follow OWASP best practices, perform regular code reviews, and ensure your user data is strictly protected.'],
             ];
             foreach ($reasons as $r) {
                 echo '
