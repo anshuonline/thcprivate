@@ -56,10 +56,10 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="manifest" href="favicon/site.webmanifest">
 
-    <!-- Fonts: Outfit (modern, clean, geometric) -->
+    <!-- Fonts: Plus Jakarta Sans (premium, corporate) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -67,7 +67,7 @@
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Outfit', 'sans-serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
                     },
                     colors: {
                         brand: {
@@ -114,6 +114,13 @@
         .nav-scrolled { box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1); }
         .card-hover { transition: all 0.3s ease; }
         .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.08); }
+        .btn-shine { position: relative; overflow: hidden; }
+        .btn-shine::after {
+            content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%;
+            background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%);
+            transform: skewX(-20deg); animation: shine-effect 3s infinite; pointer-events: none;
+        }
+        @keyframes shine-effect { 0% { left: -100%; } 20% { left: 200%; } 100% { left: 200%; } }
         .fade-up { opacity: 0; transform: translateY(20px); transition: all 0.6s ease; }
         .fade-up.visible { opacity: 1; transform: translateY(0); }
         /* Popup Overlay */
@@ -196,14 +203,13 @@
                     </a>
                 </div>
                 <div class="hidden md:flex items-center space-x-6">
-                    <a href="/#about" class="text-sm font-medium text-gray-600 hover:text-brand-600 transition-colors">About</a>
-                    <a href="/#services" class="text-sm font-medium text-gray-600 hover:text-brand-600 transition-colors">Services</a>
-                    <a href="/#how-it-works" class="text-sm font-medium text-gray-600 hover:text-brand-600 transition-colors">How It Works</a>
-                    <a href="/#pricing" class="text-sm font-medium text-gray-600 hover:text-brand-600 transition-colors">Pricing</a>
-                    <a href="/#contact" class="text-sm font-medium text-gray-600 hover:text-brand-600 transition-colors">Contact</a>
-                    <a href="/#contact" class="relative overflow-hidden inline-flex items-center px-5 py-2 border border-transparent text-sm font-semibold rounded-md text-white bg-brand-600 hover:bg-brand-700 transition-colors shadow-sm group">
+                    <a href="/#about" class="text-base font-semibold text-gray-600 hover:text-brand-600 transition-colors">About</a>
+                    <a href="/#services" class="text-base font-semibold text-gray-600 hover:text-brand-600 transition-colors">Services</a>
+                    <a href="/#how-it-works" class="text-base font-semibold text-gray-600 hover:text-brand-600 transition-colors">How It Works</a>
+                    <a href="/#pricing" class="text-base font-semibold text-gray-600 hover:text-brand-600 transition-colors">Pricing</a>
+                    <a href="/#contact" class="text-base font-semibold text-gray-600 hover:text-brand-600 transition-colors">Contact</a>
+                    <a href="/#contact" class="btn-shine inline-flex items-center px-6 py-2.5 border border-transparent text-base font-semibold rounded-md text-white bg-brand-600 hover:bg-brand-700 transition-colors shadow-sm group">
                         <span class="relative z-10">Get Free Quote</span>
-                        <div class="absolute top-0 left-0 h-full w-1/3 bg-gradient-to-r from-white/0 via-white/40 to-white/0 animate-shine pointer-events-none"></div>
                     </a>
                 </div>
                 <div class="md:hidden">
@@ -213,14 +219,13 @@
         </div>
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
             <div class="px-4 pt-2 pb-4 space-y-1">
-                <a href="/#about" class="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-brand-600 hover:bg-gray-50 rounded-md">About</a>
-                <a href="/#services" class="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-brand-600 hover:bg-gray-50 rounded-md">Services</a>
-                <a href="/#how-it-works" class="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-brand-600 hover:bg-gray-50 rounded-md">How It Works</a>
-                <a href="/#pricing" class="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-brand-600 hover:bg-gray-50 rounded-md">Pricing</a>
-                <a href="/#contact" class="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-brand-600 hover:bg-gray-50 rounded-md">Contact</a>
-                <a href="/#contact" class="relative overflow-hidden block mt-2 text-center px-5 py-2.5 text-sm font-semibold rounded-md text-white bg-brand-600 hover:bg-brand-700 group">
+                <a href="/#about" class="block px-3 py-2 text-base font-semibold text-gray-700 hover:text-brand-600 hover:bg-gray-50 rounded-md">About</a>
+                <a href="/#services" class="block px-3 py-2 text-base font-semibold text-gray-700 hover:text-brand-600 hover:bg-gray-50 rounded-md">Services</a>
+                <a href="/#how-it-works" class="block px-3 py-2 text-base font-semibold text-gray-700 hover:text-brand-600 hover:bg-gray-50 rounded-md">How It Works</a>
+                <a href="/#pricing" class="block px-3 py-2 text-base font-semibold text-gray-700 hover:text-brand-600 hover:bg-gray-50 rounded-md">Pricing</a>
+                <a href="/#contact" class="block px-3 py-2 text-base font-semibold text-gray-700 hover:text-brand-600 hover:bg-gray-50 rounded-md">Contact</a>
+                <a href="/#contact" class="btn-shine block mt-2 text-center px-5 py-3 text-base font-semibold rounded-md text-white bg-brand-600 hover:bg-brand-700 group">
                     <span class="relative z-10">Get Free Quote</span>
-                    <div class="absolute top-0 left-0 h-full w-1/3 bg-gradient-to-r from-white/0 via-white/40 to-white/0 animate-shine pointer-events-none"></div>
                 </a>
             </div>
         </div>
