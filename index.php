@@ -62,7 +62,7 @@
                     </div>
                     <div>
                         <div class="text-3xl font-bold text-slate-900">121<span class="text-blue-700">+</span></div>
-                        <div class="text-xs font-semibold text-slate-500 mt-1 uppercase tracking-wide">Govt. & Enterprise Clients</div>
+                        <div class="text-xs font-semibold text-slate-500 mt-1 uppercase tracking-wide">Clients</div>
                     </div>
                     <div>
                         <div class="text-3xl font-bold text-slate-900">100<span class="text-blue-700">%</span></div>
