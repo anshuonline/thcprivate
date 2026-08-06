@@ -365,7 +365,7 @@
             $steps = [
                 ['num' => '01', 'icon' => 'fa-comments', 'title' => 'Requirement Analysis', 'desc' => 'Detailed discussion with stakeholders. Documentation of functional requirements, security needs, and compliance mandates. RFP response preparation.'],
                 ['num' => '02', 'icon' => 'fa-file-contract', 'title' => 'Agreement & Security Clearance', 'desc' => 'Signing of NDA, SLA, and project charter. Security clearance verification for team members. Legal and compliance review.'],
-                ['num' => '03', 'icon' => 'fa-pencil-ruler', 'title' => 'Design & Prototyping', 'desc' => 'Creation of wireframes, high-fidelity mockups with accessibility compliance. Stakeholder review and formal sign-off process.'],
+                ['num' => '03', 'icon' => 'fa-sitemap', 'title' => 'Architecture & Planning', 'desc' => 'Detailed technical architecture, tech stack selection, and milestone planning. Stakeholder review and implementation plan sign-off.'],
                 ['num' => '04', 'icon' => 'fa-code', 'title' => 'Secure Development', 'desc' => 'Development with OWASP top 10 mitigation. Regular code reviews, static analysis, and security testing integrated into CI/CD pipeline.'],
                 ['num' => '05', 'icon' => 'fa-rocket', 'title' => 'UAT, Deployment & Handover', 'desc' => 'User Acceptance Testing with formal sign-off. Secure deployment with complete documentation, training manuals, and source code handover.'],
             ];
@@ -425,10 +425,12 @@
                 echo '
                     <!-- Card Body -->
                     <div class="bg-white rounded-sm border border-slate-200 p-8 text-center fade-up shadow-sm h-full relative z-10">
-                        <!-- Sequential Animated SVG Border -->
-                        <svg class="absolute inset-0 w-full h-full pointer-events-none z-20 rounded-sm" style="animation: drawBorder'.$index.' 10s linear infinite;">
-                            <rect x="0" y="0" width="100%" height="100%" rx="4" fill="none" stroke="#f59e0b" stroke-width="4" class="seq-border" />
-                        </svg>
+                        <!-- Sequential Animated SVG Border (Shining) -->
+                        <div class="absolute inset-0 w-full h-full pointer-events-none z-20 rounded-sm drop-shadow-[0_0_12px_rgba(245,158,11,0.9)]">
+                            <svg class="w-full h-full" style="animation: drawBorder'.$index.' 10s linear infinite;">
+                                <rect x="0" y="0" width="100%" height="100%" rx="4" fill="none" stroke="#f59e0b" stroke-width="4" class="seq-border" />
+                            </svg>
+                        </div>
 
                         <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-blue-800 text-white text-sm font-bold w-10 h-10 rounded-full flex items-center justify-center border-4 border-white shadow-md z-30">'.$step['num'].'</div>
                         <div class="w-14 h-14 mx-auto rounded-full bg-blue-50 flex items-center justify-center text-blue-800 text-xl mb-5 mt-2 relative z-30">
