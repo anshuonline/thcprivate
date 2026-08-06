@@ -111,7 +111,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         html { scroll-behavior: smooth; }
-        .nav-scrolled { box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1); }
+        .nav-scrolled { background-color: rgba(0,0,0,0.85) !important; backdrop-filter: blur(16px) !important; -webkit-backdrop-filter: blur(16px) !important; border-color: rgba(255,255,255,0.05) !important; box-shadow: 0 4px 30px rgba(0,0,0,0.1); }
+        .nav-scrolled .nav-link { color: #e5e7eb !important; }
+        .nav-scrolled .nav-link:hover { color: #60a5fa !important; }
+        .nav-scrolled .nav-logo-text { color: #ffffff !important; }
+        .nav-scrolled .nav-logo-img { filter: brightness(1) !important; }
+        .nav-scrolled #mobile-menu-btn { color: #ffffff !important; }
+        .nav-scrolled #mobile-menu { background-color: rgba(0,0,0,0.95) !important; border-top-color: rgba(255,255,255,0.1) !important; }
+        .nav-scrolled #mobile-menu .nav-link:hover { background-color: rgba(255,255,255,0.1) !important; color: #60a5fa !important; }
+        .nav-logo-img { filter: brightness(0); transition: filter 0.3s; }
+        .nav-logo-text { transition: color 0.3s; }
         .card-hover { transition: all 0.3s ease; }
         .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.08); }
         .btn-shine { position: relative; overflow: hidden; }
@@ -198,16 +207,16 @@
             <div class="flex justify-between items-center h-16">
                 <div class="flex-shrink-0 flex items-center">
                     <a href="/" class="flex items-center gap-3">
-                        <img src="images/hypecrews logo white.png" alt="The Hype Crews" class="h-9 w-auto bg-brand-900 rounded-md p-1 object-contain">
-                        <span class="font-bold text-lg text-gray-900">The Hype Crews</span>
+                        <img src="images/hypecrews logo white.png" alt="The Hype Crews" class="h-14 w-auto object-contain nav-logo-img">
+                        <span class="font-bold text-xl text-gray-900 nav-logo-text">The Hype Crews</span>
                     </a>
                 </div>
                 <div class="hidden md:flex items-center space-x-6">
-                    <a href="/#about" class="text-base font-semibold text-gray-600 hover:text-brand-600 transition-colors">About</a>
-                    <a href="/#services" class="text-base font-semibold text-gray-600 hover:text-brand-600 transition-colors">Services</a>
-                    <a href="/#how-it-works" class="text-base font-semibold text-gray-600 hover:text-brand-600 transition-colors">How It Works</a>
-                    <a href="/#pricing" class="text-base font-semibold text-gray-600 hover:text-brand-600 transition-colors">Pricing</a>
-                    <a href="/#contact" class="text-base font-semibold text-gray-600 hover:text-brand-600 transition-colors">Contact</a>
+                    <a href="/#about" class="nav-link text-base font-semibold text-gray-600 transition-colors">About</a>
+                    <a href="/#services" class="nav-link text-base font-semibold text-gray-600 transition-colors">Services</a>
+                    <a href="/#how-it-works" class="nav-link text-base font-semibold text-gray-600 transition-colors">How It Works</a>
+                    <a href="/#pricing" class="nav-link text-base font-semibold text-gray-600 transition-colors">Pricing</a>
+                    <a href="/#contact" class="nav-link text-base font-semibold text-gray-600 transition-colors">Contact</a>
                     <a href="/#contact" class="btn-shine inline-flex items-center px-6 py-2.5 border border-transparent text-base font-semibold rounded-md text-white bg-brand-600 hover:bg-brand-700 transition-colors shadow-sm group">
                         <span class="relative z-10">Get Free Quote</span>
                     </a>
@@ -217,13 +226,13 @@
                 </div>
             </div>
         </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 transition-colors duration-300">
             <div class="px-4 pt-2 pb-4 space-y-1">
-                <a href="/#about" class="block px-3 py-2 text-base font-semibold text-gray-700 hover:text-brand-600 hover:bg-gray-50 rounded-md">About</a>
-                <a href="/#services" class="block px-3 py-2 text-base font-semibold text-gray-700 hover:text-brand-600 hover:bg-gray-50 rounded-md">Services</a>
-                <a href="/#how-it-works" class="block px-3 py-2 text-base font-semibold text-gray-700 hover:text-brand-600 hover:bg-gray-50 rounded-md">How It Works</a>
-                <a href="/#pricing" class="block px-3 py-2 text-base font-semibold text-gray-700 hover:text-brand-600 hover:bg-gray-50 rounded-md">Pricing</a>
-                <a href="/#contact" class="block px-3 py-2 text-base font-semibold text-gray-700 hover:text-brand-600 hover:bg-gray-50 rounded-md">Contact</a>
+                <a href="/#about" class="nav-link block px-3 py-2 text-base font-semibold text-gray-700 hover:bg-gray-50 rounded-md transition-colors">About</a>
+                <a href="/#services" class="nav-link block px-3 py-2 text-base font-semibold text-gray-700 hover:bg-gray-50 rounded-md transition-colors">Services</a>
+                <a href="/#how-it-works" class="nav-link block px-3 py-2 text-base font-semibold text-gray-700 hover:bg-gray-50 rounded-md transition-colors">How It Works</a>
+                <a href="/#pricing" class="nav-link block px-3 py-2 text-base font-semibold text-gray-700 hover:bg-gray-50 rounded-md transition-colors">Pricing</a>
+                <a href="/#contact" class="nav-link block px-3 py-2 text-base font-semibold text-gray-700 hover:bg-gray-50 rounded-md transition-colors">Contact</a>
                 <a href="/#contact" class="btn-shine block mt-2 text-center px-5 py-3 text-base font-semibold rounded-md text-white bg-brand-600 hover:bg-brand-700 group">
                     <span class="relative z-10">Get Free Quote</span>
                 </a>
