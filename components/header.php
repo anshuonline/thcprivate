@@ -109,6 +109,9 @@
         }
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Intl Tel Input CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
+    
     <style>
         html { scroll-behavior: smooth; }
         .nav-scrolled { background-color: rgba(0,0,0,0.85) !important; backdrop-filter: blur(16px) !important; -webkit-backdrop-filter: blur(16px) !important; border-color: rgba(255,255,255,0.05) !important; box-shadow: 0 4px 30px rgba(0,0,0,0.1); }

@@ -892,36 +892,71 @@
     }
 </style>
 
+<!-- Intl Tel Input JS -->
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+
 <script>
-    document.getElementById('contact-form').addEventListener('submit', function(e) {
+    // Initialize intl-tel-input on the phone field
+    const phoneInput = document.querySelector("#phone");
+    const iti = window.intlTelInput(phoneInput, {
+        initialCountry: "auto",
+        geoIpLookup: function(success, failure) {
+            fetch("https://ipapi.co/json")
+                .then(function(res) { return res.json(); })
+                .then(function(data) { success(data.country_code); })
+                .catch(function() { success("in"); });
+        },
+        utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+    });
+
+    document.getElementById('contact-form').addEventListener('submit', async function(e) {
         e.preventDefault();
         const form = e.target;
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn.innerHTML;
         const name = form.querySelector('#name').value;
         const email = form.querySelector('#email').value;
-        const phone = form.querySelector('#phone').value;
+        const phone = iti.isValidNumber() ? iti.getNumber() : form.querySelector('#phone').value;
         const service = form.querySelector('#service').value;
         const message = form.querySelector('#message').value;
-        
-        const subject = encodeURIComponent('Official Inquiry from ' + name + ' - ' + service);
-        const body = encodeURIComponent(
-            'Name: ' + name + '\n' +
-            'Email: ' + email + '\n' +
-            'Phone: ' + phone + '\n' +
-            'Service Interest: ' + service + '\n\n' +
-            'Message:\n' + message
-        );
-        
-        window.location.href = 'mailto:support@hypecrews.com?subject=' + subject + '&body=' + body;
-        
         const msgDiv = document.getElementById('form-message');
-        msgDiv.classList.remove('hidden', 'bg-red-50', 'text-red-800');
-        msgDiv.classList.add('bg-emerald-50', 'text-emerald-800');
-        msgDiv.innerText = 'Opening your email client... Your official inquiry details have been prepared.';
+        
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+        msgDiv.classList.add('hidden');
+        
+        try {
+            const response = await fetch('send_email.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ name, email, phone, service, message })
+            });
+            
+            const result = await response.json();
+            
+            msgDiv.classList.remove('hidden', 'bg-red-50', 'text-red-800', 'bg-emerald-50', 'text-emerald-800');
+            if(result.success) {
+                msgDiv.classList.add('bg-emerald-50', 'text-emerald-800');
+                msgDiv.innerText = result.message;
+                form.reset();
+            } else {
+                msgDiv.classList.add('bg-red-50', 'text-red-800');
+                msgDiv.innerText = result.message || 'Something went wrong.';
+            }
+        } catch(error) {
+            msgDiv.classList.remove('hidden', 'bg-emerald-50', 'text-emerald-800');
+            msgDiv.classList.add('bg-red-50', 'text-red-800');
+            msgDiv.innerText = 'Network error. Please try again later.';
+        }
+        
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnText;
         
         setTimeout(() => {
             msgDiv.classList.add('hidden');
-            form.reset();
-        }, 5000);
+        }, 8000);
     });
 </script>
 
