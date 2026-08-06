@@ -1,8 +1,8 @@
 <?php include 'components/header.php'; ?>
 
-<!-- Hero Section -->
 <section class="relative overflow-hidden bg-white" id="home">
-    <!-- Ambient Gradient Blobs -->
+    <!-- Ambient Gradient Blobs & Mandala -->
+    <img src="images/mandala.jpg" alt="" class="absolute -top-20 -left-20 w-[600px] opacity-[0.08] mix-blend-multiply pointer-events-none animate-[spin_120s_linear_infinite]">
     <div class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-blue-100/70 rounded-full blur-[100px] pointer-events-none"></div>
     <div class="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-brand-100/70 rounded-full blur-[100px] pointer-events-none"></div>
     <div class="absolute inset-0 bg-gradient-to-br from-white/60 via-blue-50/30 to-white/80 pointer-events-none"></div>
@@ -54,9 +54,9 @@
 <section class="py-20 bg-white border-b border-gray-200 relative overflow-hidden" id="about">
     <!-- Traditional Indian Ornaments -->
     <!-- Mandala Watermark -->
-    <img src="images/mandala.jpg" alt="" class="absolute -top-32 -right-32 w-96 h-96 opacity-[0.03] mix-blend-multiply pointer-events-none rotate-12">
+    <img src="images/mandala.jpg" alt="" class="absolute -top-32 -right-32 w-[500px] h-[500px] opacity-[0.08] mix-blend-multiply pointer-events-none animate-[spin_100s_linear_infinite]">
     <!-- Spinning Ashoka Chakra SVG -->
-    <div class="absolute -bottom-24 -left-24 w-80 h-80 opacity-[0.04] text-brand-900 pointer-events-none animate-[spin_20s_linear_infinite]">
+    <div class="absolute -bottom-24 -left-24 w-80 h-80 opacity-[0.06] text-brand-900 pointer-events-none animate-[spin_20s_linear_infinite]">
         <svg viewBox="0 0 100 100" class="w-full h-full" fill="none" stroke="currentColor" stroke-width="1.5">
             <circle cx="50" cy="50" r="48"></circle>
             <circle cx="50" cy="50" r="40"></circle>
@@ -154,14 +154,18 @@
 </section>
 
 <!-- Services Section -->
-<section class="py-20 bg-white" id="services">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-3xl mx-auto mb-16 fade-up">
-            <span class="inline-block bg-brand-50 text-brand-700 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide mb-3">Our Services</span>
-            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">
-                Comprehensive Digital Services
+<section class="py-24 bg-gray-50 relative overflow-hidden" id="services">
+    <!-- Ambient Mandalas -->
+    <img src="images/mandala.jpg" alt="" class="absolute top-[-10%] right-[-5%] w-[600px] opacity-[0.05] mix-blend-multiply pointer-events-none animate-[spin_150s_linear_infinite_reverse]">
+    <img src="images/mandala.jpg" alt="" class="absolute bottom-[-5%] left-[-10%] w-[400px] opacity-[0.06] mix-blend-multiply pointer-events-none animate-[spin_100s_linear_infinite]">
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center max-w-3xl mx-auto mb-20 fade-up">
+            <span class="inline-block bg-brand-100 text-brand-700 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider mb-4 shadow-sm border border-brand-200">Our Services</span>
+            <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+                Comprehensive <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-blue-500">Digital Services</span>
             </h2>
-            <p class="mt-4 text-gray-500 text-base leading-relaxed">
+            <p class="mt-6 text-gray-600 text-lg leading-relaxed">
                 From simple business websites to complex enterprise applications, we deliver end-to-end digital solutions that drive growth, improve efficiency, and create exceptional user experiences.
             </p>
         </div>
@@ -245,17 +249,17 @@
 
             foreach ($services as $index => $service) {
                 echo '
-                <div class="bg-white rounded-lg border border-gray-200 overflow-hidden card-hover fade-up group">
-                    <div class="h-44 overflow-hidden relative">
-                        <img src="'.$service['img'].'" alt="'.$service['title'].'" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                        <div class="absolute bottom-3 left-3 bg-white p-2.5 rounded-md shadow text-brand-600">
-                            <i class="fa-solid '.$service['icon'].' text-lg"></i>
+                <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden card-hover fade-up group shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col h-full">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="'.$service['img'].'" alt="'.$service['title'].'" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/20 to-transparent"></div>
+                        <div class="absolute bottom-5 left-5 bg-white/95 backdrop-blur p-3.5 rounded-xl shadow-xl text-brand-600 flex items-center justify-center transform group-hover:-translate-y-2 transition-transform duration-300 border border-gray-100">
+                            <i class="fa-solid '.$service['icon'].' text-2xl"></i>
                         </div>
                     </div>
-                    <div class="p-5">
-                        <h3 class="text-base font-bold text-gray-900 mb-2">'.$service['title'].'</h3>
-                        <p class="text-gray-500 text-sm leading-relaxed">'.$service['desc'].'</p>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <h3 class="text-xl font-extrabold text-gray-900 mb-3 group-hover:text-brand-600 transition-colors">'.$service['title'].'</h3>
+                        <p class="text-gray-600 text-base leading-relaxed flex-1">'.$service['desc'].'</p>
                     </div>
                 </div>';
             }
