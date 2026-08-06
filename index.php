@@ -382,48 +382,48 @@
                 $start_line = $end_card;
                 $end_line = $start_line + $line_percent;
                 
+                $smooth_end = min(96, $end_card + 1);
+                $global_reset_start = 98;
+                $global_reset_end = 100;
+                
                 echo "@keyframes drawBorder{$i} {
                     0%, ".max(0, $start_card - 0.1)."% { stroke-dashoffset: 3000; opacity: 0; }
                     {$start_card}% { stroke-dashoffset: 3000; opacity: 1; }
                     {$end_card}% { stroke-dashoffset: 0; opacity: 1; }
-                    95% { stroke-dashoffset: 0; opacity: 1; }
-                    95.1%, 100% { stroke-dashoffset: 0; opacity: 0; }
+                    97% { stroke-dashoffset: 0; opacity: 1; }
+                    98%, 100% { stroke-dashoffset: 0; opacity: 0; }
                 }\n";
                 
                 echo "@keyframes drawLine{$i} {
                     0%, ".max(0, $start_line - 0.1)."% { width: 0%; opacity: 0; }
                     {$start_line}% { width: 0%; opacity: 1; }
                     {$end_line}% { width: 100%; opacity: 1; }
-                    95% { width: 100%; opacity: 1; }
-                    95.1%, 100% { width: 100%; opacity: 0; }
+                    97% { width: 100%; opacity: 1; }
+                    98%, 100% { width: 100%; opacity: 0; }
                 }\n";
                 
-                $smooth_end = min(100, $end_card + 3);
-                $fade_out_start = 93;
-                $fade_out_end = 96;
-
                 echo "@keyframes cardBg{$i} {
                     0%, {$end_card}% { background-color: #ffffff; }
-                    {$smooth_end}%, {$fade_out_start}% { background-color: #0f172a; } 
-                    {$fade_out_end}%, 100% { background-color: #ffffff; }
+                    {$smooth_end}%, {$global_reset_start}% { background-color: #0f172a; } 
+                    {$global_reset_end}%, 100% { background-color: #ffffff; }
                 }\n";
                 
                 echo "@keyframes textTitle{$i} {
                     0%, {$end_card}% { color: #0f172a; }
-                    {$smooth_end}%, {$fade_out_start}% { color: #ffffff; }
-                    {$fade_out_end}%, 100% { color: #0f172a; }
+                    {$smooth_end}%, {$global_reset_start}% { color: #ffffff; }
+                    {$global_reset_end}%, 100% { color: #0f172a; }
                 }\n";
                 
                 echo "@keyframes textDesc{$i} {
                     0%, {$end_card}% { color: #475569; }
-                    {$smooth_end}%, {$fade_out_start}% { color: #cbd5e1; }
-                    {$fade_out_end}%, 100% { color: #475569; }
+                    {$smooth_end}%, {$global_reset_start}% { color: #cbd5e1; }
+                    {$global_reset_end}%, 100% { color: #475569; }
                 }\n";
                 
                 echo "@keyframes iconBg{$i} {
                     0%, {$end_card}% { background-color: #eff6ff; color: #1e40af; }
-                    {$smooth_end}%, {$fade_out_start}% { background-color: #1e293b; color: #fbbf24; }
-                    {$fade_out_end}%, 100% { background-color: #eff6ff; color: #1e40af; }
+                    {$smooth_end}%, {$global_reset_start}% { background-color: #1e293b; color: #fbbf24; }
+                    {$global_reset_end}%, 100% { background-color: #eff6ff; color: #1e40af; }
                 }\n";
             }
             ?>
