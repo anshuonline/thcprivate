@@ -574,7 +574,8 @@
             </div>
 
             <!-- Growth -->
-            <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden card-scale fade-up shadow-sm hover:shadow-xl transition-all duration-300">
+            <div class="relative bg-white rounded-2xl border border-slate-200 card-scale fade-up shadow-sm hover:shadow-xl transition-all duration-300">
+                <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-emerald-500 to-teal-600 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md z-20 whitespace-nowrap">Recommended</div>
                 <div class="p-6">
                     <h3 class="text-xl font-bold text-slate-900">Growth Plan</h3>
                     <p class="text-xs text-slate-500 mt-2">For growing businesses</p>
@@ -598,58 +599,58 @@
                 </div>
             </div>
 
-            <!-- Enterprise (Featured) -->
+            <!-- Enterprise -->
+            <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden card-scale fade-up shadow-sm hover:shadow-xl transition-all duration-300">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-slate-900">Enterprise</h3>
+                    <p class="text-xs text-slate-500 mt-2">For established brands & companies</p>
+                    <div class="mt-4 flex items-baseline gap-1">
+                        <span class="text-4xl font-black text-slate-900" data-price-inr="49999">₹49,999</span>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-1">One-time payment</p>
+                    
+                    <ul class="space-y-3 mt-6">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-1 text-sm"></i><span class="text-sm text-slate-700 font-medium">Up to 25 Premium Pages</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-1 text-sm"></i><span class="text-sm text-slate-700">Premium UI/UX Design</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-1 text-sm"></i><span class="text-sm text-slate-700">Enterprise Admin Panel</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-1 text-sm"></i><span class="text-sm text-slate-700">E-Commerce Integration</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-1 text-sm"></i><span class="text-sm text-slate-700">Multi-User Management</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-1 text-sm"></i><span class="text-sm text-slate-700">Advanced SEO Optimization</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-1 text-sm"></i><span class="text-sm text-slate-700">Performance Optimization</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-1 text-sm"></i><span class="text-sm text-slate-700">Security & Backup</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-1 text-sm"></i><span class="text-sm text-slate-700">Priority Support (90 Days)</span></li>
+                    </ul>
+                    <a href="#contact" class="mt-8 block w-full text-center py-3 text-sm font-semibold rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-50 transition-all">Choose Plan</a>
+                </div>
+            </div>
+
+            <!-- Custom Solution (Featured / Mesmerizing Loop) -->
             <div class="relative flowing-border rounded-2xl p-[3px] fade-up shadow-[0_0_40px_rgba(59,130,246,0.3)] transform lg:scale-105 z-10 card-scale transition-all duration-300">
                 <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-lg z-20 animate-pulse whitespace-nowrap">Most Popular</div>
                 <div class="bg-slate-900 rounded-[13px] h-full overflow-hidden relative">
                     <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-blue-900/20 to-transparent pointer-events-none"></div>
                     
                     <div class="p-6 relative z-10">
-                        <h3 class="text-xl font-bold text-white">Enterprise</h3>
-                        <p class="text-xs text-slate-400 mt-2">For established brands & companies</p>
+                        <h3 class="text-xl font-bold text-white">Custom Solution</h3>
+                        <p class="text-xs text-slate-400 mt-2">Tailored to your business needs</p>
                         <div class="mt-4 flex items-baseline gap-1">
-                            <span class="text-4xl font-black text-white" data-price-inr="49999">₹49,999</span>
+                            <span class="text-2xl font-black text-white">Fully Customized</span>
                         </div>
-                        <p class="text-xs text-slate-400 mt-1">One-time payment</p>
+                        <p class="text-xs text-slate-400 mt-1">Contact Us</p>
                         
                         <ul class="space-y-3 mt-6">
-                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200 font-medium">Up to 25 Premium Pages</span></li>
-                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200">Premium UI/UX Design</span></li>
-                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200">Enterprise Admin Panel</span></li>
-                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200">E-Commerce Integration</span></li>
-                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200">Multi-User Management</span></li>
-                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200">Advanced SEO Optimization</span></li>
-                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200">Performance Optimization</span></li>
-                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200">Security & Backup</span></li>
-                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200">Priority Support (90 Days)</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200 font-medium">Fully Custom Development</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200">Custom Dashboard</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200">CRM / ERP Development</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200">Custom API Development</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200">AI Integration</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200">Cloud Deployment</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200">Mobile App Integration</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200">Dedicated Technical Support</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-blue-400 mt-1 text-sm"></i><span class="text-sm text-slate-200">SLA & Long-Term Maintenance</span></li>
                         </ul>
-                        <a href="#contact" class="mt-8 block w-full text-center py-3 text-sm font-semibold rounded-xl text-white bg-blue-600 hover:bg-blue-500 transition-all shadow-lg btn-shine">Choose Plan</a>
+                        <a href="#contact" class="mt-8 block w-full text-center py-3 text-sm font-semibold rounded-xl text-white bg-blue-600 hover:bg-blue-500 transition-all shadow-lg btn-shine">Contact Sales</a>
                     </div>
-                </div>
-            </div>
-
-            <!-- Custom Solution -->
-            <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden card-scale fade-up shadow-sm hover:shadow-xl transition-all duration-300">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-slate-900">Custom Solution</h3>
-                    <p class="text-xs text-slate-500 mt-2">Tailored to your business needs</p>
-                    <div class="mt-4 flex items-baseline gap-1">
-                        <span class="text-2xl font-black text-slate-900">Fully Customized</span>
-                    </div>
-                    <p class="text-xs text-slate-400 mt-1">Contact Us</p>
-                    
-                    <ul class="space-y-3 mt-6">
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-slate-400 mt-1 text-sm"></i><span class="text-sm text-slate-700">Fully Custom Development</span></li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-slate-400 mt-1 text-sm"></i><span class="text-sm text-slate-700">Custom Dashboard</span></li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-slate-400 mt-1 text-sm"></i><span class="text-sm text-slate-700">CRM / ERP Development</span></li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-slate-400 mt-1 text-sm"></i><span class="text-sm text-slate-700">Custom API Development</span></li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-slate-400 mt-1 text-sm"></i><span class="text-sm text-slate-700">AI Integration</span></li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-slate-400 mt-1 text-sm"></i><span class="text-sm text-slate-700">Cloud Deployment</span></li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-slate-400 mt-1 text-sm"></i><span class="text-sm text-slate-700">Mobile App Integration</span></li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-slate-400 mt-1 text-sm"></i><span class="text-sm text-slate-700">Dedicated Technical Support</span></li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-slate-400 mt-1 text-sm"></i><span class="text-sm text-slate-700">SLA & Long-Term Maintenance</span></li>
-                    </ul>
-                    <a href="#contact" class="mt-8 block w-full text-center py-3 text-sm font-semibold rounded-xl text-brand-600 bg-brand-50 hover:bg-brand-100 transition-all">Contact Sales</a>
                 </div>
             </div>
 
