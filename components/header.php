@@ -210,7 +210,7 @@
                         <span class="font-bold text-xl text-white nav-logo-text">The Hype Crews</span>
                     </a>
                 </div>
-                <div class="hidden md:flex items-center space-x-6">
+                <div class="hidden lg:flex items-center space-x-6">
                     <a href="/#about" class="nav-link text-base font-semibold text-gray-300 hover:text-white transition-colors">About</a>
                     <a href="/#services" class="nav-link text-base font-semibold text-gray-300 hover:text-white transition-colors">Services</a>
                     <a href="/#how-it-works" class="nav-link text-base font-semibold text-gray-300 hover:text-white transition-colors">How It Works</a>
@@ -220,7 +220,7 @@
                         <span class="relative z-10">Get Free Quote</span>
                     </a>
                 </div>
-                <div class="md:hidden">
+                <div class="lg:hidden">
                     <button id="mobile-menu-btn" class="text-gray-300 hover:text-white p-2"><i class="fa-solid fa-bars text-xl"></i></button>
                 </div>
             </div>
@@ -229,7 +229,7 @@
     </nav>
     
     <!-- Mobile Menu Overlay -->
-    <div id="mobile-menu" class="fixed inset-0 z-[100] bg-gray-900 bg-opacity-95 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden flex flex-col pt-20 pb-6 px-6">
+    <div id="mobile-menu" class="fixed inset-0 z-[100] bg-gray-900 bg-opacity-95 transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden flex flex-col pt-20 pb-6 px-6">
         <button id="mobile-menu-close" class="absolute top-4 right-4 text-gray-400 hover:text-white p-2"><i class="fa-solid fa-xmark text-3xl"></i></button>
         <div class="flex-1 flex flex-col justify-center space-y-6 text-center">
             <a href="/#about" class="mobile-link text-2xl font-bold text-gray-300 hover:text-white transition-colors">About</a>
