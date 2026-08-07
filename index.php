@@ -124,88 +124,113 @@
     </div>
 </section>
 
-<!-- About Us Section - Government Style -->
-<section class="py-24 bg-white border-b border-slate-200 relative overflow-hidden" id="about">
-    <!-- Subtle watermark pattern -->
-    <div class="absolute inset-0 opacity-[0.02] pointer-events-none">
-        <div class="absolute top-0 left-0 w-full h-full" style="background-image: url('data:image/svg+xml,%3Csvg width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cg fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg fill=%22%231e3a5f%22 fill-opacity=%221%22%3E%3Cpath d=%22M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
-    </div>
+<!-- About Us Section - Premium Agency Style -->
+<section class="py-24 bg-white relative overflow-hidden" id="about">
+    <!-- Modern background blobs -->
+    <div class="absolute top-0 right-0 -mt-20 -mr-20 w-96 h-96 bg-brand-50 rounded-full blur-3xl opacity-50 pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-blue-50 rounded-full blur-3xl opacity-50 pointer-events-none"></div>
     
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <!-- Left Side: Copy & Stats -->
             <div class="fade-up">
-                <span class="inline-block bg-blue-50 text-blue-800 text-xs font-bold px-4 py-2 rounded-sm uppercase tracking-widest mb-4 border-l-4 border-blue-700">About the Organization</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 leading-tight">
-                    Serving the Nation Through Digital Excellence
+                <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-50 text-brand-700 text-sm font-semibold mb-6">
+                    <span class="w-2 h-2 rounded-full bg-brand-600 animate-pulse"></span>
+                    About The Agency
+                </span>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight tracking-tight">
+                    Empowering Global Brands Through <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-blue-500">Digital Excellence</span>
                 </h2>
-                <div class="w-20 h-1 bg-amber-400 mt-4 mb-6"></div>
-                <p class="mt-4 text-slate-600 text-base leading-relaxed">
-                    Established in 2022 in Guwahati, Assam, The Hype Crews is a registered private limited company dedicated to providing secure, scalable, and accessible digital solutions. We serve government departments, public sector units, and enterprises across India with a commitment to transparency and technological excellence.
+                <p class="mt-6 text-gray-600 text-lg leading-relaxed">
+                    Established in 2022, The Hype Crews is a premium digital agency dedicated to engineering secure, scalable, and stunning digital experiences. We partner with forward-thinking enterprises to accelerate their digital transformation and drive measurable growth.
                 </p>
-                <p class="mt-4 text-slate-600 text-base leading-relaxed">
-                    Our team of security-cleared professionals ensures every project meets the highest standards of data protection, accessibility guidelines, and performance benchmarks mandated for government and enterprise applications.
+                <p class="mt-4 text-gray-600 text-lg leading-relaxed">
+                    Our team of elite developers and designers ensures every project meets the highest standards of modern web architecture, intuitive UX/UI, and lightning-fast performance.
                 </p>
                 
-                <div class="mt-8 grid grid-cols-2 gap-4">
-                    <div class="bg-slate-50 border border-slate-200 rounded-sm p-5">
-                        <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold mb-1">Corporate Identity</div>
-                        <div class="text-sm font-bold text-slate-900">U73100AS2026PTC029838</div>
+                <div class="mt-10 grid grid-cols-2 gap-6">
+                    <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+                        <div class="w-10 h-10 bg-brand-50 rounded-xl flex items-center justify-center mb-4 text-brand-600">
+                            <i class="fa-solid fa-fingerprint text-xl"></i>
+                        </div>
+                        <div class="text-xs text-gray-400 uppercase tracking-wider font-bold mb-1">Corporate Identity</div>
+                        <div class="text-sm font-bold text-gray-900">U73100AS2026PTC029838</div>
                     </div>
-                    <div class="bg-slate-50 border border-slate-200 rounded-sm p-5">
-                        <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold mb-1">Registered Office</div>
-                        <div class="text-sm font-bold text-slate-900">Golaghat, Assam, 785621</div>
+                    <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+                        <div class="w-10 h-10 bg-brand-50 rounded-xl flex items-center justify-center mb-4 text-brand-600">
+                            <i class="fa-solid fa-location-dot text-xl"></i>
+                        </div>
+                        <div class="text-xs text-gray-400 uppercase tracking-wider font-bold mb-1">Registered Office</div>
+                        <div class="text-sm font-bold text-gray-900">Golaghat, Assam, 785621</div>
                     </div>
-                    <div class="bg-slate-50 border border-slate-200 rounded-sm p-5">
-                        <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold mb-1">Establishment</div>
-                        <div class="text-sm font-bold text-slate-900">2022, Guwahati, Assam</div>
+                    <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+                        <div class="w-10 h-10 bg-brand-50 rounded-xl flex items-center justify-center mb-4 text-brand-600">
+                            <i class="fa-regular fa-calendar-check text-xl"></i>
+                        </div>
+                        <div class="text-xs text-gray-400 uppercase tracking-wider font-bold mb-1">Establishment</div>
+                        <div class="text-sm font-bold text-gray-900">2022, Guwahati, Assam</div>
                     </div>
-                    <div class="bg-slate-50 border border-slate-200 rounded-sm p-5">
-                        <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold mb-1">Jurisdiction</div>
-                        <div class="text-sm font-bold text-slate-900">Pan-India & International</div>
+                    <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+                        <div class="w-10 h-10 bg-brand-50 rounded-xl flex items-center justify-center mb-4 text-brand-600">
+                            <i class="fa-solid fa-globe text-xl"></i>
+                        </div>
+                        <div class="text-xs text-gray-400 uppercase tracking-wider font-bold mb-1">Jurisdiction</div>
+                        <div class="text-sm font-bold text-gray-900">Pan-India & International</div>
                     </div>
                 </div>
             </div>
-            <div class="fade-up">
-                <div class="bg-slate-50 border border-slate-200 rounded-sm p-8 shadow-sm">
-                    <h3 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
-                        <span class="w-8 h-8 bg-blue-800 text-white rounded-full flex items-center justify-center text-sm">1</span>
+
+            <!-- Right Side: Mission & Values Card -->
+            <div class="fade-up relative">
+                <!-- Decorative glow behind card -->
+                <div class="absolute -inset-1 bg-gradient-to-r from-brand-600 to-blue-500 rounded-[2.5rem] blur opacity-20"></div>
+                
+                <div class="relative bg-brand-900 border border-brand-700 rounded-3xl p-8 sm:p-10 shadow-2xl overflow-hidden">
+                    <!-- Card Background Pattern -->
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-brand-800 rounded-full blur-3xl opacity-50 -translate-y-1/2 translate-x-1/2"></div>
+                    
+                    <h3 class="text-2xl font-bold text-white mb-8 flex items-center gap-3 relative z-10">
+                        <span class="w-10 h-10 bg-gradient-to-br from-brand-500 to-blue-600 text-white rounded-xl flex items-center justify-center text-lg shadow-lg">
+                            <i class="fa-solid fa-rocket"></i>
+                        </span>
                         Mission & Values
                     </h3>
-                    <div class="space-y-5">
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                    
+                    <div class="space-y-6 relative z-10">
+                        <div class="flex items-start gap-4 group">
+                            <div class="w-8 h-8 rounded-full bg-brand-800 border border-brand-600 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-brand-600 transition-colors">
+                                <i class="fa-solid fa-check text-white text-xs"></i>
                             </div>
                             <div>
-                                <span class="text-sm font-bold text-slate-900">Transparency First</span>
-                                <p class="text-xs text-slate-600 mt-0.5">Clear communication, honest pricing, no hidden charges. Every line of code is documented.</p>
+                                <span class="text-base font-bold text-white">Transparency First</span>
+                                <p class="text-sm text-brand-200 mt-1 leading-relaxed">Clear communication, honest pricing, and no hidden charges. We treat your project like our own.</p>
                             </div>
                         </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                        <div class="flex items-start gap-4 group">
+                            <div class="w-8 h-8 rounded-full bg-brand-800 border border-brand-600 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-brand-600 transition-colors">
+                                <i class="fa-solid fa-check text-white text-xs"></i>
                             </div>
                             <div>
-                                <span class="text-sm font-bold text-slate-900">Security & Compliance</span>
-                                <p class="text-xs text-slate-600 mt-0.5">GDPR, ISO standards, and Indian IT Act compliance built into every project from day one.</p>
+                                <span class="text-base font-bold text-white">Premium Quality</span>
+                                <p class="text-sm text-brand-200 mt-1 leading-relaxed">We don't compromise on design or code. Every product we deliver is highly optimized and pixel-perfect.</p>
                             </div>
                         </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                        <div class="flex items-start gap-4 group">
+                            <div class="w-8 h-8 rounded-full bg-brand-800 border border-brand-600 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-brand-600 transition-colors">
+                                <i class="fa-solid fa-check text-white text-xs"></i>
                             </div>
                             <div>
-                                <span class="text-sm font-bold text-slate-900">Accessible by Design</span>
-                                <p class="text-xs text-slate-600 mt-0.5">WCAG 2.1 compliance for all government-facing applications. Inclusive digital experiences.</p>
+                                <span class="text-base font-bold text-white">Security & Compliance</span>
+                                <p class="text-sm text-brand-200 mt-1 leading-relaxed">Enterprise-grade security standards built into the architecture from day one.</p>
                             </div>
                         </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                        <div class="flex items-start gap-4 group">
+                            <div class="w-8 h-8 rounded-full bg-brand-800 border border-brand-600 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-brand-600 transition-colors">
+                                <i class="fa-solid fa-check text-white text-xs"></i>
                             </div>
                             <div>
-                                <span class="text-sm font-bold text-slate-900">Made in India</span>
-                                <p class="text-xs text-slate-600 mt-0.5">Proudly contributing to Digital India. All data stored on Indian servers (MeitY empanelled).</p>
+                                <span class="text-base font-bold text-white">Continuous Innovation</span>
+                                <p class="text-sm text-brand-200 mt-1 leading-relaxed">Leveraging the latest technologies like Next.js, AI, and Cloud infrastructure to keep you ahead.</p>
                             </div>
                         </div>
                     </div>
