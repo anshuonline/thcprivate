@@ -1,51 +1,126 @@
 <?php include 'components/header.php'; ?>
 <link rel="stylesheet" href="css/wp-packages.css?v=<?php echo time(); ?>">
 
-<!-- Hero Section -->
-<section class="wp-hero-section">
-    <!-- 3D Sphere Background -->
-    <div class="wp-hero-sphere"></div>
+<!-- Modern Hero Section (matching homepage layout) -->
+<section class="relative overflow-hidden bg-white min-h-[90vh] flex items-center" id="home">
+    <!-- Subtle geometric background pattern -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+        <div class="absolute top-0 left-0 w-full h-full" style="background-image: radial-gradient(circle at 25px 25px, #1e3a5f 1px, transparent 0); background-size: 50px 50px;"></div>
+    </div>
     
-    <!-- Floating Particles -->
+    <!-- Optimized gradient blobs -->
+    <div class="absolute top-[-20%] right-[-15%] w-[70%] h-[70%] bg-gradient-to-br from-blue-50 via-blue-50/30 to-transparent rounded-full pointer-events-none"></div>
+    <div class="absolute bottom-[-15%] left-[-10%] w-[50%] h-[50%] bg-gradient-to-tr from-slate-50 via-slate-50/20 to-transparent rounded-full pointer-events-none"></div>
+    
+    <!-- Floating Particles (from wp-packages.css) -->
     <div class="wp-particle wp-particle-1"></div>
     <div class="wp-particle wp-particle-2"></div>
     <div class="wp-particle wp-particle-3"></div>
     <div class="wp-particle wp-particle-4"></div>
-
-    <!-- Dot Pattern -->
-    <div class="wp-hero-dots"></div>
-    <!-- Main Content -->
-    <div class="wp-hero-container">
-        <div class="wp-hero-grid">
-            <!-- LEFT COLUMN -->
-            <div class="wp-hero-left">
-                <div class="wp-hero-badge"><i class="fa-brands fa-wordpress"></i> WordPress Excellence</div>
-                <h1 class="wp-hero-heading">Premium<br><span>WordPress</span><br>Solutions</h1>
-                <p class="wp-hero-subtext">From lightning-fast landing pages to complex e-commerce platforms. We build scalable, secure, and beautiful WordPress websites tailored to your exact needs.</p>
-                <div class="wp-hero-btns">
-                    <a href="#packages" class="wp-hero-btn-primary"><i class="fa-solid fa-rocket"></i> View Packages</a>
-                    <a href="#contact" class="wp-hero-btn-outline"><i class="fa-regular fa-message"></i> Get Custom Quote</a>
-                </div>
-                <div class="wp-hero-trust">
-                    <div class="wp-hero-avatars">
-                        <img src="images/avatar1.jpg" alt=""><img src="images/avatar2.jpg" alt=""><img src="images/avatar3.jpg" alt=""><img src="images/avatar4.jpg" alt="">
-                        <div class="wp-hero-avatar-plus">+</div>
+    
+    <!-- Thin decorative lines -->
+    <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-900 via-blue-600 to-blue-900"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-16 md:py-24 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <!-- Left Content -->
+            <div class="order-2 lg:order-1">
+                <!-- Badge -->
+                <div class="inline-flex items-center gap-3 bg-slate-50 border border-slate-200 rounded-sm px-4 py-2 mb-8 shadow-sm">
+                    <div class="flex items-center gap-1.5">
+                        <i class="fa-brands fa-wordpress text-[#21759b]"></i>
                     </div>
-                    <div class="wp-hero-trust-text"><strong>524+</strong> Indian businesses launched<br><span class="wp-hero-star">★</span> <strong>4.9/5</strong> average client rating</div>
+                    <span class="text-slate-700 text-xs font-semibold uppercase tracking-widest">WordPress Excellence</span>
+                </div>
+                
+                <!-- Heading -->
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight tracking-tight">
+                    Premium
+                    <span class="relative inline-block">
+                        <span class="relative z-10 text-[#21759b]">WordPress</span>
+                        <span class="absolute bottom-1 left-0 w-full h-3 bg-blue-200/50 -z-0"></span>
+                    </span><br>
+                    Solutions
+                </h1>
+                
+                <!-- Subtext -->
+                <p class="mt-6 text-base md:text-lg text-slate-600 leading-relaxed max-w-xl font-medium">
+                    From lightning-fast landing pages to complex e-commerce platforms. We build scalable, secure, and beautiful WordPress websites tailored to your exact needs.
+                </p>
+                
+                <!-- CTA buttons -->
+                <div class="mt-10 flex flex-col sm:flex-row gap-4">
+                    <a href="#packages" class="group inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold rounded-sm text-white bg-[#21759b] hover:bg-[#1a5f7e] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 border border-[#1a5f7e]">
+                        <i class="fa-solid fa-rocket mr-2"></i>
+                        <span>View Packages</span>
+                    </a>
+                    <a href="#contact" class="inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold rounded-sm text-slate-700 bg-white border-2 border-slate-300 hover:bg-slate-50 hover:border-[#21759b] transition-all duration-300 shadow-sm">
+                        <i class="fa-regular fa-message text-[#21759b] mr-2"></i>
+                        Get Custom Quote
+                    </a>
+                </div>
+                
+                <!-- Social Proof -->
+                <div class="mt-8 flex flex-col sm:flex-row items-center sm:items-start gap-4">
+                    <div class="flex -space-x-2">
+                        <img src="images/avatar1.jpg" class="w-8 h-8 rounded-full border-2 border-white relative z-40 object-cover" alt="">
+                        <img src="images/avatar2.jpg" class="w-8 h-8 rounded-full border-2 border-white relative z-30 object-cover" alt="">
+                        <img src="images/avatar3.jpg" class="w-8 h-8 rounded-full border-2 border-white relative z-20 object-cover" alt="">
+                        <img src="images/avatar4.jpg" class="w-8 h-8 rounded-full border-2 border-white relative z-10 object-cover" alt="">
+                        <div class="w-8 h-8 rounded-full bg-[#21759b] text-white flex items-center justify-center text-[10px] font-bold border-2 border-white relative z-0">+</div>
+                    </div>
+                    <div class="text-xs sm:text-sm text-slate-600 font-medium pt-1">
+                        <span class="font-bold text-slate-900">524+</span> Indian businesses launched <span class="mx-1 text-slate-300">•</span> <span class="font-bold text-[#f59e0b]">★ 4.9/5</span> average client rating
+                    </div>
+                </div>
+                
+                <!-- Bottom Feature Bar (Inline Version for Hero) -->
+                <div class="mt-14 grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-slate-200 pt-10">
+                    <div>
+                        <div class="text-xl font-bold text-slate-900"><i class="fa-solid fa-shield-halved text-[#21759b] mb-1"></i></div>
+                        <div class="text-[10px] font-semibold text-slate-500 uppercase tracking-wide">100% Secure</div>
+                    </div>
+                    <div>
+                        <div class="text-xl font-bold text-slate-900"><i class="fa-solid fa-headset text-[#21759b] mb-1"></i></div>
+                        <div class="text-[10px] font-semibold text-slate-500 uppercase tracking-wide">Dedicated Support</div>
+                    </div>
+                    <div>
+                        <div class="text-xl font-bold text-slate-900"><i class="fa-solid fa-bolt text-[#21759b] mb-1"></i></div>
+                        <div class="text-[10px] font-semibold text-slate-500 uppercase tracking-wide">Fast Turnaround</div>
+                    </div>
+                    <div>
+                        <div class="text-xl font-bold text-slate-900"><i class="fa-solid fa-code text-[#21759b] mb-1"></i></div>
+                        <div class="text-[10px] font-semibold text-slate-500 uppercase tracking-wide">Clean Code</div>
+                    </div>
                 </div>
             </div>
-            <!-- RIGHT COLUMN -->
-            <div class="wp-hero-right"><img src="images/placeholder3.webp" alt="WordPress Services" class="wp-hero-img"></div>
+            
+            <!-- Right side - Image Placeholder -->
+            <div class="order-1 lg:order-2 flex justify-center lg:justify-end">
+                <div class="relative w-full max-w-lg">
+                    <div class="relative z-10 rounded-sm overflow-hidden shadow-2xl border-4 border-white bg-slate-100">
+                        <img 
+                            src="images/placeholder3.webp" 
+                            alt="WordPress Services" 
+                            class="w-full h-auto object-cover relative z-10 transition-transform duration-1000 hover:scale-105"
+                        >
+                        <!-- Overlay gradient for depth -->
+                        <div class="absolute inset-0 bg-gradient-to-tr from-blue-900/10 to-transparent z-20 pointer-events-none"></div>
+                    </div>
+                    <!-- Decorative elements behind the image -->
+                    <div class="absolute -top-4 -right-4 w-full h-full border-2 border-[#21759b]/30 rounded-sm z-0"></div>
+                    <div class="absolute -bottom-4 -left-4 w-full h-full border-2 border-slate-300 rounded-sm z-0"></div>
+                </div>
+            </div>
+            
         </div>
     </div>
-    <!-- Bottom Feature Bar -->
-    <div class="wp-hero-bar">
-        <div class="wp-hero-bar-inner">
-            <div class="wp-hero-bar-item"><div class="wp-hero-bar-icon"><i class="fa-solid fa-shield-halved"></i></div><div><div class="wp-hero-bar-title">100% Secure</div><div class="wp-hero-bar-desc">SSL &amp; WAF Protected</div></div></div>
-            <div class="wp-hero-bar-item"><div class="wp-hero-bar-icon"><i class="fa-solid fa-headset"></i></div><div><div class="wp-hero-bar-title">Dedicated Support</div><div class="wp-hero-bar-desc">Mon–Sat, 10AM – 7PM IST</div></div></div>
-            <div class="wp-hero-bar-item"><div class="wp-hero-bar-icon"><i class="fa-solid fa-bolt"></i></div><div><div class="wp-hero-bar-title">Fast Turnaround</div><div class="wp-hero-bar-desc">Milestone-Based Delivery</div></div></div>
-            <div class="wp-hero-bar-item wp-hero-bar-item-last"><div class="wp-hero-bar-icon"><i class="fa-solid fa-code"></i></div><div><div class="wp-hero-bar-title">Clean Code</div><div class="wp-hero-bar-desc">Documented &amp; Auditable</div></div></div>
-        </div>
+    
+    <!-- Bottom subtle wave -->
+    <div class="absolute bottom-0 left-0 right-0 pointer-events-none">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" class="w-full h-auto">
+            <path fill="#f8fafc" fill-opacity="1" d="M0,40 C360,60 1080,20 1440,40 L1440,60 L0,60 Z"></path>
+        </svg>
     </div>
 </section>
 
