@@ -814,13 +814,11 @@
                 </div>
 
                 <ul class="mt-8 space-y-4 text-sm text-slate-600">
-                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Custom Personal Branding</li>
-                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Responsive Landing Pages</li>
-                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>AI-Powered Content Optimization</li>
-                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Basic SEO & Google Analytics</li>
-                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Secure Contact Forms</li>
-                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Global CDN & Fast Hosting</li>
-                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>1 Month Free Maintenance</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>100% Custom Tailored Design</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Choose Features You Need</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Flexible Page Counts</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Mobile Responsive Built-in</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Pay Only For What You Use</li>
                 </ul>
 
                 <a href="#contact"
@@ -881,17 +879,11 @@
                 </div>
 
                 <ul class="mt-8 space-y-4 text-sm text-slate-600">
-
-                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Business Website</li>
-
-                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Admin Dashboard</li>
-
-                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>CMS Integration</li>
-
-                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>SEO Optimization</li>
-
-                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Priority Support</li>
-
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Custom Architecture Setup</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Select Your Integrations</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Scalable Tech Stack Options</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Dedicated CMS (Optional)</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Adjustable Support Plans</li>
                 </ul>
 
                 <a href="#contact"
@@ -945,17 +937,11 @@
                 </div>
 
                 <ul class="mt-8 space-y-4 text-sm text-slate-600">
-
-                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Custom Web Applications</li>
-
-                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Enterprise Dashboard</li>
-
-                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>API Integrations</li>
-
-                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Advanced Security</li>
-
-                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Dedicated Support</li>
-
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Fully Bespoke Development</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Unlimited Custom Features</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Advanced Custom Security</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Bring Your Own APIs</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Tailored Maintenance SLAs</li>
                 </ul>
 
                 <a href="#contact"
