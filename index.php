@@ -724,9 +724,7 @@
 
         <section class="relative mt-24 pb-28 pt-8 px-4 overflow-hidden">
 
-    <!-- Background Blur -->
-    <div class="absolute -top-32 -left-32 w-80 h-80 bg-blue-200/40 rounded-full blur-[120px]"></div>
-    <div class="absolute -bottom-32 -right-32 w-80 h-80 bg-cyan-200/40 rounded-full blur-[120px]"></div>
+
 
     <div class="relative z-10">
 
