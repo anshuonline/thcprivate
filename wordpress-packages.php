@@ -353,6 +353,7 @@
         if(phoneInput) {
             window.intlTelInput(phoneInput, {
                 initialCountry: "in",
+                preferredCountries: ["in", "us", "gb"],
                 separateDialCode: true,
                 utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js"
             });

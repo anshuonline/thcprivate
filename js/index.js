@@ -4,6 +4,7 @@ let iti;
 if (phoneInput) {
     iti = window.intlTelInput(phoneInput, {
         initialCountry: "auto",
+        preferredCountries: ["in", "us", "gb"],
         separateDialCode: true,
         geoIpLookup: function(success, failure) {
             fetch("https://get.geojs.io/v1/ip/country.json")
