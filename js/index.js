@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function() {
     planButtons.forEach(btn => {
         btn.addEventListener('click', function() {
             // Find the closest card
-            const card = this.closest('.bg-white, .bg-slate-900');
+            const card = this.closest('.group, .bg-white, .bg-slate-900');
             if(card && serviceSelect) {
                 const titleEl = card.querySelector('h3, h4');
                 if(titleEl) {

@@ -782,7 +782,7 @@
             <!-- Card 1 -->
 
             <div
-                class="group relative overflow-hidden rounded-3xl border border-white/60 bg-white/80 backdrop-blur-xl p-8 shadow-[0_15px_60px_rgba(15,23,42,.08)] transition duration-500 hover:-translate-y-3 hover:shadow-[0_25px_80px_rgba(37,99,235,.15)]">
+                class="group flex flex-col h-full relative overflow-hidden rounded-3xl border border-white/60 bg-white/80 backdrop-blur-xl p-8 shadow-[0_15px_60px_rgba(15,23,42,.08)] transition duration-500 hover:-translate-y-3 hover:shadow-[0_25px_80px_rgba(37,99,235,.15)]">
 
                 <div
                     class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-cyan-400">
@@ -808,19 +808,11 @@
                     Individuals
                 </h3>
 
-                <div class="mt-6">
-
-                    <div
-                        class="text-5xl font-black bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
-
-                        Under
-
-                    </div>
-
-                    <div class="text-3xl font-black text-slate-900 mt-1">
+                <div class="mt-6 flex flex-col justify-center h-24">
+                    <div class="text-xl font-bold text-slate-500">Under</div>
+                    <div class="text-4xl md:text-5xl font-black bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent mt-1">
                         <span data-price-inr="15000">₹15,000</span>
                     </div>
-
                 </div>
 
                 <ul class="mt-8 space-y-4 text-sm text-slate-600">
@@ -838,12 +830,11 @@
                 </ul>
 
                 <a href="#contact"
-                    class="mt-10 flex justify-center items-center rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 px-5 py-3 font-semibold text-white shadow-lg transition hover:scale-105">
-
-                    Get Free Quote
-
-                    <i class="fa-solid fa-arrow-right ml-2"></i>
-
+                    class="mt-auto pt-6">
+                    <div class="flex justify-center items-center rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 px-5 py-3 font-semibold text-white shadow-lg transition hover:scale-105 w-full">
+                        Get Free Quote
+                        <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </div>
                 </a>
 
             </div>
@@ -851,7 +842,7 @@
             <!-- Card 2 -->
 
             <div
-                class="group relative overflow-hidden rounded-3xl border-2 border-blue-500 bg-white/90 backdrop-blur-xl p-8 scale-105 shadow-[0_25px_80px_rgba(37,99,235,.15)] transition duration-500 hover:-translate-y-3">
+                class="group flex flex-col h-full relative overflow-hidden rounded-3xl border-2 border-blue-500 bg-white/90 backdrop-blur-xl p-8 scale-105 shadow-[0_25px_80px_rgba(37,99,235,.15)] transition duration-500 hover:-translate-y-3">
 
                 <div
                     class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600 to-cyan-500">
@@ -886,22 +877,13 @@
 
                 </h3>
 
-                <div class="mt-6">
-
-                    <div
-                        class="text-5xl font-black bg-gradient-to-r from-emerald-500 to-teal-500 bg-clip-text text-transparent">
-
-                        ₹25K
-
+                <div class="mt-6 flex flex-col justify-center h-24">
+                    <div class="text-4xl md:text-5xl font-black bg-gradient-to-r from-emerald-500 to-teal-500 bg-clip-text text-transparent">
+                        <span data-price-inr="25000">₹25,000</span>
                     </div>
-
-                    <p class="font-semibold text-slate-500 mt-2">
-
-                        up to
-                        <span data-price-inr="50000">₹50K</span>
-
+                    <p class="font-semibold text-slate-500 mt-1">
+                        up to <span data-price-inr="50000">₹50,000</span>
                     </p>
-
                 </div>
 
                 <ul class="mt-8 space-y-4 text-sm text-slate-600">
@@ -919,12 +901,11 @@
                 </ul>
 
                 <a href="#contact"
-                    class="mt-10 flex justify-center items-center rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 px-5 py-3 font-semibold text-white shadow-lg transition hover:scale-105">
-
-                    Get Free Quote
-
-                    <i class="fa-solid fa-arrow-right ml-2"></i>
-
+                    class="mt-auto pt-6">
+                    <div class="flex justify-center items-center rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 px-5 py-3 font-semibold text-white shadow-lg transition hover:scale-105 w-full">
+                        Get Free Quote
+                        <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </div>
                 </a>
 
             </div>
@@ -932,7 +913,7 @@
             <!-- Card 3 -->
 
             <div
-                class="group relative overflow-hidden rounded-3xl border border-white/60 bg-white/80 backdrop-blur-xl p-8 shadow-[0_15px_60px_rgba(15,23,42,.08)] transition duration-500 hover:-translate-y-3 hover:shadow-[0_25px_80px_rgba(139,92,246,.15)]">
+                class="group flex flex-col h-full relative overflow-hidden rounded-3xl border border-white/60 bg-white/80 backdrop-blur-xl p-8 shadow-[0_15px_60px_rgba(15,23,42,.08)] transition duration-500 hover:-translate-y-3 hover:shadow-[0_25px_80px_rgba(139,92,246,.15)]">
 
                 <div
                     class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-600 to-pink-500">
@@ -960,22 +941,13 @@
 
                 </h3>
 
-                <div class="mt-6">
-
-                    <div
-                        class="text-5xl font-black bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
-
-                        ₹50K
-
+                <div class="mt-6 flex flex-col justify-center h-24">
+                    <div class="text-4xl md:text-5xl font-black bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
+                        <span data-price-inr="50000">₹50,000</span>
                     </div>
-
-                    <p class="font-semibold text-slate-500 mt-2">
-
-                        up to
-                        <span data-price-inr="150000">₹1.5L</span>
-
+                    <p class="font-semibold text-slate-500 mt-1">
+                        up to <span data-price-inr="150000">₹1,50,000</span>
                     </p>
-
                 </div>
 
                 <ul class="mt-8 space-y-4 text-sm text-slate-600">
@@ -993,12 +965,11 @@
                 </ul>
 
                 <a href="#contact"
-                    class="mt-10 flex justify-center items-center rounded-xl bg-gradient-to-r from-purple-600 to-pink-500 px-5 py-3 font-semibold text-white shadow-lg transition hover:scale-105">
-
-                    Get Free Quote
-
-                    <i class="fa-solid fa-arrow-right ml-2"></i>
-
+                    class="mt-auto pt-6">
+                    <div class="flex justify-center items-center rounded-xl bg-gradient-to-r from-purple-600 to-pink-500 px-5 py-3 font-semibold text-white shadow-lg transition hover:scale-105 w-full">
+                        Get Free Quote
+                        <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </div>
                 </a>
 
             </div>
