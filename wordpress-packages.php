@@ -1,5 +1,5 @@
 <?php include 'components/header.php'; ?>
-<link rel="stylesheet" href="css/wp-packages.css">
+<link rel="stylesheet" href="css/wp-packages.css?v=<?php echo time(); ?>">
 
 <!-- Hero Section -->
 <section class="wp-hero-section">
