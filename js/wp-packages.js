@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.addEventListener('click', function(e) {
                 const packageTitle = this.getAttribute('data-package');
                 if (packageTitle) {
-                    // Make sure the option exists, or create it if not
                     let optionExists = false;
                     Array.from(subjectSelect.options).forEach(opt => {
                         if (opt.value === `WordPress - ${packageTitle}`) {
@@ -31,6 +30,21 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Math Captcha Logic
+    const captchaQuestion = document.getElementById('captcha-question');
+    const captchaAnswerInput = document.getElementById('captcha-answer');
+    
+    function generateCaptcha() {
+        if(captchaQuestion && captchaAnswerInput) {
+            const num1 = Math.floor(Math.random() * 10) + 1;
+            const num2 = Math.floor(Math.random() * 10) + 1;
+            captchaQuestion.textContent = `${num1} + ${num2}`;
+            captchaAnswerInput.value = num1 + num2;
+        }
+    }
+    
+    generateCaptcha();
+
     // Handle Contact Form Submission
     const form = document.getElementById('wp-contact-form');
     const msgDiv = document.getElementById('form-message');
@@ -38,6 +52,18 @@ document.addEventListener('DOMContentLoaded', () => {
     if(form) {
         form.addEventListener('submit', function(e) {
             e.preventDefault();
+            
+            // Validate Captcha
+            const userAnswer = document.getElementById('captcha').value;
+            const correctAnswer = document.getElementById('captcha-answer').value;
+            
+            if(parseInt(userAnswer) !== parseInt(correctAnswer)) {
+                msgDiv.innerHTML = '<i class="fa-solid fa-circle-exclamation mr-2"></i> Incorrect Security Answer. Please try again.';
+                msgDiv.className = 'mb-4 p-4 rounded-xl text-sm font-semibold bg-red-50 text-red-700 border border-red-200 block';
+                generateCaptcha();
+                document.getElementById('captcha').value = '';
+                return;
+            }
             
             const formData = new FormData(form);
             const submitBtn = form.querySelector('button[type="submit"]');
@@ -60,6 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     msgDiv.innerHTML = '<i class="fa-solid fa-circle-check mr-2"></i> Your message has been sent successfully. We will get back to you shortly.';
                     msgDiv.className = 'mb-4 p-4 rounded-xl text-sm font-semibold bg-green-50 text-green-700 border border-green-200 block';
                     form.reset();
+                    generateCaptcha();
                 } else {
                     throw new Error('Form submission failed');
                 }
@@ -71,9 +98,6 @@ document.addEventListener('DOMContentLoaded', () => {
             .finally(() => {
                 submitBtn.innerHTML = originalBtnText;
                 submitBtn.disabled = false;
-                setTimeout(() => {
-                    msgDiv.classList.add('hidden');
-                }, 8000);
             });
         });
     }

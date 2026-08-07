@@ -2,23 +2,49 @@
 <link rel="stylesheet" href="css/wp-packages.css">
 
 <!-- Hero Section -->
-<section class="wp-hero py-24 lg:py-32 overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="text-center max-w-4xl mx-auto">
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-blue-100 text-sm font-semibold mb-8">
-                <i class="fa-brands fa-wordpress animate-float-wp text-xl"></i>
-                WordPress Excellence
+<section class="wp-hero-section">
+    <!-- 3D Sphere Background -->
+    <div class="wp-hero-sphere"></div>
+    
+    <!-- Floating Particles -->
+    <div class="wp-particle wp-particle-1"></div>
+    <div class="wp-particle wp-particle-2"></div>
+    <div class="wp-particle wp-particle-3"></div>
+    <div class="wp-particle wp-particle-4"></div>
+
+    <!-- Dot Pattern -->
+    <div class="wp-hero-dots"></div>
+    <!-- Main Content -->
+    <div class="wp-hero-container">
+        <div class="wp-hero-grid">
+            <!-- LEFT COLUMN -->
+            <div class="wp-hero-left">
+                <div class="wp-hero-badge"><i class="fa-brands fa-wordpress"></i> WordPress Excellence</div>
+                <h1 class="wp-hero-heading">Premium<br><span>WordPress</span><br>Solutions</h1>
+                <p class="wp-hero-subtext">From lightning-fast landing pages to complex e-commerce platforms. We build scalable, secure, and beautiful WordPress websites tailored to your exact needs.</p>
+                <div class="wp-hero-btns">
+                    <a href="#packages" class="wp-hero-btn-primary"><i class="fa-solid fa-rocket"></i> View Packages</a>
+                    <a href="#contact" class="wp-hero-btn-outline"><i class="fa-regular fa-message"></i> Get Custom Quote</a>
+                </div>
+                <div class="wp-hero-trust">
+                    <div class="wp-hero-avatars">
+                        <img src="images/avatar1.jpg" alt=""><img src="images/avatar2.jpg" alt=""><img src="images/avatar3.jpg" alt=""><img src="images/avatar4.jpg" alt="">
+                        <div class="wp-hero-avatar-plus">+</div>
+                    </div>
+                    <div class="wp-hero-trust-text"><strong>524+</strong> Indian businesses launched<br><span class="wp-hero-star">★</span> <strong>4.9/5</strong> average client rating</div>
+                </div>
             </div>
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight mb-6">
-                Premium <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-cyan-300">WordPress</span> Solutions
-            </h1>
-            <p class="text-lg md:text-xl text-blue-100/80 mb-10 leading-relaxed max-w-2xl mx-auto">
-                From lightning-fast landing pages to complex e-commerce platforms. We build scalable, secure, and beautiful WordPress websites tailored to your exact needs.
-            </p>
-            <div class="flex justify-center gap-4">
-                <a href="#packages" class="px-8 py-3.5 bg-white text-blue-900 font-bold rounded-xl shadow-lg hover:bg-blue-50 transition-colors">View Packages</a>
-                <a href="#contact" class="px-8 py-3.5 bg-transparent border border-white/30 text-white font-bold rounded-xl hover:bg-white/10 transition-colors">Get Custom Quote</a>
-            </div>
+            <!-- RIGHT COLUMN -->
+            <div class="wp-hero-right"><img src="images/placeholder3.webp" alt="WordPress Services" class="wp-hero-img"></div>
+        </div>
+    </div>
+    <!-- Bottom Feature Bar -->
+    <div class="wp-hero-bar">
+        <div class="wp-hero-bar-inner">
+            <div class="wp-hero-bar-item"><div class="wp-hero-bar-icon"><i class="fa-solid fa-shield-halved"></i></div><div><div class="wp-hero-bar-title">100% Secure</div><div class="wp-hero-bar-desc">SSL &amp; WAF Protected</div></div></div>
+            <div class="wp-hero-bar-item"><div class="wp-hero-bar-icon"><i class="fa-solid fa-headset"></i></div><div><div class="wp-hero-bar-title">Dedicated Support</div><div class="wp-hero-bar-desc">Mon–Sat, 10AM – 7PM IST</div></div></div>
+            <div class="wp-hero-bar-item"><div class="wp-hero-bar-icon"><i class="fa-solid fa-bolt"></i></div><div><div class="wp-hero-bar-title">Fast Turnaround</div><div class="wp-hero-bar-desc">Milestone-Based Delivery</div></div></div>
+            <div class="wp-hero-bar-item wp-hero-bar-item-last"><div class="wp-hero-bar-icon"><i class="fa-solid fa-code"></i></div><div><div class="wp-hero-bar-title">Clean Code</div><div class="wp-hero-bar-desc">Documented &amp; Auditable</div></div></div>
         </div>
     </div>
 </section>
@@ -52,7 +78,7 @@
                 <p class="text-sm text-slate-500 mt-2">Perfect for marketing campaigns & simple portfolios.</p>
                 <div class="my-6">
                     <div class="text-4xl font-black text-slate-900">
-                        <span data-price-inr="2500">₹2,500</span>
+                        <span data-price-inr="4500">₹4,500</span>
                     </div>
                 </div>
                 <ul class="space-y-4 text-sm text-slate-600 mb-8 flex-1">
@@ -177,9 +203,8 @@
                     </div>
                 </div>
             </div>
-            <div class="relative">
-                <div class="absolute inset-0 bg-gradient-to-tr from-[#21759b] to-[#1e40af] rounded-3xl transform rotate-3 opacity-20"></div>
-                <img src="images/about-image.jpg" alt="WordPress Development" class="relative z-10 rounded-3xl shadow-2xl object-cover w-full h-full aspect-[4/3]" onerror="this.src='https://images.unsplash.com/photo-1616469829581-73993eb86b02?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'">
+            <div>
+                <img src="images/placeholder2.webp" alt="WordPress Development" class="rounded-3xl object-cover w-full h-auto">
             </div>
         </div>
     </div>
@@ -216,7 +241,7 @@
                         <label for="subject" class="block text-sm font-bold text-slate-700 mb-2">Selected Package *</label>
                         <select id="subject" name="subject" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-[#21759b] focus:border-[#21759b] outline-none transition-all bg-white">
                             <option value="" disabled selected>Select a package...</option>
-                            <option value="WordPress - Landing Page">Landing Page (₹2,500)</option>
+                            <option value="WordPress - Landing Page">Landing Page (₹4,500)</option>
                             <option value="WordPress - Blog/News">Blog / News (₹8,000)</option>
                             <option value="WordPress - E-commerce">E-commerce (₹15,000)</option>
                             <option value="WordPress - Custom Enterprise">Custom Enterprise (Custom)</option>
@@ -228,6 +253,14 @@
                 <div>
                     <label for="message" class="block text-sm font-bold text-slate-700 mb-2">Project Details *</label>
                     <textarea id="message" name="message" rows="4" required placeholder="Tell us about your project, goals, and any specific requirements..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-[#21759b] focus:border-[#21759b] outline-none transition-all resize-none"></textarea>
+                </div>
+                
+                <div>
+                    <label for="captcha" class="block text-sm font-bold text-slate-700 mb-2">Security Question: What is <span id="captcha-question" class="text-blue-600 font-black"></span>? *</label>
+                    <input type="text" id="captcha" required placeholder="Your Answer" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-[#21759b] focus:border-[#21759b] outline-none transition-all">
+                    <input type="hidden" id="captcha-answer" value="">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_captcha" value="false">
                 </div>
                 
                 <button type="submit" class="w-full py-4 rounded-xl wp-btn text-lg font-bold shadow-lg">
