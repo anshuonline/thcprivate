@@ -722,62 +722,292 @@
             </div>
         </div>
 
-        <!-- Budget-based Custom Plans -->
-        <div class="mt-20">
-            <div class="text-center mb-10 fade-up">
-                <h3 class="text-2xl md:text-3xl font-bold text-slate-900">Customized For Every Budget</h3>
-                <p class="text-slate-600 mt-2">Specialized custom web development plans tailored to your specific budget range.</p>
-                <div class="mt-6 inline-flex items-center gap-2 bg-white border border-slate-200 rounded-full px-5 py-2 shadow-sm">
-                    <span class="text-sm font-semibold text-slate-700">Currency:</span>
-                    <select class="currency-selector bg-transparent text-sm font-bold text-blue-800 cursor-pointer focus:outline-none ml-1">
-                        <option value="INR">₹ INR</option>
-                        <option value="USD">$ USD</option>
-                        <option value="EUR">€ EUR</option>
-                    </select>
-                </div>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-                <!-- Under 15k -->
-                <div class="bg-white rounded-2xl border border-slate-200 p-8 card-scale fade-up shadow-sm hover:shadow-lg transition-all text-center">
-                    <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
-                        <i class="fa-solid fa-user-tie"></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-slate-900">For Individuals</h4>
-                    <p class="text-xs text-slate-500 mt-1 uppercase tracking-wider font-semibold">Low Budget Customized</p>
-                    <div class="my-5 text-2xl font-black text-blue-600">Under <span data-price-inr="15000">₹15,000</span></div>
-                    <p class="text-sm text-slate-600 leading-relaxed">Perfect for portfolios, freelancers, and personal brands needing a professional online presence without breaking the bank.</p>
-                    <a href="#contact" class="mt-6 inline-block text-sm font-bold text-blue-600 hover:text-blue-800 transition-colors">Get a Quote <i class="fa-solid fa-arrow-right ml-1 text-xs"></i></a>
-                </div>
+        <section class="relative mt-24 overflow-hidden">
 
-                <!-- 25k - 50k -->
-                <div class="bg-white rounded-2xl border border-slate-200 p-8 card-scale fade-up shadow-sm hover:shadow-lg transition-all text-center">
-                    <div class="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
-                        <i class="fa-solid fa-store"></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-slate-900">For Startups</h4>
-                    <p class="text-xs text-slate-500 mt-1 uppercase tracking-wider font-semibold">Mid-Tier Customized</p>
-                    <div class="my-5 text-2xl font-black text-emerald-600"><span data-price-inr="25000">₹25,000</span> - <span data-price-inr="50000">₹50,000</span></div>
-                    <p class="text-sm text-slate-600 leading-relaxed">Ideal for small businesses and growing startups looking for custom functionalities, CMS, and dynamic content.</p>
-                    <a href="#contact" class="mt-6 inline-block text-sm font-bold text-emerald-600 hover:text-emerald-800 transition-colors">Get a Quote <i class="fa-solid fa-arrow-right ml-1 text-xs"></i></a>
-                </div>
+    <!-- Background Blur -->
+    <div class="absolute -top-32 -left-32 w-80 h-80 bg-blue-200/40 rounded-full blur-[120px]"></div>
+    <div class="absolute -bottom-32 -right-32 w-80 h-80 bg-cyan-200/40 rounded-full blur-[120px]"></div>
 
-                <!-- 50k - 1.5L -->
-                <div class="bg-white rounded-2xl border border-slate-200 p-8 card-scale fade-up shadow-sm hover:shadow-lg transition-all text-center relative overflow-hidden">
-                    <div class="absolute -right-6 -top-6 w-24 h-24 bg-purple-50 rounded-full z-0 opacity-50"></div>
-                    <div class="relative z-10">
-                        <div class="w-14 h-14 bg-purple-50 text-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
-                            <i class="fa-solid fa-building"></i>
-                        </div>
-                        <h4 class="text-xl font-bold text-slate-900">For Enterprises</h4>
-                        <p class="text-xs text-slate-500 mt-1 uppercase tracking-wider font-semibold">High-End Platforms</p>
-                        <div class="my-5 text-2xl font-black text-purple-600"><span data-price-inr="50000">₹50,000</span> - <span data-price-inr="150000">₹1,50,000</span></div>
-                        <p class="text-sm text-slate-600 leading-relaxed">Comprehensive custom development for large-scale web apps, extensive e-commerce, and heavy API integrations.</p>
-                        <a href="#contact" class="mt-6 inline-block text-sm font-bold text-purple-600 hover:text-purple-800 transition-colors">Get a Quote <i class="fa-solid fa-arrow-right ml-1 text-xs"></i></a>
-                    </div>
-                </div>
+    <div class="relative z-10">
+
+        <!-- Heading -->
+        <div class="text-center max-w-3xl mx-auto mb-14 fade-up">
+
+            <span
+                class="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700">
+                <i class="fa-solid fa-sparkles"></i>
+                Flexible Pricing
+            </span>
+
+            <h2 class="mt-6 text-4xl md:text-5xl font-black tracking-tight text-slate-900">
+                Customized For
+                <span
+                    class="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+                    Every Budget
+                </span>
+            </h2>
+
+            <p class="mt-4 text-lg text-slate-600 leading-relaxed">
+                Whether you're an individual, startup, or enterprise, we build
+                custom web solutions tailored to your goals and budget.
+            </p>
+
+            <!-- Currency -->
+            <div
+                class="inline-flex items-center gap-3 mt-8 rounded-full border border-slate-200 bg-white/80 backdrop-blur-xl px-6 py-3 shadow-lg">
+
+                <i class="fa-solid fa-coins text-blue-600"></i>
+
+                <span class="text-sm font-semibold text-slate-700">
+                    Currency
+                </span>
+
+                <select
+                    class="currency-selector bg-transparent font-semibold text-blue-700 outline-none cursor-pointer">
+
+                    <option value="INR">₹ INR</option>
+                    <option value="USD">$ USD</option>
+                    <option value="EUR">€ EUR</option>
+
+                </select>
+
             </div>
+
         </div>
+
+        <!-- Cards -->
+
+        <div class="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+
+            <!-- Card 1 -->
+
+            <div
+                class="group relative overflow-hidden rounded-3xl border border-white/60 bg-white/80 backdrop-blur-xl p-8 shadow-[0_15px_60px_rgba(15,23,42,.08)] transition duration-500 hover:-translate-y-3 hover:shadow-[0_25px_80px_rgba(37,99,235,.15)]">
+
+                <div
+                    class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-cyan-400">
+                </div>
+
+                <div
+                    class="inline-flex items-center gap-2 rounded-full bg-blue-50 px-4 py-1 text-xs font-bold text-blue-700">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    Best For Individuals
+
+                </div>
+
+                <div
+                    class="mt-7 w-16 h-16 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center text-2xl">
+
+                    <i class="fa-solid fa-user-tie"></i>
+
+                </div>
+
+                <h3 class="mt-6 text-2xl font-bold text-slate-900">
+                    Individuals
+                </h3>
+
+                <div class="mt-6">
+
+                    <div
+                        class="text-5xl font-black bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+
+                        Under
+
+                    </div>
+
+                    <div class="text-3xl font-black text-slate-900 mt-1">
+                        <span data-price-inr="15000">₹15,000</span>
+                    </div>
+
+                </div>
+
+                <ul class="mt-8 space-y-4 text-sm text-slate-600">
+
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Portfolio Website</li>
+
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Landing Pages</li>
+
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Responsive Design</li>
+
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>SEO Ready</li>
+
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Fast Performance</li>
+
+                </ul>
+
+                <a href="#contact"
+                    class="mt-10 flex justify-center items-center rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 px-5 py-3 font-semibold text-white shadow-lg transition hover:scale-105">
+
+                    Get Free Quote
+
+                    <i class="fa-solid fa-arrow-right ml-2"></i>
+
+                </a>
+
+            </div>
+
+            <!-- Card 2 -->
+
+            <div
+                class="group relative overflow-hidden rounded-3xl border-2 border-blue-500 bg-white/90 backdrop-blur-xl p-8 scale-105 shadow-[0_25px_80px_rgba(37,99,235,.15)] transition duration-500 hover:-translate-y-3">
+
+                <div
+                    class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600 to-cyan-500">
+                </div>
+
+                <div
+                    class="absolute right-6 top-6 rounded-full bg-blue-600 text-white text-xs font-bold px-4 py-2">
+
+                    MOST POPULAR
+
+                </div>
+
+                <div
+                    class="inline-flex items-center gap-2 rounded-full bg-emerald-50 px-4 py-1 text-xs font-bold text-emerald-700">
+
+                    <i class="fa-solid fa-fire"></i>
+
+                    Growing Business
+
+                </div>
+
+                <div
+                    class="mt-7 w-16 h-16 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl">
+
+                    <i class="fa-solid fa-store"></i>
+
+                </div>
+
+                <h3 class="mt-6 text-2xl font-bold text-slate-900">
+
+                    Startups
+
+                </h3>
+
+                <div class="mt-6">
+
+                    <div
+                        class="text-5xl font-black bg-gradient-to-r from-emerald-500 to-teal-500 bg-clip-text text-transparent">
+
+                        ₹25K
+
+                    </div>
+
+                    <p class="font-semibold text-slate-500 mt-2">
+
+                        up to
+                        <span data-price-inr="50000">₹50K</span>
+
+                    </p>
+
+                </div>
+
+                <ul class="mt-8 space-y-4 text-sm text-slate-600">
+
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Business Website</li>
+
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Admin Dashboard</li>
+
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>CMS Integration</li>
+
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>SEO Optimization</li>
+
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Priority Support</li>
+
+                </ul>
+
+                <a href="#contact"
+                    class="mt-10 flex justify-center items-center rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 px-5 py-3 font-semibold text-white shadow-lg transition hover:scale-105">
+
+                    Get Free Quote
+
+                    <i class="fa-solid fa-arrow-right ml-2"></i>
+
+                </a>
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div
+                class="group relative overflow-hidden rounded-3xl border border-white/60 bg-white/80 backdrop-blur-xl p-8 shadow-[0_15px_60px_rgba(15,23,42,.08)] transition duration-500 hover:-translate-y-3 hover:shadow-[0_25px_80px_rgba(139,92,246,.15)]">
+
+                <div
+                    class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-600 to-pink-500">
+                </div>
+
+                <div
+                    class="inline-flex items-center gap-2 rounded-full bg-purple-50 px-4 py-1 text-xs font-bold text-purple-700">
+
+                    <i class="fa-solid fa-crown"></i>
+
+                    Premium Solution
+
+                </div>
+
+                <div
+                    class="mt-7 w-16 h-16 rounded-2xl bg-purple-100 text-purple-600 flex items-center justify-center text-2xl">
+
+                    <i class="fa-solid fa-building"></i>
+
+                </div>
+
+                <h3 class="mt-6 text-2xl font-bold text-slate-900">
+
+                    Enterprises
+
+                </h3>
+
+                <div class="mt-6">
+
+                    <div
+                        class="text-5xl font-black bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
+
+                        ₹50K
+
+                    </div>
+
+                    <p class="font-semibold text-slate-500 mt-2">
+
+                        up to
+                        <span data-price-inr="150000">₹1.5L</span>
+
+                    </p>
+
+                </div>
+
+                <ul class="mt-8 space-y-4 text-sm text-slate-600">
+
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Custom Web Applications</li>
+
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Enterprise Dashboard</li>
+
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>API Integrations</li>
+
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Advanced Security</li>
+
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Dedicated Support</li>
+
+                </ul>
+
+                <a href="#contact"
+                    class="mt-10 flex justify-center items-center rounded-xl bg-gradient-to-r from-purple-600 to-pink-500 px-5 py-3 font-semibold text-white shadow-lg transition hover:scale-105">
+
+                    Get Free Quote
+
+                    <i class="fa-solid fa-arrow-right ml-2"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
         <div class="mt-16 text-center fade-up">
             <p class="text-sm text-slate-500">All prices exclusive of GST. Domain, hosting, and third-party API charges separate. <a href="refund-policy.php" class="text-blue-700 hover:underline font-semibold">Refund Policy</a>.</p>
