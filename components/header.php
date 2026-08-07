@@ -226,27 +226,28 @@
             </div>
         </div>
         
-        <!-- Mobile Menu Overlay -->
-        <div id="mobile-menu" class="fixed inset-0 z-[100] bg-gray-900 bg-opacity-95 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden flex flex-col pt-20 pb-6 px-6">
-            <button id="mobile-menu-close" class="absolute top-4 right-4 text-gray-400 hover:text-white p-2"><i class="fa-solid fa-xmark text-3xl"></i></button>
-            <div class="flex-1 flex flex-col justify-center space-y-6 text-center">
-                <a href="/#about" class="mobile-link text-2xl font-bold text-gray-300 hover:text-white transition-colors">About</a>
-                <a href="/#services" class="mobile-link text-2xl font-bold text-gray-300 hover:text-white transition-colors">Services</a>
-                <a href="/#how-it-works" class="mobile-link text-2xl font-bold text-gray-300 hover:text-white transition-colors">How It Works</a>
-                <a href="/#pricing" class="mobile-link text-2xl font-bold text-gray-300 hover:text-white transition-colors">Pricing</a>
-                <a href="/#contact" class="mobile-link text-2xl font-bold text-gray-300 hover:text-white transition-colors">Contact</a>
-            </div>
-            <div class="mt-auto pt-6 border-t border-gray-800 text-center">
-                <a href="/#contact" class="mobile-link w-full inline-flex justify-center items-center px-6 py-4 border border-transparent text-lg font-bold rounded-xl text-white bg-brand-600 hover:bg-brand-700 shadow-lg mb-6">
-                    Get Free Quote
-                </a>
-                <div class="flex justify-center gap-6 text-gray-400">
-                    <a href="mailto:support@hypecrews.com" class="hover:text-white text-xl"><i class="fa-solid fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/company/hypecrews/" class="hover:text-white text-xl"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
+    </nav>
+    
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-[100] bg-gray-900 bg-opacity-95 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden flex flex-col pt-20 pb-6 px-6">
+        <button id="mobile-menu-close" class="absolute top-4 right-4 text-gray-400 hover:text-white p-2"><i class="fa-solid fa-xmark text-3xl"></i></button>
+        <div class="flex-1 flex flex-col justify-center space-y-6 text-center">
+            <a href="/#about" class="mobile-link text-2xl font-bold text-gray-300 hover:text-white transition-colors">About</a>
+            <a href="/#services" class="mobile-link text-2xl font-bold text-gray-300 hover:text-white transition-colors">Services</a>
+            <a href="/#how-it-works" class="mobile-link text-2xl font-bold text-gray-300 hover:text-white transition-colors">How It Works</a>
+            <a href="/#pricing" class="mobile-link text-2xl font-bold text-gray-300 hover:text-white transition-colors">Pricing</a>
+            <a href="/#contact" class="mobile-link text-2xl font-bold text-gray-300 hover:text-white transition-colors">Contact</a>
+        </div>
+        <div class="mt-auto pt-6 border-t border-gray-800 text-center">
+            <a href="/#contact" class="mobile-link w-full inline-flex justify-center items-center px-6 py-4 border border-transparent text-lg font-bold rounded-xl text-white bg-brand-600 hover:bg-brand-700 shadow-lg mb-6">
+                Get Free Quote
+            </a>
+            <div class="flex justify-center gap-6 text-gray-400">
+                <a href="mailto:support@hypecrews.com" class="hover:text-white text-xl"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/company/hypecrews/" class="hover:text-white text-xl"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
         </div>
-    </nav>
+    </div>
     <script>
         const mobileMenu = document.getElementById('mobile-menu');
         const openBtn = document.getElementById('mobile-menu-btn');
