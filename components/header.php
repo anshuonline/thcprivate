@@ -190,6 +190,7 @@
                 <div class="hidden lg:flex items-center space-x-6">
                     <a href="/#about" class="nav-link text-base font-semibold text-gray-300 hover:text-white transition-colors">About</a>
                     <a href="/#services" class="nav-link text-base font-semibold text-gray-300 hover:text-white transition-colors">Services</a>
+                    <a href="wordpress-packages.php" class="nav-link text-base font-semibold text-brand-400 hover:text-white transition-colors"><i class="fa-brands fa-wordpress mr-1"></i>WordPress</a>
                     <a href="/#how-it-works" class="nav-link text-base font-semibold text-gray-300 hover:text-white transition-colors">How It Works</a>
                     <a href="/#pricing" class="nav-link text-base font-semibold text-gray-300 hover:text-white transition-colors">Pricing</a>
                     <a href="/#contact" class="nav-link text-base font-semibold text-gray-300 hover:text-white transition-colors">Contact</a>
@@ -211,6 +212,7 @@
         <div class="flex-1 flex flex-col justify-center space-y-6 text-center">
             <a href="/#about" class="mobile-link text-2xl font-bold text-gray-300 hover:text-white transition-colors">About</a>
             <a href="/#services" class="mobile-link text-2xl font-bold text-gray-300 hover:text-white transition-colors">Services</a>
+            <a href="wordpress-packages.php" class="mobile-link text-2xl font-bold text-brand-400 hover:text-white transition-colors"><i class="fa-brands fa-wordpress mr-2"></i>WordPress</a>
             <a href="/#how-it-works" class="mobile-link text-2xl font-bold text-gray-300 hover:text-white transition-colors">How It Works</a>
             <a href="/#pricing" class="mobile-link text-2xl font-bold text-gray-300 hover:text-white transition-colors">Pricing</a>
             <a href="/#contact" class="mobile-link text-2xl font-bold text-gray-300 hover:text-white transition-colors">Contact</a>

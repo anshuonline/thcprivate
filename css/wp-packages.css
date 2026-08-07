@@ -1,0 +1,56 @@
+/* wp-packages.css */
+/* Specific styling for the WordPress packages page */
+
+.wp-hero {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+    position: relative;
+}
+
+.wp-hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(circle at 80% 20%, rgba(33, 117, 155, 0.4) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.wp-icon-bg {
+    background-color: rgba(33, 117, 155, 0.1);
+    color: #21759b;
+}
+
+.wp-card {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.wp-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px -10px rgba(33, 117, 155, 0.15);
+    border-color: #21759b;
+}
+
+.wp-card-popular {
+    border-color: #21759b;
+    box-shadow: 0 10px 30px -10px rgba(33, 117, 155, 0.2);
+}
+
+.wp-btn {
+    background: linear-gradient(to right, #21759b, #1e40af);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.wp-btn:hover {
+    background: linear-gradient(to right, #1e40af, #172554);
+    transform: scale(1.05);
+}
+
+/* Float animation for the WordPress logo in hero */
+@keyframes floatWp {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+}
+
+.animate-float-wp {
+    animation: floatWp 6s ease-in-out infinite;
+}
