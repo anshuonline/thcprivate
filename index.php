@@ -722,7 +722,7 @@
             </div>
         </div>
 
-        <section class="relative mt-24 overflow-hidden">
+        <section class="relative mt-24 pb-28 pt-8 px-4 overflow-hidden">
 
     <!-- Background Blur -->
     <div class="absolute -top-32 -left-32 w-80 h-80 bg-blue-200/40 rounded-full blur-[120px]"></div>
