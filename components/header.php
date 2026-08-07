@@ -179,7 +179,7 @@
     <div class="bg-brand-900 text-white text-xs">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-2">
             <div class="flex items-center gap-4">
-                <span class="flex items-center gap-1"><i class="fa-solid fa-envelope text-brand-300"></i> support@hypecrews.com</span>
+                <span class="hidden md:flex items-center gap-1"><i class="fa-solid fa-envelope text-brand-300"></i> support@hypecrews.com</span>
                 <span class="hidden sm:flex items-center gap-1"><i class="fa-solid fa-phone text-brand-300"></i> +91 361 324 3276</span>
             </div>
             <div class="flex items-center gap-4">
@@ -195,7 +195,7 @@
                         <option value="EUR">€ EUR</option>
                     </select>
                 </div>
-                <a href="https://www.linkedin.com/company/hypecrews/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-300 transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/company/hypecrews/" target="_blank" rel="noopener noreferrer" class="hidden sm:block hover:text-brand-300 transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
         </div>
     </div>
@@ -227,7 +227,7 @@
         </div>
         
         <!-- Mobile Menu Overlay -->
-        <div id="mobile-menu" class="fixed inset-0 z-40 bg-black/95 backdrop-blur-md transform translate-x-full transition-transform duration-300 ease-in-out md:hidden flex flex-col pt-20 pb-6 px-6">
+        <div id="mobile-menu" class="fixed inset-0 z-[100] bg-gray-900 bg-opacity-95 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden flex flex-col pt-20 pb-6 px-6">
             <button id="mobile-menu-close" class="absolute top-4 right-4 text-gray-400 hover:text-white p-2"><i class="fa-solid fa-xmark text-3xl"></i></button>
             <div class="flex-1 flex flex-col justify-center space-y-6 text-center">
                 <a href="/#about" class="mobile-link text-2xl font-bold text-gray-300 hover:text-white transition-colors">About</a>
