@@ -56,10 +56,10 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="manifest" href="favicon/site.webmanifest">
 
-    <!-- Fonts: Plus Jakarta Sans (premium, corporate) -->
+    <!-- Fonts: Outfit (premium, corporate) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -67,7 +67,7 @@
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        sans: ['"Outfit"', 'sans-serif'],
                     },
                     colors: {
                         brand: {
@@ -113,17 +113,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
     
     <style>
-        html { scroll-behavior: smooth; }
-        .nav-scrolled { background-color: rgba(0,0,0,0.85) !important; backdrop-filter: blur(16px) !important; -webkit-backdrop-filter: blur(16px) !important; border-color: rgba(255,255,255,0.05) !important; box-shadow: 0 4px 30px rgba(0,0,0,0.1); }
-        .nav-scrolled .nav-link { color: #e5e7eb !important; }
-        .nav-scrolled .nav-link:hover { color: #60a5fa !important; }
-        .nav-scrolled .nav-logo-text { color: #ffffff !important; }
-        .nav-scrolled .nav-logo-img { filter: brightness(1) !important; }
-        .nav-scrolled #mobile-menu-btn { color: #ffffff !important; }
-        .nav-scrolled #mobile-menu { background-color: rgba(0,0,0,0.95) !important; border-top-color: rgba(255,255,255,0.1) !important; }
-        .nav-scrolled #mobile-menu .nav-link:hover { background-color: rgba(255,255,255,0.1) !important; color: #60a5fa !important; }
-        .nav-logo-img { filter: brightness(0); transition: filter 0.3s; }
-        .nav-logo-text { transition: color 0.3s; }
+        html { scroll-behavior: smooth; font-size: 16px; transition: font-size 0.3s ease; }
+        .nav-scrolled { background-color: rgba(0,0,0,0.85) !important; backdrop-filter: blur(16px) !important; -webkit-backdrop-filter: blur(16px) !important; box-shadow: 0 4px 30px rgba(0,0,0,0.5); border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .nav-logo-img { filter: brightness(0) invert(1); transition: filter 0.3s; }
+        .nav-logo-text { color: white !important; }
         .card-hover { transition: all 0.3s ease; }
         .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.08); }
         .btn-shine { position: relative; overflow: hidden; }
@@ -190,6 +183,9 @@
                 <span class="hidden sm:flex items-center gap-1"><i class="fa-solid fa-phone text-brand-300"></i> +91 361 324 3276</span>
             </div>
             <div class="flex items-center gap-4">
+                <!-- Font Resizer -->
+                <button onclick="toggleFontSize()" class="flex items-center justify-center w-6 h-6 bg-brand-800 rounded border border-brand-700 hover:bg-brand-700 transition-colors text-white font-bold text-xs" title="Change Font Size">A</button>
+                
                 <!-- Currency Selector -->
                 <div class="flex items-center gap-1">
                     <i class="fa-solid fa-coins text-brand-300"></i>
@@ -205,46 +201,76 @@
     </div>
 
     <!-- Main Navbar -->
-    <nav class="sticky top-0 z-50 bg-white border-b border-gray-200 transition-all duration-300" id="navbar">
+    <nav class="sticky top-0 z-50 bg-black border-b border-gray-800 transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex-shrink-0 flex items-center">
                     <a href="/" class="flex items-center gap-3">
                         <img src="images/hypecrews logo white.png" alt="The Hype Crews" class="h-14 w-auto object-contain nav-logo-img">
-                        <span class="font-bold text-xl text-gray-900 nav-logo-text">The Hype Crews</span>
+                        <span class="font-bold text-xl text-white nav-logo-text">The Hype Crews</span>
                     </a>
                 </div>
                 <div class="hidden md:flex items-center space-x-6">
-                    <a href="/#about" class="nav-link text-base font-semibold text-gray-600 transition-colors">About</a>
-                    <a href="/#services" class="nav-link text-base font-semibold text-gray-600 transition-colors">Services</a>
-                    <a href="/#how-it-works" class="nav-link text-base font-semibold text-gray-600 transition-colors">How It Works</a>
-                    <a href="/#pricing" class="nav-link text-base font-semibold text-gray-600 transition-colors">Pricing</a>
-                    <a href="/#contact" class="nav-link text-base font-semibold text-gray-600 transition-colors">Contact</a>
+                    <a href="/#about" class="nav-link text-base font-semibold text-gray-300 hover:text-white transition-colors">About</a>
+                    <a href="/#services" class="nav-link text-base font-semibold text-gray-300 hover:text-white transition-colors">Services</a>
+                    <a href="/#how-it-works" class="nav-link text-base font-semibold text-gray-300 hover:text-white transition-colors">How It Works</a>
+                    <a href="/#pricing" class="nav-link text-base font-semibold text-gray-300 hover:text-white transition-colors">Pricing</a>
+                    <a href="/#contact" class="nav-link text-base font-semibold text-gray-300 hover:text-white transition-colors">Contact</a>
                     <a href="/#contact" class="btn-shine inline-flex items-center px-6 py-2.5 border border-transparent text-base font-semibold rounded-md text-white bg-brand-600 hover:bg-brand-700 transition-colors shadow-sm group">
                         <span class="relative z-10">Get Free Quote</span>
                     </a>
                 </div>
                 <div class="md:hidden">
-                    <button id="mobile-menu-btn" class="text-gray-500 hover:text-gray-700 p-2"><i class="fa-solid fa-bars text-xl"></i></button>
+                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-white p-2"><i class="fa-solid fa-bars text-xl"></i></button>
                 </div>
             </div>
         </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 transition-colors duration-300">
-            <div class="px-4 pt-2 pb-4 space-y-1">
-                <a href="/#about" class="nav-link block px-3 py-2 text-base font-semibold text-gray-700 hover:bg-gray-50 rounded-md transition-colors">About</a>
-                <a href="/#services" class="nav-link block px-3 py-2 text-base font-semibold text-gray-700 hover:bg-gray-50 rounded-md transition-colors">Services</a>
-                <a href="/#how-it-works" class="nav-link block px-3 py-2 text-base font-semibold text-gray-700 hover:bg-gray-50 rounded-md transition-colors">How It Works</a>
-                <a href="/#pricing" class="nav-link block px-3 py-2 text-base font-semibold text-gray-700 hover:bg-gray-50 rounded-md transition-colors">Pricing</a>
-                <a href="/#contact" class="nav-link block px-3 py-2 text-base font-semibold text-gray-700 hover:bg-gray-50 rounded-md transition-colors">Contact</a>
-                <a href="/#contact" class="btn-shine block mt-2 text-center px-5 py-3 text-base font-semibold rounded-md text-white bg-brand-600 hover:bg-brand-700 group">
-                    <span class="relative z-10">Get Free Quote</span>
+        
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="fixed inset-0 z-40 bg-black/95 backdrop-blur-md transform translate-x-full transition-transform duration-300 ease-in-out md:hidden flex flex-col pt-20 pb-6 px-6">
+            <button id="mobile-menu-close" class="absolute top-4 right-4 text-gray-400 hover:text-white p-2"><i class="fa-solid fa-xmark text-3xl"></i></button>
+            <div class="flex-1 flex flex-col justify-center space-y-6 text-center">
+                <a href="/#about" class="mobile-link text-2xl font-bold text-gray-300 hover:text-white transition-colors">About</a>
+                <a href="/#services" class="mobile-link text-2xl font-bold text-gray-300 hover:text-white transition-colors">Services</a>
+                <a href="/#how-it-works" class="mobile-link text-2xl font-bold text-gray-300 hover:text-white transition-colors">How It Works</a>
+                <a href="/#pricing" class="mobile-link text-2xl font-bold text-gray-300 hover:text-white transition-colors">Pricing</a>
+                <a href="/#contact" class="mobile-link text-2xl font-bold text-gray-300 hover:text-white transition-colors">Contact</a>
+            </div>
+            <div class="mt-auto pt-6 border-t border-gray-800 text-center">
+                <a href="/#contact" class="mobile-link w-full inline-flex justify-center items-center px-6 py-4 border border-transparent text-lg font-bold rounded-xl text-white bg-brand-600 hover:bg-brand-700 shadow-lg mb-6">
+                    Get Free Quote
                 </a>
+                <div class="flex justify-center gap-6 text-gray-400">
+                    <a href="mailto:support@hypecrews.com" class="hover:text-white text-xl"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/company/hypecrews/" class="hover:text-white text-xl"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
             </div>
         </div>
     </nav>
     <script>
-        document.getElementById('mobile-menu-btn').addEventListener('click', () => document.getElementById('mobile-menu').classList.toggle('hidden'));
+        const mobileMenu = document.getElementById('mobile-menu');
+        const openBtn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+        
+        function toggleMenu() {
+            mobileMenu.classList.toggle('translate-x-full');
+            document.body.classList.toggle('overflow-hidden');
+        }
+        
+        if(openBtn) openBtn.addEventListener('click', toggleMenu);
+        if(closeBtn) closeBtn.addEventListener('click', toggleMenu);
+        mobileLinks.forEach(link => link.addEventListener('click', toggleMenu));
+
         window.addEventListener('scroll', () => document.getElementById('navbar').classList.toggle('nav-scrolled', window.scrollY > 10));
+        
+        // Font size toggler logic
+        let fontSizes = ['16px', '18px', '20px'];
+        let currentFontLevel = 0;
+        function toggleFontSize() {
+            currentFontLevel = (currentFontLevel + 1) % fontSizes.length;
+            document.documentElement.style.fontSize = fontSizes[currentFontLevel];
+        }
     </script>
 
     <!-- Currency auto-detect by IP + conversion script -->
