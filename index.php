@@ -814,17 +814,13 @@
                 </div>
 
                 <ul class="mt-8 space-y-4 text-sm text-slate-600">
-
-                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Portfolio Website</li>
-
-                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Landing Pages</li>
-
-                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Responsive Design</li>
-
-                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>SEO Ready</li>
-
-                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Fast Performance</li>
-
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Custom Personal Branding</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Responsive Landing Pages</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>AI-Powered Content Optimization</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Basic SEO & Google Analytics</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Secure Contact Forms</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Global CDN & Fast Hosting</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i>1 Month Free Maintenance</li>
                 </ul>
 
                 <a href="#contact"
