@@ -386,13 +386,9 @@ include 'components/header.php';
             <div class="bg-gray-50 p-8 rounded-sm border border-gray-200 shadow-sm">
                 <!-- Hidden iframe for seamless submission -->
                 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
-                <form action="https://formsubmit.co/thehypecrews@proton.me" method="POST" target="hidden_iframe" id="career-form">
-                    <!-- FormSubmit Configuration -->
-                    <input type="hidden" name="_captcha" value="false">
+                <form action="submit-career.php" method="POST" target="hidden_iframe" id="career-form" enctype="multipart/form-data">
                     <!-- Honeypot -->
                     <input type="text" name="_honey" style="display:none">
-                    <!-- Hidden field for file.io link -->
-                    <input type="hidden" name="Resume_Link" id="resume_link_input" value="">
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                         <div>
@@ -437,7 +433,7 @@ include 'components/header.php';
 
                     <div class="mb-6">
                         <label for="resume" class="block text-sm font-medium text-gray-700 mb-1">Resume Upload (PDF only, max 5MB) *</label>
-                        <input type="file" id="resume" accept=".pdf" required class="w-full px-4 py-2 border border-gray-300 rounded-sm focus:ring-blue-800 focus:border-blue-800 bg-white text-sm file:mr-4 file:py-2 file:px-4 file:rounded-sm file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-800 hover:file:bg-blue-100">
+                        <input type="file" id="resume" name="attachment" accept=".pdf" required class="w-full px-4 py-2 border border-gray-300 rounded-sm focus:ring-blue-800 focus:border-blue-800 bg-white text-sm file:mr-4 file:py-2 file:px-4 file:rounded-sm file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-800 hover:file:bg-blue-100">
                         <p id="file-error" class="text-red-500 text-xs mt-1 hidden">File must be a PDF and less than 5MB.</p>
                     </div>
 
