@@ -24,7 +24,13 @@ $phone = isset($_POST['phone']) ? strip_tags(trim($_POST['phone'])) : 'Not provi
 $position = isset($_POST['position']) ? strip_tags(trim($_POST['position'])) : 'Not provided';
 $experience = isset($_POST['experience']) ? strip_tags(trim($_POST['experience'])) : 'Not provided';
 $portfolio = isset($_POST['portfolio']) ? strip_tags(trim($_POST['portfolio'])) : 'Not provided';
-$cover_letter = isset($_POST['cover_letter']) ? strip_tags(trim($_POST['cover_letter'])) : 'Not provided';
+
+// Strict validation for cover letter (no links, html, or urls allowed)
+$raw_cover_letter = isset($_POST['cover_letter']) ? $_POST['cover_letter'] : '';
+$clean_cover_letter = strip_tags(trim($raw_cover_letter));
+// Remove basic URL patterns (http, https, www)
+$clean_cover_letter = preg_replace('/(https?:\/\/[^\s]+|www\.[^\s]+)/i', '[LINK REMOVED FOR SECURITY]', $clean_cover_letter);
+$cover_letter = $clean_cover_letter ? $clean_cover_letter : 'Not provided';
 
 // Prepare email body text
 $message = "You have received a new career application.\n\n";
