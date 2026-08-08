@@ -81,16 +81,42 @@ if (mail($to, $subject, $body, $headers)) {
     
     // --- Auto-Responder to Applicant ---
     $user_subject = "Thank you for applying to The Hype Crews!";
-    $user_message = "Hi $name,\n\n";
-    $user_message .= "Thank you for submitting your application for the $position role.\n\n";
-    $user_message .= "Our hiring team will carefully review your resume and portfolio. If your profile matches our current requirements, we will get back to you shortly.\n\n";
-    $user_message .= "Best Regards,\n";
-    $user_message .= "The Hype Crews Team\n";
-    $user_message .= "https://thehypecrew.in";
+    
+    $user_message = "
+    <html>
+    <head>
+      <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
+        .header { background-color: #0b1120; padding: 20px; text-align: center; }
+        .header img { max-width: 200px; }
+        .content { padding: 30px; }
+        .footer { background-color: #f3f4f6; padding: 20px; text-align: center; font-size: 12px; color: #6b7280; }
+      </style>
+    </head>
+    <body>
+      <div class='header'>
+        <img src='https://thehypecrews.in/images/hypecrews%20logo%20white.png' alt='The Hype Crews'>
+      </div>
+      <div class='content'>
+        <p>Hi $name,</p>
+        <p>Thank you for submitting your application for the <strong>$position</strong> role.</p>
+        <p>Our hiring team will carefully review your resume and portfolio. If your profile matches our current requirements, we will get back to you shortly.</p>
+        <br>
+        <p>Best Regards,</p>
+        <p><strong>The Hype Crews Team</strong><br>
+        <a href='https://thehypecrews.in' style='color: #1d4ed8; text-decoration: none;'>thehypecrews.in</a></p>
+      </div>
+      <div class='footer'>
+        <p>&copy; " . date('Y') . " Hypecrews Software Private Limited. All rights reserved.</p>
+      </div>
+    </body>
+    </html>
+    ";
     
     $user_headers = "From: The Hype Crews <no-reply@" . $_SERVER['HTTP_HOST'] . ">\r\n";
     $user_headers .= "Reply-To: support@hypecrews.com\r\n";
-    $user_headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+    $user_headers .= "MIME-Version: 1.0\r\n";
+    $user_headers .= "Content-Type: text/html; charset=UTF-8\r\n";
     
     // Send the thank you email
     mail($email, $user_subject, $user_message, $user_headers);
