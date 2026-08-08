@@ -11,6 +11,24 @@ document.addEventListener("DOMContentLoaded", function () {
     const applyBtns = document.querySelectorAll('.apply-btn');
 
     let num1, num2;
+    
+    // Rate Limiting Logic (Max 5 submissions, 10 hour lockout)
+    let submissionCount = parseInt(localStorage.getItem('hc_submission_count') || '0');
+    let lockoutUntil = parseInt(localStorage.getItem('hc_lockout_until') || '0');
+
+    if (lockoutUntil > Date.now()) {
+        submitBtn.disabled = true;
+        submitBtn.querySelector('span').textContent = 'Too Many Attempts';
+        formMessages.textContent = 'You have reached the maximum number of applications. Please try again later.';
+        formMessages.classList.add('bg-red-50', 'text-red-800', 'border', 'border-red-200');
+        formMessages.classList.remove('hidden');
+    } else if (lockoutUntil > 0 && lockoutUntil <= Date.now()) {
+        // Reset if lockout period has passed
+        submissionCount = 0;
+        lockoutUntil = 0;
+        localStorage.removeItem('hc_submission_count');
+        localStorage.removeItem('hc_lockout_until');
+    }
 
     function generateMathCaptcha() {
         num1 = Math.floor(Math.random() * 10) + 1;
@@ -58,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener('message', function(event) {
         if (submitted && (event.data === 'application_success' || event.data === 'application_error')) {
             if (event.data === 'application_success') {
-                formMessages.textContent = 'Thank you for your application. We will be in touch soon!';
+                formMessages.textContent = 'Thank you for your application. A confirmation email has been sent to you (please check your spam folder).';
                 formMessages.classList.add('bg-green-50', 'text-green-800', 'border', 'border-green-200');
             } else {
                 formMessages.textContent = 'An error occurred while sending your application. Please try again.';
@@ -70,10 +88,28 @@ document.addEventListener("DOMContentLoaded", function () {
             submitBtn.disabled = false;
             submitBtn.querySelector('span').textContent = 'Submit Application';
             submitted = false;
+            
+            if (event.data === 'application_success') {
+                submissionCount++;
+                localStorage.setItem('hc_submission_count', submissionCount);
+                if (submissionCount >= 5) {
+                    // Lockout for 10 hours
+                    lockoutUntil = Date.now() + (10 * 60 * 60 * 1000);
+                    localStorage.setItem('hc_lockout_until', lockoutUntil);
+                    submitBtn.disabled = true;
+                    submitBtn.querySelector('span').textContent = 'Too Many Attempts';
+                }
+            }
         }
     });
 
     form.addEventListener('submit', function (e) {
+        // Prevent if locked out
+        if (lockoutUntil > Date.now()) {
+            e.preventDefault();
+            return;
+        }
+        
         // Validate Math CAPTCHA
         if (parseInt(mathAnswer.value) !== (num1 + num2)) {
             e.preventDefault();
