@@ -5,6 +5,18 @@
 $to = "thehypecrews@proton.me";
 $subject = "New Career Application";
 
+// Security: Enforce POST method
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    echo "<script>window.parent.postMessage('application_error', '*');</script>";
+    exit;
+}
+
+// Security: Honeypot check (bots fill hidden fields)
+if (!empty($_POST['_honey'])) {
+    echo "<script>window.parent.postMessage('application_success', '*');</script>"; // Fake success to trick bot
+    exit;
+}
+
 // Basic field validation
 $name = isset($_POST['name']) ? strip_tags(trim($_POST['name'])) : 'Not provided';
 $email = isset($_POST['email']) ? strip_tags(trim($_POST['email'])) : 'Not provided';
