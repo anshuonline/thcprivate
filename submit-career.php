@@ -34,7 +34,11 @@ $message .= "Phone: $phone\n";
 $message .= "Position Applied For: $position\n";
 $message .= "Total Experience: $experience Years\n";
 $message .= "Portfolio/LinkedIn: $portfolio\n\n";
-$message .= "Cover Letter:\n$cover_letter\n";
+$message .= "Cover Letter:\n$cover_letter\n\n";
+$message .= "========================================================\n";
+$message .= "SECURITY WARNING (FOR HIRING TEAM):\n";
+$message .= "If an applicant's resume looks suspicious, do NOT click on any weird links inside it.\n";
+$message .= "========================================================\n";
 
 // Handle file attachment
 $file = $_FILES['attachment'];
