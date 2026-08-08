@@ -80,8 +80,11 @@ if ($file_error === UPLOAD_ERR_OK) {
     $body = $message;
 }
 
+// Set envelope sender to match the From address
+$envelope_sender = "-f no-reply@" . $_SERVER['HTTP_HOST'];
+
 // Send Email
-if (mail($to, $subject, $body, $headers)) {
+if (mail($to, $subject, $body, $headers, $envelope_sender)) {
     
     // --- Auto-Responder to Applicant ---
     $user_subject = "Thank you for applying to The Hype Crews!";
@@ -147,8 +150,11 @@ if (mail($to, $subject, $body, $headers)) {
     $user_headers .= "MIME-Version: 1.0\r\n";
     $user_headers .= "Content-Type: text/html; charset=UTF-8\r\n";
     
+    // Set envelope sender to match the From address
+    $envelope_sender = "-f no-reply@" . $_SERVER['HTTP_HOST'];
+    
     // Send the thank you email
-    mail($email, $user_subject, $user_message, $user_headers);
+    mail($email, $user_subject, $user_message, $user_headers, $envelope_sender);
     // -----------------------------------
 
     // Trigger success message in parent window if using hidden iframe
