@@ -125,6 +125,10 @@ if (mail($to, $subject, $body, $headers)) {
             
             <p>Best Regards,</p>
             <p><strong>Talent Acquisition Team</strong><br>Hypecrews Software Private Limited</p>
+            
+            <div style="margin-top: 35px; padding: 15px; background-color: #fef2f2; border: 1px solid #fecaca; border-radius: 6px;">
+                <p style="margin: 0; font-size: 12px; color: #991b1b; line-height: 1.5;"><strong>⚠️ Security Notice:</strong> Hypecrews Software Private Limited does not charge any fees at any stage of our recruitment process. We will never ask for payment or banking details. Please beware of fraudulent job offers.</p>
+            </div>
           </div>
           <div class="footer">
             <p><strong>Hypecrews Software Private Limited</strong></p>
