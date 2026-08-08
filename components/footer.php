@@ -75,7 +75,10 @@
         <!-- Bottom Bar -->
         <div class="border-t border-brand-900">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col md:flex-row justify-between items-center gap-4">
-                <p class="text-xs text-gray-500">&copy; <?php echo date('Y'); ?> The Hype Crews. All Rights Reserved.</p>
+                <div class="text-center md:text-left">
+                    <p class="text-xs text-gray-500 mb-1">&copy; <?php echo date('Y'); ?> Hypecrews Software Private Limited. All Rights Reserved.</p>
+                    <p class="text-[10px] text-gray-600">Last Updated: <?php echo date('d F Y', filemtime($_SERVER['SCRIPT_FILENAME'])); ?></p>
+                </div>
                 <div class="flex gap-4">
                     <a href="terms.php" class="text-xs text-gray-500 hover:text-gray-300 transition-colors">Terms</a>
                     <a href="privacy-policy.php" class="text-xs text-gray-500 hover:text-gray-300 transition-colors">Privacy</a>
