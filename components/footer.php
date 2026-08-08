@@ -13,12 +13,6 @@
                     <p class="text-gray-400 text-sm leading-relaxed mb-6">
                         India's trusted web development company delivering enterprise-grade websites, applications, and digital solutions since 2022.<br><span class="text-gray-500 text-xs mt-1 block">CIN: U73100AS2026PTC029838</span>
                     </p>
-                    <div class="flex gap-3">
-                        <a href="#" class="w-9 h-9 rounded-md bg-brand-900 flex items-center justify-center text-gray-400 hover:bg-brand-700 hover:text-white transition-all text-sm"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#" class="w-9 h-9 rounded-md bg-brand-900 flex items-center justify-center text-gray-400 hover:bg-brand-700 hover:text-white transition-all text-sm"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" class="w-9 h-9 rounded-md bg-brand-900 flex items-center justify-center text-gray-400 hover:bg-brand-700 hover:text-white transition-all text-sm"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#" class="w-9 h-9 rounded-md bg-brand-900 flex items-center justify-center text-gray-400 hover:bg-brand-700 hover:text-white transition-all text-sm"><i class="fa-brands fa-twitter"></i></a>
-                    </div>
                 </div>
 
                 <!-- Services -->
