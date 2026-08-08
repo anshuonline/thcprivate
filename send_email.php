@@ -77,7 +77,7 @@ $htmlContent = "
 // Headers
 $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-$headers .= "From: Hype Crews Website <noreply@thehypecrews.in>" . "\r\n";
+$headers .= "From: Hype Crews Website <noreply@thehypecrew.in>" . "\r\n";
 $headers .= "Reply-To: $email" . "\r\n";
 
 // Send Email

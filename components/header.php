@@ -10,20 +10,20 @@
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://thehypecrews.in/">
+    <meta property="og:url" content="https://thehypecrew.in/">
     <meta property="og:title" content="The Hype Crews | Web & App Development Company">
     <meta property="og:description" content="Top web development company in Guwahati, India. We build enterprise websites, e-commerce platforms, and mobile apps.">
-    <meta property="og:image" content="https://thehypecrews.in/images/hypecrews-logo-white.png">
+    <meta property="og:image" content="https://thehypecrew.in/images/hypecrews-logo-white.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://thehypecrews.in/">
+    <meta property="twitter:url" content="https://thehypecrew.in/">
     <meta property="twitter:title" content="The Hype Crews | Web & App Development Company">
     <meta property="twitter:description" content="Top web development company in Guwahati, India. We build enterprise websites, e-commerce platforms, and mobile apps.">
-    <meta property="twitter:image" content="https://thehypecrews.in/images/hypecrews-logo-white.png">
+    <meta property="twitter:image" content="https://thehypecrew.in/images/hypecrews-logo-white.png">
     
     <!-- Canonical -->
-    <link rel="canonical" href="https://thehypecrews.in/">
+    <link rel="canonical" href="https://thehypecrew.in/">
 
     <!-- Schema.org JSON-LD for Google Search -->
     <script type="application/ld+json">
@@ -31,8 +31,8 @@
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
       "name": "The Hype Crews",
-      "image": "https://thehypecrews.in/images/hypecrews-logo-white.png",
-      "url": "https://thehypecrews.in/",
+      "image": "https://thehypecrew.in/images/hypecrews-logo-white.png",
+      "url": "https://thehypecrew.in/",
       "telephone": "+913613243276",
       "email": "support@hypecrews.com",
       "address": {
