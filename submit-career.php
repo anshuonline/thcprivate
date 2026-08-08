@@ -71,8 +71,8 @@ if ($file_error === UPLOAD_ERR_OK) {
     // Message body (text part)
     $body = "--$boundary\r\n";
     $body .= "Content-Type: text/plain; charset=\"UTF-8\"\r\n";
-    $body .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
-    $body .= $message . "\r\n\r\n";
+    $body .= "Content-Transfer-Encoding: 8bit\r\n\r\n";
+    $body .= wordwrap($message, 70, "\r\n") . "\r\n\r\n";
 
     // Message body (attachment part)
     $body .= "--$boundary\r\n";
