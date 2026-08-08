@@ -1,0 +1,53 @@
+/* careers.css */
+
+.job-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.apply-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.apply-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(30, 58, 95, 0.05);
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    transition: transform 0.4s ease;
+}
+
+.apply-btn:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Fix intl-tel-input width inside flex layout */
+.iti {
+    width: 100%;
+}
+
+/* Ensure smooth scrolling for entire page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+    .job-card {
+        padding: 1.25rem;
+    }
+    
+    .job-card h3 {
+        font-size: 1.125rem;
+    }
+}
