@@ -8,7 +8,7 @@
                 <!-- Brand -->
                 <div class="lg:col-span-1">
                     <a href="/" class="flex items-center gap-2 mb-4">
-                        <img src="images/hypecrews logo white.png" alt="The Hype Crews" class="h-8 w-auto object-contain">
+                        <img src="images/hypecrews-logo-white.png" alt="The Hype Crews" class="h-8 w-auto object-contain">
                         <span class="font-bold text-lg">The Hype Crews</span>
                     </a>
                     <p class="text-gray-400 text-sm leading-relaxed mb-6">

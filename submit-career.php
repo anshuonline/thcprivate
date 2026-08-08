@@ -108,7 +108,7 @@ if (mail($to, $subject, $body, $headers)) {
       <div class="email-wrapper">
         <div class="email-container">
           <div class="header">
-            <img src="https://thehypecrews.in/images/hypecrews%20logo%20white.png" alt="The Hype Crews">
+            <img src="https://thehypecrew.in/images/hypecrews-logo-white.png" alt="The Hype Crews">
           </div>
           <div class="content">
             <h1>Application Received Successfully</h1>

@@ -13,14 +13,14 @@
     <meta property="og:url" content="https://thehypecrews.in/">
     <meta property="og:title" content="The Hype Crews | Web & App Development Company">
     <meta property="og:description" content="Top web development company in Guwahati, India. We build enterprise websites, e-commerce platforms, and mobile apps.">
-    <meta property="og:image" content="https://thehypecrews.in/images/hypecrews logo white.png">
+    <meta property="og:image" content="https://thehypecrews.in/images/hypecrews-logo-white.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://thehypecrews.in/">
     <meta property="twitter:title" content="The Hype Crews | Web & App Development Company">
     <meta property="twitter:description" content="Top web development company in Guwahati, India. We build enterprise websites, e-commerce platforms, and mobile apps.">
-    <meta property="twitter:image" content="https://thehypecrews.in/images/hypecrews logo white.png">
+    <meta property="twitter:image" content="https://thehypecrews.in/images/hypecrews-logo-white.png">
     
     <!-- Canonical -->
     <link rel="canonical" href="https://thehypecrews.in/">
@@ -31,7 +31,7 @@
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
       "name": "The Hype Crews",
-      "image": "https://thehypecrews.in/images/hypecrews logo white.png",
+      "image": "https://thehypecrews.in/images/hypecrews-logo-white.png",
       "url": "https://thehypecrews.in/",
       "telephone": "+913613243276",
       "email": "support@hypecrews.com",
@@ -183,7 +183,7 @@
             <div class="flex justify-between items-center h-16">
                 <div class="flex-shrink-0 flex items-center">
                     <a href="/" class="flex items-center gap-3">
-                        <img src="images/hypecrews logo white.png" alt="The Hype Crews" class="h-14 w-auto object-contain nav-logo-img">
+                        <img src="images/hypecrews-logo-white.png" alt="The Hype Crews" class="h-14 w-auto object-contain nav-logo-img">
                         <span class="font-bold text-xl text-white nav-logo-text">The Hype Crews</span>
                     </a>
                 </div>
