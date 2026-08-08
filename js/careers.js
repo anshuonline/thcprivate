@@ -54,29 +54,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let submitted = false;
     
-    // Listen for iframe postMessage from submit-career.php
-    window.addEventListener('message', function(event) {
-        if (submitted && (event.data === 'application_success' || event.data === 'application_error')) {
-            if (event.data === 'application_success') {
+    // We'll rely on the hidden iframe's load event for success since we're using FormSubmit again
+    const hiddenIframe = document.getElementById('hidden_iframe');
+    if (hiddenIframe) {
+        hiddenIframe.onload = function() {
+            if (submitted) {
                 formMessages.textContent = 'Thank you for your application. We will be in touch soon!';
                 formMessages.classList.add('bg-green-50', 'text-green-800', 'border', 'border-green-200');
-            } else {
-                formMessages.textContent = 'An error occurred while sending your application. Please try again.';
-                formMessages.classList.add('bg-red-50', 'text-red-800', 'border', 'border-red-200');
+                formMessages.classList.remove('hidden');
+                form.reset();
+                generateMathCaptcha();
+                submitBtn.disabled = false;
+                submitBtn.querySelector('span').textContent = 'Submit Application';
+                submitted = false;
             }
-            formMessages.classList.remove('hidden');
-            form.reset();
-            generateMathCaptcha();
-            submitBtn.disabled = false;
-            submitBtn.querySelector('span').textContent = 'Submit Application';
-            submitted = false;
-        }
-    });
+        };
+    }
 
-    form.addEventListener('submit', function (e) {
+    form.addEventListener('submit', async function (e) {
+        e.preventDefault(); // Stop natural submission to handle file upload first
+
         // Validate Math CAPTCHA
         if (parseInt(mathAnswer.value) !== (num1 + num2)) {
-            e.preventDefault();
             mathError.classList.remove('hidden');
             generateMathCaptcha();
             return;
@@ -85,13 +84,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // File check
         if (!fileInput.files.length) {
-            e.preventDefault();
             return;
         }
 
         // Show loading state
         submitBtn.disabled = true;
-        submitBtn.querySelector('span').textContent = 'Submitting...';
+        submitBtn.querySelector('span').textContent = 'Uploading Resume...';
         
         formMessages.classList.add('hidden');
         formMessages.className = 'mb-4 hidden rounded-sm p-4 text-sm font-medium';
@@ -105,8 +103,37 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
         
-        // Let the form submit naturally to the hidden iframe
-        submitted = true;
+        // 1. Upload file to file.io
+        const file = fileInput.files[0];
+        const formData = new FormData();
+        formData.append('file', file);
+        
+        try {
+            const response = await fetch('https://file.io/', {
+                method: 'POST',
+                body: formData
+            });
+            
+            const result = await response.json();
+            
+            if (result.success && result.link) {
+                // 2. Inject link into hidden input
+                document.getElementById('resume_link_input').value = result.link;
+                
+                // 3. Submit the form naturally to the hidden iframe
+                submitBtn.querySelector('span').textContent = 'Submitting...';
+                submitted = true;
+                form.submit();
+            } else {
+                throw new Error('Upload failed');
+            }
+        } catch(error) {
+            formMessages.textContent = 'Failed to upload resume to secure storage. Please try again.';
+            formMessages.classList.add('bg-red-50', 'text-red-800', 'border', 'border-red-200');
+            formMessages.classList.remove('hidden');
+            submitBtn.disabled = false;
+            submitBtn.querySelector('span').textContent = 'Submit Application';
+        }
     });
 });
 
