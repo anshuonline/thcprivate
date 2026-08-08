@@ -52,19 +52,38 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    form.addEventListener('submit', function (e) {
-        e.preventDefault();
+    let submitted = false;
+    
+    // Listen for iframe load (which happens after form submission)
+    const hiddenIframe = document.getElementById('hidden_iframe');
+    if (hiddenIframe) {
+        hiddenIframe.onload = function() {
+            if (submitted) {
+                formMessages.textContent = 'Thank you for your application. We will be in touch soon!';
+                formMessages.classList.add('bg-green-50', 'text-green-800', 'border', 'border-green-200');
+                formMessages.classList.remove('hidden');
+                form.reset();
+                generateMathCaptcha();
+                submitBtn.disabled = false;
+                submitBtn.querySelector('span').textContent = 'Submit Application';
+                submitted = false;
+            }
+        };
+    }
 
+    form.addEventListener('submit', function (e) {
         // Validate Math CAPTCHA
         if (parseInt(mathAnswer.value) !== (num1 + num2)) {
+            e.preventDefault();
             mathError.classList.remove('hidden');
             generateMathCaptcha();
             return;
         }
         mathError.classList.add('hidden');
 
-        // File check (required is on input, but just in case)
+        // File check
         if (!fileInput.files.length) {
+            e.preventDefault();
             return;
         }
 
@@ -75,46 +94,16 @@ document.addEventListener("DOMContentLoaded", function () {
         formMessages.classList.add('hidden');
         formMessages.className = 'mb-4 hidden rounded-sm p-4 text-sm font-medium';
 
-        // Prepare FormData
-        const formData = new FormData(form);
-        
-        // Use intl-tel-input formatted number if exists
+        // Update phone number if intl-tel-input is used
         const phoneInput = document.querySelector("#phone");
         if(phoneInput && window.intlTelInputGlobals) {
             const iti = window.intlTelInputGlobals.getInstance(phoneInput);
             if(iti && iti.isValidNumber()) {
-                formData.set('phone', iti.getNumber());
+                phoneInput.value = iti.getNumber();
             }
         }
-
-        // Submit via AJAX
-        fetch('https://formsubmit.co/ajax/thehypecrews@proton.me', {
-            method: 'POST',
-            body: formData,
-            headers: {
-                'Accept': 'application/json'
-            }
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.success) {
-                formMessages.textContent = 'Thank you for your application. We will be in touch soon!';
-                formMessages.classList.add('bg-green-50', 'text-green-800', 'border', 'border-green-200');
-                formMessages.classList.remove('hidden');
-                form.reset();
-                generateMathCaptcha();
-            } else {
-                throw new Error('Submission failed');
-            }
-        })
-        .catch(error => {
-            formMessages.textContent = 'An error occurred. Please try again later.';
-            formMessages.classList.add('bg-red-50', 'text-red-800', 'border', 'border-red-200');
-            formMessages.classList.remove('hidden');
-        })
-        .finally(() => {
-            submitBtn.disabled = false;
-            submitBtn.querySelector('span').textContent = 'Submit Application';
-        });
+        
+        // Let the form submit naturally to the hidden iframe
+        submitted = true;
     });
 });

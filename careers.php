@@ -238,7 +238,11 @@ include 'components/header.php';
             </div>
 
             <div class="bg-gray-50 p-8 rounded-sm border border-gray-200 shadow-sm">
-                <form id="career-form" enctype="multipart/form-data">
+                <!-- Hidden iframe for seamless submission -->
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+                <form action="https://formsubmit.co/thehypecrews@proton.me" method="POST" target="hidden_iframe" id="career-form" enctype="multipart/form-data">
+                    <!-- FormSubmit Configuration -->
+                    <input type="hidden" name="_captcha" value="false">
                     <!-- Honeypot -->
                     <input type="text" name="_honey" style="display:none">
                     
