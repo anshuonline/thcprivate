@@ -481,6 +481,6 @@ include 'components/header.php';
         }
     });
 </script>
-<script src="js/careers.js" defer></script>
+<script src="js/careers.js?v=<?php echo time(); ?>" defer></script>
 
 <?php include 'components/footer.php'; ?>
