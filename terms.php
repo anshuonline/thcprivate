@@ -35,7 +35,7 @@
         <div class="space-y-12 text-gray-700 leading-relaxed">
             <section id="section-1">
                 <h2 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">1. Acceptance of Terms</h2>
-                <p>These Terms and Conditions constitute a legally binding agreement made between you, whether personally or on behalf of an entity ("Client"), and The Hype Crews ("Company"), concerning your access to and use of our web development, application development, and associated digital services. By engaging our services, you expressly agree that you have read, understood, and are bound by all of these terms.</p>
+                <p>These Terms and Conditions constitute a legally binding agreement made between you, whether personally or on behalf of an entity ("Client"), and Hypecrews Software Private Limited ("Company"), concerning your access to and use of our web development, application development, and associated digital services. By engaging our services, you expressly agree that you have read, understood, and are bound by all of these terms.</p>
             </section>
 
             <section id="section-2">
@@ -146,7 +146,7 @@
                 <h2 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">22. Contact Information</h2>
                 <p>Formal legal notices, queries regarding contractual stipulations, or general inquiries should be directed to our administrative headquarters.</p>
                 <p class="mt-4">
-                    <strong>The Hype Crews</strong><br>
+                    <strong>Hypecrews Software Private Limited</strong><br>
                     Email: <a href="mailto:support@hypecrews.com" class="text-blue-600 hover:underline">support@hypecrews.com</a><br>
                     Location: India
                 </p>

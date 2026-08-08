@@ -184,7 +184,6 @@
                 <div class="flex-shrink-0 flex items-center">
                     <a href="/" class="flex items-center gap-3">
                         <img src="images/hypecrews-logo-white.png" alt="The Hype Crews" class="h-14 w-auto object-contain nav-logo-img">
-                        <span class="font-bold text-xl text-white nav-logo-text">The Hype Crews</span>
                     </a>
                 </div>
                 <div class="hidden lg:flex items-center space-x-6">

@@ -33,7 +33,7 @@
         <div class="space-y-12 text-gray-700 leading-relaxed">
             <section id="section-1">
                 <h2 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">1. Introduction and General Principles</h2>
-                <p>The Hype Crews ("Company," "We," "Us," or "Our") is steadfastly committed to protecting the privacy, confidentiality, and security of your personal data. This Privacy Policy comprehensively details the rigorous frameworks, methodologies, and legal parameters governing how we collect, process, utilize, share, and safeguard your data when you access our websites, utilize our applications, or engage with our services.</p>
+                <p>Hypecrews Software Private Limited ("Company," "We," "Us," or "Our") is steadfastly committed to protecting the privacy, confidentiality, and security of your personal data. This Privacy Policy comprehensively details the rigorous frameworks, methodologies, and legal parameters governing how we collect, process, utilize, share, and safeguard your data when you access our websites, utilize our applications, or engage with our services.</p>
             </section>
 
             <section id="section-2">
@@ -41,7 +41,7 @@
                 <ul class="list-disc pl-6 mt-2 space-y-2">
                     <li><strong>"Personal Data"</strong> implies any information relating to an identified or identifiable natural person.</li>
                     <li><strong>"Processing"</strong> refers to any operation performed on Personal Data, whether or not by automated means.</li>
-                    <li><strong>"Data Controller"</strong> refers to The Hype Crews, determining the purposes and means of the processing of Personal Data.</li>
+                    <li><strong>"Data Controller"</strong> refers to Hypecrews Software Private Limited, determining the purposes and means of the processing of Personal Data.</li>
                     <li><strong>"User"</strong> or <strong>"You"</strong> refers to any individual accessing our digital properties or utilizing our Services.</li>
                 </ul>
             </section>
@@ -135,7 +135,7 @@
                 <h2 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">20. Contact Information</h2>
                 <p>All formal inquiries, rights assertions, or grievances pertaining to this Privacy Policy or our data processing architectures must be directed in written format to our Chief Privacy Officer.</p>
                 <p class="mt-4">
-                    <strong>The Hype Crews</strong><br>
+                    <strong>Hypecrews Software Private Limited</strong><br>
                     Email: <a href="mailto:support@hypecrews.com" class="text-blue-600 hover:underline">support@hypecrews.com</a><br>
                     Location: India
                 </p>

@@ -9,7 +9,6 @@
                 <div class="lg:col-span-1">
                     <a href="/" class="flex items-center gap-2 mb-4">
                         <img src="images/hypecrews-logo-white.png" alt="The Hype Crews" class="h-8 w-auto object-contain">
-                        <span class="font-bold text-lg">The Hype Crews</span>
                     </a>
                     <p class="text-gray-400 text-sm leading-relaxed mb-6">
                         India's trusted web development company delivering enterprise-grade websites, applications, and digital solutions since 2022.<br><span class="text-gray-500 text-xs mt-1 block">CIN: U73100AS2026PTC029838</span>

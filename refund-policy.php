@@ -15,7 +15,7 @@
                 <li><a href="#section-6" class="hover:underline">6. Design and Creative Work</a></li>
                 <li><a href="#section-7" class="hover:underline">7. Hosting, Domains, and Third-Party Purchases</a></li>
                 <li><a href="#section-8" class="hover:underline">8. Project Cancellation by Client</a></li>
-                <li><a href="#section-9" class="hover:underline">9. Project Cancellation by The Hype Crews</a></li>
+                <li><a href="#section-9" class="hover:underline">9. Project Cancellation by Hypecrews Software Private Limited</a></li>
                 <li><a href="#section-10" class="hover:underline">10. Abandonment of Project</a></li>
                 <li><a href="#section-11" class="hover:underline">11. Partial Delivery and Deliverables</a></li>
                 <li><a href="#section-12" class="hover:underline">12. Revision Cycles and Scope Creep</a></li>
@@ -32,14 +32,14 @@
         <div class="space-y-12 text-gray-700 leading-relaxed">
             <section id="section-1">
                 <h2 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">1. Introduction and Scope</h2>
-                <p>This Refund Policy sets forth the binding terms and conditions regarding any financial transactions, payments, and refund requests made to The Hype Crews ("Company," "We," "Us," or "Our"). By engaging with our services, you ("Client," "User," or "You") explicitly acknowledge, understand, and agree to be bound by the stipulations contained herein in their entirety. This policy applies uniformly to all web development, application development, design, maintenance, hosting, and any supplementary services provided by The Hype Crews.</p>
+                <p>This Refund Policy sets forth the binding terms and conditions regarding any financial transactions, payments, and refund requests made to Hypecrews Software Private Limited ("Company," "We," "Us," or "Our"). By engaging with our services, you ("Client," "User," or "You") explicitly acknowledge, understand, and agree to be bound by the stipulations contained herein in their entirety. This policy applies uniformly to all web development, application development, design, maintenance, hosting, and any supplementary services provided by Hypecrews Software Private Limited.</p>
             </section>
 
             <section id="section-2">
                 <h2 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">2. Definitions</h2>
                 <p>For the purposes of this legal agreement:</p>
                 <ul class="list-disc pl-6 mt-2 space-y-2">
-                    <li><strong>"Company"</strong> refers to The Hype Crews, its subsidiaries, affiliates, employees, agents, and representatives.</li>
+                    <li><strong>"Company"</strong> refers to Hypecrews Software Private Limited, its subsidiaries, affiliates, employees, agents, and representatives.</li>
                     <li><strong>"Client"</strong> refers to the individual, entity, or organization engaging the Company for services.</li>
                     <li><strong>"Services"</strong> encompasses all technical, creative, consulting, and administrative work executed by the Company, including but not limited to software development, graphic design, and server management.</li>
                     <li><strong>"Deliverables"</strong> refers to the tangible or intangible outputs generated as a result of the Services.</li>
@@ -48,7 +48,7 @@
 
             <section id="section-3">
                 <h2 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">3. Strict No Refund Policy</h2>
-                <p>The Hype Crews maintains a rigorous and uncompromising STRICT NO REFUND POLICY. Due to the bespoke, customized, and labor-intensive nature of software development and digital design services, all payments rendered to the Company are strictly non-refundable under any and all circumstances, except where explicitly mandated by governing law. Once work has commenced, billable hours and resource allocations cannot be reversed, recovered, or undone.</p>
+                <p>Hypecrews Software Private Limited maintains a rigorous and uncompromising STRICT NO REFUND POLICY. Due to the bespoke, customized, and labor-intensive nature of software development and digital design services, all payments rendered to the Company are strictly non-refundable under any and all circumstances, except where explicitly mandated by governing law. Once work has commenced, billable hours and resource allocations cannot be reversed, recovered, or undone.</p>
             </section>
 
             <section id="section-4">
@@ -77,7 +77,7 @@
             </section>
 
             <section id="section-9">
-                <h2 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">9. Project Cancellation by The Hype Crews</h2>
+                <h2 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">9. Project Cancellation by Hypecrews Software Private Limited</h2>
                 <p>The Company reserves the unilateral right to terminate the project or service agreement in the event of a material breach by the Client, including non-payment, failure to provide requisite materials, or hostile communication. In such events, the Company shall retain all payments made, and no refunds shall be issued. The Company shall not be liable for any damages resulting from such termination.</p>
             </section>
 
@@ -113,7 +113,7 @@
 
             <section id="section-16">
                 <h2 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">16. Governing Law and Jurisdiction</h2>
-                <p>This Refund Policy and all engagements with The Hype Crews shall be governed by, construed, and enforced in accordance with the laws of India, without regard to its conflict of law principles. Any legal proceedings arising out of or relating to this policy shall be instituted exclusively in the competent courts located within India. The Client expressly consents to the exclusive jurisdiction of such courts.</p>
+                <p>This Refund Policy and all engagements with Hypecrews Software Private Limited shall be governed by, construed, and enforced in accordance with the laws of India, without regard to its conflict of law principles. Any legal proceedings arising out of or relating to this policy shall be instituted exclusively in the competent courts located within India. The Client expressly consents to the exclusive jurisdiction of such courts.</p>
             </section>
 
             <section id="section-17">
@@ -130,7 +130,7 @@
                 <h2 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">19. Contact Information</h2>
                 <p>Should you require formal clarification or have inquiries concerning this strict Refund Policy, you must submit your request in writing to our official legal and support department. We require up to fourteen (14) business days to formally review and respond to inquiries.</p>
                 <p class="mt-4">
-                    <strong>The Hype Crews</strong><br>
+                    <strong>Hypecrews Software Private Limited</strong><br>
                     Email: <a href="mailto:support@hypecrews.com" class="text-blue-600 hover:underline">support@hypecrews.com</a><br>
                     Location: India
                 </p>
