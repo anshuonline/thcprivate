@@ -114,6 +114,19 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E59W25F4G6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-E59W25F4G6');
+    </script>
+    
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="zRCpoTnrvoRBIjiljfZBKdDPVSINZ5G9ZVNcRE69Zig" />
 </head>
 <body class="bg-white text-gray-800 antialiased font-sans flex flex-col min-h-screen">
 
