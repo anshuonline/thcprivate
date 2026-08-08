@@ -26,43 +26,40 @@ $experience = isset($_POST['experience']) ? strip_tags(trim($_POST['experience']
 $portfolio = isset($_POST['portfolio']) ? strip_tags(trim($_POST['portfolio'])) : 'Not provided';
 
 // ---------------------------------------------------------
-// GOOGLE SAFE BROWSING API - REAL-TIME MALWARE LINK SCANNER
+// FREE MALWARE SCANNER (URLHaus API + Heuristics)
+// No API Key Required!
 // ---------------------------------------------------------
-$google_api_key = ""; // <-- PASTE YOUR GOOGLE SAFE BROWSING API KEY HERE
+if ($portfolio !== 'Not provided' && filter_var($portfolio, FILTER_VALIDATE_URL)) {
+    $is_unsafe = false;
+    
+    // 1. Basic Heuristic Check (Block direct downloads of executable files)
+    if (preg_match('/\.(exe|bat|cmd|scr|vbs|js|apk)$/i', parse_url($portfolio, PHP_URL_PATH))) {
+        $is_unsafe = true;
+    }
 
-if ($portfolio !== 'Not provided' && filter_var($portfolio, FILTER_VALIDATE_URL) && !empty($google_api_key)) {
-    $api_url = "https://safebrowsing.googleapis.com/v4/threatMatches:find?key=" . $google_api_key;
-    $payload = json_encode([
-        "client" => [
-            "clientId" => "hypecrews-careers",
-            "clientVersion" => "1.0.0"
-        ],
-        "threatInfo" => [
-            "threatTypes" => ["MALWARE", "SOCIAL_ENGINEERING", "UNWANTED_SOFTWARE"],
-            "platformTypes" => ["ANY_PLATFORM"],
-            "threatEntryTypes" => ["URL"],
-            "threatEntries" => [
-                ["url" => $portfolio]
-            ]
-        ]
-    ]);
+    // 2. URLHaus API Check (Free, No Key Required, Swiss Cybersecurity Database)
+    if (!$is_unsafe) {
+        $ch = curl_init("https://urlhaus-api.abuse.ch/v1/url/");
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query(['url' => $portfolio]));
+        curl_setopt($ch, CURLOPT_TIMEOUT, 3); // 3 second timeout
+        $response = curl_exec($ch);
+        curl_close($ch);
 
-    $ch = curl_init($api_url);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
-    curl_setopt($ch, CURLOPT_POST, true);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
-    curl_setopt($ch, CURLOPT_TIMEOUT, 3); // 3 second timeout so the form doesn't hang forever
-    $response = curl_exec($ch);
-    curl_close($ch);
-
-    if ($response) {
-        $result = json_decode($response, true);
-        if (isset($result['matches']) && count($result['matches']) > 0) {
-            // Threat detected! Block the submission instantly.
-            echo "<script>window.parent.postMessage('application_error_malware', '*');</script>";
-            exit;
+        if ($response) {
+            $result = json_decode($response, true);
+            // If the query is successful and the URL is actively distributing malware
+            if (isset($result['query_status']) && $result['query_status'] === 'ok') {
+                $is_unsafe = true;
+            }
         }
+    }
+
+    if ($is_unsafe) {
+        // Threat detected! Block the submission instantly.
+        echo "<script>window.parent.postMessage('application_error_malware', '*');</script>";
+        exit;
     }
 }
 // ---------------------------------------------------------
