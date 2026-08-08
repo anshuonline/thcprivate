@@ -74,10 +74,13 @@ document.addEventListener("DOMContentLoaded", function () {
     
     // Listen for iframe postMessage from submit-career.php
     window.addEventListener('message', function(event) {
-        if (submitted && (event.data === 'application_success' || event.data === 'application_error')) {
+        if (submitted && (event.data === 'application_success' || event.data === 'application_error' || event.data === 'application_error_malware')) {
             if (event.data === 'application_success') {
                 formMessages.textContent = 'Thank you for your application. A confirmation email has been sent to you (please check your spam folder).';
                 formMessages.classList.add('bg-green-50', 'text-green-800', 'border', 'border-green-200');
+            } else if (event.data === 'application_error_malware') {
+                formMessages.textContent = 'Security Alert: The portfolio link you provided has been flagged as unsafe or malicious. Please remove it or provide a safe URL.';
+                formMessages.classList.add('bg-red-50', 'text-red-800', 'border', 'border-red-200');
             } else {
                 formMessages.textContent = 'An error occurred while sending your application. Please try again.';
                 formMessages.classList.add('bg-red-50', 'text-red-800', 'border', 'border-red-200');

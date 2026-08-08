@@ -25,6 +25,48 @@ $position = isset($_POST['position']) ? strip_tags(trim($_POST['position'])) : '
 $experience = isset($_POST['experience']) ? strip_tags(trim($_POST['experience'])) : 'Not provided';
 $portfolio = isset($_POST['portfolio']) ? strip_tags(trim($_POST['portfolio'])) : 'Not provided';
 
+// ---------------------------------------------------------
+// GOOGLE SAFE BROWSING API - REAL-TIME MALWARE LINK SCANNER
+// ---------------------------------------------------------
+$google_api_key = ""; // <-- PASTE YOUR GOOGLE SAFE BROWSING API KEY HERE
+
+if ($portfolio !== 'Not provided' && filter_var($portfolio, FILTER_VALIDATE_URL) && !empty($google_api_key)) {
+    $api_url = "https://safebrowsing.googleapis.com/v4/threatMatches:find?key=" . $google_api_key;
+    $payload = json_encode([
+        "client" => [
+            "clientId" => "hypecrews-careers",
+            "clientVersion" => "1.0.0"
+        ],
+        "threatInfo" => [
+            "threatTypes" => ["MALWARE", "SOCIAL_ENGINEERING", "UNWANTED_SOFTWARE"],
+            "platformTypes" => ["ANY_PLATFORM"],
+            "threatEntryTypes" => ["URL"],
+            "threatEntries" => [
+                ["url" => $portfolio]
+            ]
+        ]
+    ]);
+
+    $ch = curl_init($api_url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 3); // 3 second timeout so the form doesn't hang forever
+    $response = curl_exec($ch);
+    curl_close($ch);
+
+    if ($response) {
+        $result = json_decode($response, true);
+        if (isset($result['matches']) && count($result['matches']) > 0) {
+            // Threat detected! Block the submission instantly.
+            echo "<script>window.parent.postMessage('application_error_malware', '*');</script>";
+            exit;
+        }
+    }
+}
+// ---------------------------------------------------------
+
 // Strict validation for cover letter (no links, html, or urls allowed)
 $raw_cover_letter = isset($_POST['cover_letter']) ? $_POST['cover_letter'] : '';
 $clean_cover_letter = strip_tags(trim($raw_cover_letter));
