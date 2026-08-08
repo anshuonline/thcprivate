@@ -54,22 +54,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let submitted = false;
     
-    // Listen for iframe load (which happens after form submission)
-    const hiddenIframe = document.getElementById('hidden_iframe');
-    if (hiddenIframe) {
-        hiddenIframe.onload = function() {
-            if (submitted) {
+    // Listen for iframe postMessage from submit-career.php
+    window.addEventListener('message', function(event) {
+        if (submitted && (event.data === 'application_success' || event.data === 'application_error')) {
+            if (event.data === 'application_success') {
                 formMessages.textContent = 'Thank you for your application. We will be in touch soon!';
                 formMessages.classList.add('bg-green-50', 'text-green-800', 'border', 'border-green-200');
-                formMessages.classList.remove('hidden');
-                form.reset();
-                generateMathCaptcha();
-                submitBtn.disabled = false;
-                submitBtn.querySelector('span').textContent = 'Submit Application';
-                submitted = false;
+            } else {
+                formMessages.textContent = 'An error occurred while sending your application. Please try again.';
+                formMessages.classList.add('bg-red-50', 'text-red-800', 'border', 'border-red-200');
             }
-        };
-    }
+            formMessages.classList.remove('hidden');
+            form.reset();
+            generateMathCaptcha();
+            submitBtn.disabled = false;
+            submitBtn.querySelector('span').textContent = 'Submit Application';
+            submitted = false;
+        }
+    });
 
     form.addEventListener('submit', function (e) {
         // Validate Math CAPTCHA
@@ -107,3 +109,21 @@ document.addEventListener("DOMContentLoaded", function () {
         submitted = true;
     });
 });
+
+// Accordion toggle function for Job Details
+function toggleJobDetail(button) {
+    // Find the adjacent .job-detail div
+    const accordion = button.closest('.job-accordion');
+    const detailPanel = accordion.querySelector('.job-detail');
+    const icon = button.querySelector('.fa-chevron-down');
+
+    // Toggle hidden class
+    detailPanel.classList.toggle('hidden');
+
+    // Rotate chevron icon
+    if (detailPanel.classList.contains('hidden')) {
+        icon.classList.remove('rotate-180');
+    } else {
+        icon.classList.add('rotate-180');
+    }
+}

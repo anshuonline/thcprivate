@@ -191,42 +191,23 @@
                     <a href="/" class="nav-link text-base font-semibold text-gray-300 hover:text-white transition-colors">Home</a>
                     <a href="/#about" class="nav-link text-base font-semibold text-gray-300 hover:text-white transition-colors">About</a>
                     <a href="/#services" class="nav-link text-base font-semibold text-gray-300 hover:text-white transition-colors">Services</a>
+                    <a href="wordpress-packages.php" class="nav-link text-base font-semibold text-brand-400 hover:text-white transition-colors"><i class="fa-brands fa-wordpress mr-1"></i>WordPress</a>
                     
-                    <!-- Multi Dropdown: Solutions -->
+                    <!-- Dropdown: More -->
                     <div class="relative group">
                         <button class="nav-link text-base font-semibold text-gray-300 hover:text-white transition-colors flex items-center gap-1">
-                            Solutions <i class="fa-solid fa-chevron-down text-[10px] transition-transform group-hover:rotate-180"></i>
+                            More <i class="fa-solid fa-chevron-down text-[10px] transition-transform group-hover:rotate-180"></i>
                         </button>
                         <div class="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                             <div class="bg-white rounded-lg shadow-xl border border-gray-100 py-2 min-w-[220px]">
-                                <a href="wordpress-packages.php" class="flex items-center gap-3 px-4 py-2.5 text-sm font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-800 transition-colors">
-                                    <i class="fa-brands fa-wordpress text-[#21759b] w-5 text-center"></i> WordPress Packages
-                                </a>
                                 <a href="/#pricing" class="flex items-center gap-3 px-4 py-2.5 text-sm font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-800 transition-colors">
                                     <i class="fa-solid fa-tags text-blue-600 w-5 text-center"></i> Pricing Plans
                                 </a>
                                 <a href="/#how-it-works" class="flex items-center gap-3 px-4 py-2.5 text-sm font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-800 transition-colors">
                                     <i class="fa-solid fa-diagram-project text-blue-600 w-5 text-center"></i> How It Works
                                 </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Multi Dropdown: Company -->
-                    <div class="relative group">
-                        <button class="nav-link text-base font-semibold text-gray-300 hover:text-white transition-colors flex items-center gap-1">
-                            Company <i class="fa-solid fa-chevron-down text-[10px] transition-transform group-hover:rotate-180"></i>
-                        </button>
-                        <div class="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                            <div class="bg-white rounded-lg shadow-xl border border-gray-100 py-2 min-w-[220px]">
-                                <a href="/#about" class="flex items-center gap-3 px-4 py-2.5 text-sm font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-800 transition-colors">
-                                    <i class="fa-solid fa-building text-blue-600 w-5 text-center"></i> About Us
-                                </a>
                                 <a href="careers.php" class="flex items-center gap-3 px-4 py-2.5 text-sm font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-800 transition-colors">
                                     <i class="fa-solid fa-briefcase text-blue-600 w-5 text-center"></i> Careers
-                                </a>
-                                <a href="/#contact" class="flex items-center gap-3 px-4 py-2.5 text-sm font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-800 transition-colors">
-                                    <i class="fa-solid fa-envelope text-blue-600 w-5 text-center"></i> Contact Us
                                 </a>
                             </div>
                         </div>
@@ -252,28 +233,17 @@
             <a href="/" class="mobile-link text-2xl font-bold text-gray-300 hover:text-white transition-colors">Home</a>
             <a href="/#about" class="mobile-link text-2xl font-bold text-gray-300 hover:text-white transition-colors">About</a>
             <a href="/#services" class="mobile-link text-2xl font-bold text-gray-300 hover:text-white transition-colors">Services</a>
+            <a href="wordpress-packages.php" class="mobile-link text-2xl font-bold text-brand-400 hover:text-white transition-colors"><i class="fa-brands fa-wordpress mr-2"></i>WordPress</a>
             
-            <!-- Mobile Accordion: Solutions -->
+            <!-- Mobile Accordion: More -->
             <div class="mobile-accordion">
                 <button onclick="toggleMobileAccordion(this)" class="text-2xl font-bold text-gray-300 hover:text-white transition-colors flex items-center justify-center gap-2 w-full">
-                    Solutions <i class="fa-solid fa-chevron-down text-sm transition-transform"></i>
+                    More <i class="fa-solid fa-chevron-down text-sm transition-transform"></i>
                 </button>
                 <div class="mobile-accordion-panel hidden mt-3 space-y-2">
-                    <a href="wordpress-packages.php" class="mobile-link block text-lg font-semibold text-gray-400 hover:text-white transition-colors"><i class="fa-brands fa-wordpress mr-2 text-[#21759b]"></i>WordPress</a>
                     <a href="/#pricing" class="mobile-link block text-lg font-semibold text-gray-400 hover:text-white transition-colors"><i class="fa-solid fa-tags mr-2 text-blue-400"></i>Pricing</a>
                     <a href="/#how-it-works" class="mobile-link block text-lg font-semibold text-gray-400 hover:text-white transition-colors"><i class="fa-solid fa-diagram-project mr-2 text-blue-400"></i>How It Works</a>
-                </div>
-            </div>
-            
-            <!-- Mobile Accordion: Company -->
-            <div class="mobile-accordion">
-                <button onclick="toggleMobileAccordion(this)" class="text-2xl font-bold text-gray-300 hover:text-white transition-colors flex items-center justify-center gap-2 w-full">
-                    Company <i class="fa-solid fa-chevron-down text-sm transition-transform"></i>
-                </button>
-                <div class="mobile-accordion-panel hidden mt-3 space-y-2">
-                    <a href="/#about" class="mobile-link block text-lg font-semibold text-gray-400 hover:text-white transition-colors"><i class="fa-solid fa-building mr-2 text-blue-400"></i>About Us</a>
                     <a href="careers.php" class="mobile-link block text-lg font-semibold text-gray-400 hover:text-white transition-colors"><i class="fa-solid fa-briefcase mr-2 text-blue-400"></i>Careers</a>
-                    <a href="/#contact" class="mobile-link block text-lg font-semibold text-gray-400 hover:text-white transition-colors"><i class="fa-solid fa-envelope mr-2 text-blue-400"></i>Contact Us</a>
                 </div>
             </div>
             

@@ -360,6 +360,6 @@
         }
     });
 </script>
-<script src="js/wp-packages.js" defer></script>
+<script src="js/wp-packages.js?v=<?php echo time(); ?>" defer></script>
 
 <?php include 'components/footer.php'; ?>
